@@ -15,6 +15,7 @@ import { SmoothScroll } from "../components/smooth-scroll";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { WhatsAppFab } from "../components/whatsapp-fab";
+import { PageTransition } from "../components/page-transition";
 
 function NotFoundComponent() {
   return (
