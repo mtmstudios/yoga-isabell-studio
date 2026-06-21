@@ -15,9 +15,9 @@ const ctaVariants = cva(
     variants: {
       variant: {
         primary:
-          "rounded-pill bg-clay text-bone px-7 py-3.5 text-[0.95rem] shadow-[0_1px_0_rgba(43,38,34,0.04)] hover:bg-clay-deep hover:-translate-y-0.5",
+          "rounded-pill bg-clay text-bone px-7 py-3.5 text-[0.95rem] shadow-[0_1px_0_rgba(43,38,34,0.04)] hover:bg-clay-deep hover:-translate-y-0.5 hover:shadow-[0_18px_38px_-18px_rgba(185,106,77,0.55),0_2px_0_rgba(43,38,34,0.04)]",
         ghost:
-          "rounded-pill border border-ink/30 text-ink px-7 py-3.5 text-[0.95rem] hover:border-ink hover:bg-ink/[0.03] hover:-translate-y-0.5",
+          "rounded-pill border border-ink/30 text-ink px-7 py-3.5 text-[0.95rem] hover:border-ink hover:bg-ink/[0.03] hover:-translate-y-0.5 hover:shadow-[0_14px_28px_-20px_rgba(43,38,34,0.35)]",
         link: [
           "relative inline-block px-0 py-1 text-ink",
           "after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full",
