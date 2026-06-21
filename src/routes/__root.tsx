@@ -140,7 +140,9 @@ function RootComponent() {
       <SiteHeader />
       <main className="min-h-screen">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <PageTransition>
+          <Outlet />
+        </PageTransition>
       </main>
       <SiteFooter />
       <WhatsAppFab />
