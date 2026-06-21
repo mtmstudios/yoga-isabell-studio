@@ -19,19 +19,24 @@ import { PageTransition } from "../components/page-transition";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+    <div className="flex min-h-dvh items-center justify-center bg-bone px-6 py-24">
+      <div className="max-w-lg text-center">
+        <p className="text-[0.72rem] uppercase tracking-[0.28em] text-clay">
+          Seite nicht gefunden
         </p>
-        <div className="mt-6">
+        <h1 className="mt-6 font-display text-[clamp(3.5rem,10vw,7rem)] leading-none text-ink italic">
+          404
+        </h1>
+        <p className="mt-6 text-taupe leading-relaxed">
+          Diese Seite gibt es nicht (mehr). Vielleicht magst Du tief
+          durchatmen und zurück zur Startseite gehen?
+        </p>
+        <div className="mt-10">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex items-center justify-center rounded-pill bg-clay px-7 py-3.5 text-[0.95rem] font-medium text-bone shadow-[0_1px_0_rgba(43,38,34,0.04)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:bg-clay-deep"
           >
-            Go home
+            Zurück zur Startseite
           </Link>
         </div>
       </div>
