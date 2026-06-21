@@ -225,7 +225,7 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-4"
             >
               <CTA asChild variant="primary">
-                <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+                <Link to="/buchen">
                   Probestunde buchen
                 </a>
               </CTA>

@@ -59,7 +59,7 @@ function KinderyogaPage() {
                 </p>
                 <div className="mt-6">
                   <CTA asChild variant="primary">
-                    <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+                    <Link to="/buchen">
                       Jetzt buchen
                     </a>
                   </CTA>

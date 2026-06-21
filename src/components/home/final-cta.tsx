@@ -26,7 +26,7 @@ export function FinalCta() {
               asChild
               className="bg-bone text-clay-deep hover:bg-bone-soft hover:text-clay-deep"
             >
-              <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+              <Link to="/buchen">
                 Jetzt Probestunde buchen — 10 €
               </a>
             </CTA>

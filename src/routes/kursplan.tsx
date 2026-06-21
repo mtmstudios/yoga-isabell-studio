@@ -131,7 +131,7 @@ function KursplanPage() {
 
         <Reveal delay={0.2} className="mt-12">
           <CTA asChild variant="primary">
-            <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+            <Link to="/buchen">
               Hier geht's zum Buchungskalender
             </a>
           </CTA>
