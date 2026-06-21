@@ -100,10 +100,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Vinyasa Yoga in Stuttgart — klein, persönlich, ganzheitlich.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:site_name", content: "Yoga mit Isabell" },
+      { property: "og:locale", content: "de_DE" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "theme-color", content: "#F6F1E8" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -113,6 +117,53 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Hanken+Grotesk:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HealthAndBeautyBusiness",
+          "@id": "#yoga-mit-isabell",
+          name: "Yoga mit Isabell",
+          description:
+            "Vinyasa Yoga in Stuttgart-Steinhaldenfeld. Persönlich, klein, ganzheitlich. Max. 12 Teilnehmer:innen.",
+          image: "/favicon.svg",
+          telephone: "+49 157 31154727",
+          email: "hello@yoga-mit-isabell.de",
+          priceRange: "€€",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Zuckerbergstraße 99, 1. Stock",
+            addressLocality: "Stuttgart",
+            addressRegion: "Baden-Württemberg",
+            postalCode: "70378",
+            addressCountry: "DE",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 48.8264,
+            longitude: 9.2492,
+          },
+          areaServed: [
+            "Stuttgart-Steinhaldenfeld",
+            "Bad Cannstatt",
+            "Stuttgart",
+          ],
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Wednesday", "Thursday"],
+              description:
+                "Öffnung 15 Minuten vor Kursbeginn. Siehe Kursplan für aktuelle Zeiten.",
+            },
+          ],
+          sameAs: [
+            "https://www.instagram.com/yogamitisabell/",
+            "https://www.facebook.com/YogamitIsabell",
+          ],
+        }),
       },
     ],
   }),
