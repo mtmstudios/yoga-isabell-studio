@@ -1,6 +1,6 @@
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { CTA } from "@/components/cta";
+import { NewsletterForm } from "@/components/newsletter-form";
 
 export function Newsletter() {
   return (
@@ -13,25 +13,7 @@ export function Newsletter() {
             </h3>
           </Reveal>
           <Reveal delay={0.1}>
-            <form
-              className="flex flex-col gap-3 sm:flex-row"
-              onSubmit={(e) => e.preventDefault()}
-              aria-label="Newsletter-Anmeldung"
-            >
-              <label htmlFor="newsletter-email" className="sr-only">
-                E-Mail-Adresse
-              </label>
-              <input
-                id="newsletter-email"
-                type="email"
-                placeholder="deine@email.de"
-                className="min-w-0 flex-1 rounded-pill border border-ink/20 bg-bone px-5 py-3 text-[0.95rem] text-ink placeholder:text-taupe/60 outline-none transition-colors focus:border-clay"
-                required
-              />
-              <CTA type="submit" variant="primary" className="shrink-0">
-                Anmelden
-              </CTA>
-            </form>
+            <NewsletterForm />
           </Reveal>
         </div>
         <Reveal delay={0.2}>
