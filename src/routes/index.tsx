@@ -9,6 +9,8 @@ import { Retreat } from "@/components/home/retreat";
 import { FinalCta } from "@/components/home/final-cta";
 import { Newsletter } from "@/components/home/newsletter";
 import { InstagramStrip } from "@/components/instagram-strip";
+import { Marquee } from "@/components/marquee";
+import { LotusThread } from "@/components/lotus-thread";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,8 +36,10 @@ function Index() {
     <>
       <Hero />
       <Intro />
+      <LotusThread heightClass="h-[18rem]" className="-my-12 bg-bone" />
       <CoursesPreview />
       <AboutTeaser />
+      <Marquee />
       <Quote />
       <Studio />
       <Retreat />

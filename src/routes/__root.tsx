@@ -15,6 +15,7 @@ import { SmoothScroll } from "../components/smooth-scroll";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
 import { WhatsAppFab } from "../components/whatsapp-fab";
+import { PageTransition } from "../components/page-transition";
 
 function NotFoundComponent() {
   return (
@@ -139,7 +140,9 @@ function RootComponent() {
       <SiteHeader />
       <main className="min-h-screen">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <PageTransition>
+          <Outlet />
+        </PageTransition>
       </main>
       <SiteFooter />
       <WhatsAppFab />
