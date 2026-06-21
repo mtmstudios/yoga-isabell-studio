@@ -18,8 +18,10 @@ export const Route = createFileRoute("/kurse/soundbath")({
       {
         property: "og:description",
         content: "Heilende Klänge in Stuttgart-Steinhaldenfeld.",
-      },
+      },,
+      { property: "og:url", content: "/kurse/soundbath" }
     ],
+    links: [{ rel: "canonical", href: "/kurse/soundbath" }],
   }),
   component: SoundbathPage,
 });

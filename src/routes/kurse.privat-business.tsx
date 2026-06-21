@@ -18,8 +18,10 @@ export const Route = createFileRoute("/kurse/privat-business")({
       {
         property: "og:description",
         content: "Privatstunden und Business Yoga mit Isabell Thieleke.",
-      },
+      },,
+      { property: "og:url", content: "/kurse/privat-business" }
     ],
+    links: [{ rel: "canonical", href: "/kurse/privat-business" }],
   }),
   component: PrivatBusinessPage,
 });

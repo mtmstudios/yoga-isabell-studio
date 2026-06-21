@@ -20,8 +20,10 @@ export const Route = createFileRoute("/retreat")({
       {
         property: "og:description",
         content: "Ein Wochenende Abstand vom Alltag, nur 2 Stunden von Stuttgart.",
-      },
+      },,
+      { property: "og:url", content: "/retreat" }
     ],
+    links: [{ rel: "canonical", href: "/retreat" }],
   }),
   component: RetreatPage,
 });

@@ -18,8 +18,10 @@ export const Route = createFileRoute("/preise")({
       {
         property: "og:description",
         content: "Faire, einfache Preise für offene Kurse und Privatstunden.",
-      },
+      },,
+      { property: "og:url", content: "/preise" }
     ],
+    links: [{ rel: "canonical", href: "/preise" }],
   }),
   component: PreisePage,
 });
