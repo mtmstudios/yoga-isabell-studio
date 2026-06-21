@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { setLenis } from "@/lib/lenis";
 
 /**
  * Smooth scroll provider. Initialised once at the app root.
@@ -17,7 +18,9 @@ export function SmoothScroll() {
       duration: 1.1,
       easing: (t) => 1 - Math.pow(1 - t, 3),
       smoothWheel: true,
+      overscroll: false,
     });
+    setLenis(lenis);
 
     let raf = 0;
     const tick = (time: number) => {
@@ -29,6 +32,7 @@ export function SmoothScroll() {
     return () => {
       cancelAnimationFrame(raf);
       lenis.destroy();
+      setLenis(null);
     };
   }, []);
 
