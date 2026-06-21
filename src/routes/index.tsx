@@ -36,8 +36,10 @@ function Index() {
     <>
       <Hero />
       <Intro />
+      <LotusThread heightClass="h-[18rem]" className="-my-12 bg-bone" />
       <CoursesPreview />
       <AboutTeaser />
+      <Marquee />
       <Quote />
       <Studio />
       <Retreat />
