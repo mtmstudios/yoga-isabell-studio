@@ -142,12 +142,22 @@ export function SiteHeader() {
   );
 }
 
-function Brand() {
+function Brand({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <a href="/" className="flex items-center gap-3 group" aria-label="Yoga mit Isabell — Startseite">
-      <LotusMark size={34} className="text-clay transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-[8deg]" />
+      <LotusMark
+        size={scrolled ? 28 : 34}
+        className="text-clay transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rotate-[8deg]"
+      />
       <span className="flex flex-col leading-none">
-        <span className="font-display text-[1.35rem] text-ink italic">Yoga</span>
+        <span
+          className={cn(
+            "font-display italic text-ink transition-[font-size] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]",
+            scrolled ? "text-[1.15rem]" : "text-[1.35rem]",
+          )}
+        >
+          Yoga
+        </span>
         <span className="font-sans text-[0.62rem] tracking-[0.32em] text-taupe mt-1">
           MIT ISABELL
         </span>
