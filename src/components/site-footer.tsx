@@ -106,8 +106,8 @@ export function SiteFooter() {
 
             <div className="mt-8 flex items-center gap-5 text-bone-muted">
               <a
-                href="https://www.instagram.com/"
-                aria-label="Instagram"
+                href="https://www.instagram.com/yogamitisabell/"
+                aria-label="Instagram — @yogamitisabell"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-clay transition-colors"
@@ -115,8 +115,8 @@ export function SiteFooter() {
                 <Instagram size={18} strokeWidth={1.4} />
               </a>
               <a
-                href="https://www.facebook.com/"
-                aria-label="Facebook"
+                href="https://www.facebook.com/YogamitIsabell"
+                aria-label="Facebook — Yoga mit Isabell"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-clay transition-colors"

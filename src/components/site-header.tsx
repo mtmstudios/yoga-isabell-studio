@@ -33,10 +33,10 @@ const NAV: NavItem[] = [
   { label: "Kontakt", href: "/kontakt" },
 ];
 
-const BOOKING_URL = "https://www.eversports.de";
+const BOOKING_URL = "/buchen";
 const WHATSAPP_URL = "https://wa.me/4915731154727";
-const INSTAGRAM_URL = "https://www.instagram.com/";
-const FACEBOOK_URL = "https://www.facebook.com/";
+const INSTAGRAM_URL = "https://www.instagram.com/yogamitisabell/";
+const FACEBOOK_URL = "https://www.facebook.com/YogamitIsabell";
 
 function WhatsAppGlyph({ className }: { className?: string }) {
   return (

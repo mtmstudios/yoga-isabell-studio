@@ -8,6 +8,7 @@ import { Studio } from "@/components/home/studio";
 import { Retreat } from "@/components/home/retreat";
 import { FinalCta } from "@/components/home/final-cta";
 import { Newsletter } from "@/components/home/newsletter";
+import { InstagramStrip } from "@/components/instagram-strip";
 
 export const Route = createFileRoute("/")({
   head: () => ({
