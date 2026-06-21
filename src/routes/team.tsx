@@ -17,7 +17,7 @@ export const Route = createFileRoute("/team")({
       {
         property: "og:description",
         content: "Die Menschen hinter Yoga mit Isabell.",
-      },,
+      },
       { property: "og:url", content: "/team" }
     ],
     links: [{ rel: "canonical", href: "/team" }],

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/kontakt")({
       {
         property: "og:description",
         content: "Kontaktiere Isabell — ich freue mich!",
-      },,
+      },
       { property: "og:url", content: "/kontakt" }
     ],
     links: [{ rel: "canonical", href: "/kontakt" }],

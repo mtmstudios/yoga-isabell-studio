@@ -18,7 +18,7 @@ export const Route = createFileRoute("/kurse/beckenboden")({
       {
         property: "og:description",
         content: "Beckenbodenarbeit mit Achtsamkeit, Atmung und Bewegung.",
-      },,
+      },
       { property: "og:url", content: "/kurse/beckenboden" }
     ],
     links: [{ rel: "canonical", href: "/kurse/beckenboden" }],

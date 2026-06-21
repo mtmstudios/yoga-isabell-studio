@@ -22,7 +22,7 @@ export const Route = createFileRoute("/buchen")({
       {
         property: "og:description",
         content: "Direkt online buchen über Eversports.",
-      },,
+      },
       { property: "og:url", content: "/buchen" }
     ],
     links: [{ rel: "canonical", href: "/buchen" }],

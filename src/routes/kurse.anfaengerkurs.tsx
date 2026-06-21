@@ -18,7 +18,7 @@ export const Route = createFileRoute("/kurse/anfaengerkurs")({
       {
         property: "og:description",
         content: "Sanfter Einstieg ins Yoga — 6 Einheiten, max. 12 Teilnehmer:innen.",
-      },,
+      },
       { property: "og:url", content: "/kurse/anfaengerkurs" }
     ],
     links: [{ rel: "canonical", href: "/kurse/anfaengerkurs" }],

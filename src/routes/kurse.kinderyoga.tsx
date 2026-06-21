@@ -18,7 +18,7 @@ export const Route = createFileRoute("/kurse/kinderyoga")({
       {
         property: "og:description",
         content: "Yoga für die Kleinen — spielerisch, liebevoll, gemeinsam mit einer Begleitperson.",
-      },,
+      },
       { property: "og:url", content: "/kurse/kinderyoga" }
     ],
     links: [{ rel: "canonical", href: "/kurse/kinderyoga" }],
