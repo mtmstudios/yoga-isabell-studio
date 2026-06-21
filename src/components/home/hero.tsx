@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "@tanstack/react-router";
 import {
   motion,
   useReducedMotion,
@@ -225,9 +226,9 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-4"
             >
               <CTA asChild variant="primary">
-                <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+                <Link to="/buchen">
                   Probestunde buchen
-                </a>
+                </Link>
               </CTA>
               <CTA asChild variant="ghost">
                 <a href="/kurse">Kursplan ansehen</a>

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
@@ -131,9 +131,9 @@ function KursplanPage() {
 
         <Reveal delay={0.2} className="mt-12">
           <CTA asChild variant="primary">
-            <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+            <Link to="/buchen">
               Hier geht's zum Buchungskalender
-            </a>
+            </Link>
           </CTA>
         </Reveal>
       </Section>

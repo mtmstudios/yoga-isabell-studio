@@ -15,6 +15,7 @@ import { Route as RetreatRouteImport } from './routes/retreat'
 import { Route as PreiseRouteImport } from './routes/preise'
 import { Route as KursplanRouteImport } from './routes/kursplan'
 import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
 import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
@@ -52,6 +53,11 @@ const KontaktRoute = KontaktRouteImport.update({
   path: '/kontakt',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BuchenRoute = BuchenRouteImport.update({
+  id: '/buchen',
+  path: '/buchen',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -85,6 +91,7 @@ const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/buchen': typeof BuchenRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
@@ -99,6 +106,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/buchen': typeof BuchenRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
@@ -114,6 +122,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/buchen': typeof BuchenRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
@@ -130,6 +139,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/buchen'
     | '/kontakt'
     | '/kursplan'
     | '/preise'
@@ -144,6 +154,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/buchen'
     | '/kontakt'
     | '/kursplan'
     | '/preise'
@@ -158,6 +169,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/buchen'
     | '/kontakt'
     | '/kursplan'
     | '/preise'
@@ -173,6 +185,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BuchenRoute: typeof BuchenRoute
   KontaktRoute: typeof KontaktRoute
   KursplanRoute: typeof KursplanRoute
   PreiseRoute: typeof PreiseRoute
@@ -230,6 +243,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KontaktRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/buchen': {
+      id: '/buchen'
+      path: '/buchen'
+      fullPath: '/buchen'
+      preLoaderRoute: typeof BuchenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -277,6 +297,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BuchenRoute: BuchenRoute,
   KontaktRoute: KontaktRoute,
   KursplanRoute: KursplanRoute,
   PreiseRoute: PreiseRoute,

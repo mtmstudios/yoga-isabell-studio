@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { LotusOutline } from "@/components/lotus-mark";
@@ -26,9 +27,9 @@ export function FinalCta() {
               asChild
               className="bg-bone text-clay-deep hover:bg-bone-soft hover:text-clay-deep"
             >
-              <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+              <Link to="/buchen">
                 Jetzt Probestunde buchen — 10 €
-              </a>
+              </Link>
             </CTA>
           </Reveal>
         </div>

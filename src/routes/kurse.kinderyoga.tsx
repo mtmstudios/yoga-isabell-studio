@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
@@ -59,9 +59,9 @@ function KinderyogaPage() {
                 </p>
                 <div className="mt-6">
                   <CTA asChild variant="primary">
-                    <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+                    <Link to="/buchen">
                       Jetzt buchen
-                    </a>
+                    </Link>
                   </CTA>
                 </div>
               </div>

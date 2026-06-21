@@ -3,8 +3,9 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
-import { CTA } from "@/components/cta";
-import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { MapEmbed } from "@/components/map-embed";
+import { ContactForm } from "@/components/contact-form";
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
@@ -75,12 +76,23 @@ function KontaktPage() {
                 <li className="flex items-start gap-3">
                   <Instagram size={18} strokeWidth={1.4} className="mt-1 shrink-0 text-clay" />
                   <a
-                    href="https://instagram.com/yogamitisabell"
+                    href="https://www.instagram.com/yogamitisabell/"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-clay"
                   >
                     @yogamitisabell
+                  </a>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Facebook size={18} strokeWidth={1.4} className="mt-1 shrink-0 text-clay" />
+                  <a
+                    href="https://www.facebook.com/YogamitIsabell"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-clay"
+                  >
+                    Yoga mit Isabell
                   </a>
                 </li>
               </ul>
@@ -98,15 +110,7 @@ function KontaktPage() {
             </Reveal>
 
             <Reveal delay={0.3}>
-              <div className="mt-8 aspect-[4/3] w-full overflow-hidden rounded-md border border-ink/10 bg-sand">
-                <div className="flex h-full w-full items-center justify-center text-center">
-                  <span className="px-4 text-[0.7rem] uppercase tracking-[0.22em] text-ink/40">
-                    Karte folgt
-                    <br />
-                    (Google Maps Embed)
-                  </span>
-                </div>
-              </div>
+              <MapEmbed className="mt-8 aspect-[4/3] w-full" />
             </Reveal>
           </div>
 
@@ -115,62 +119,8 @@ function KontaktPage() {
             <Reveal>
               <Eyebrow>Nachricht senden</Eyebrow>
             </Reveal>
-            <Reveal delay={0.1}>
-              <form
-                className="mt-8 flex flex-col gap-5"
-                onSubmit={(e) => e.preventDefault()}
-                aria-label="Kontaktformular"
-              >
-                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-                  <label className="flex flex-col gap-2">
-                    <span className="text-[0.72rem] uppercase tracking-[0.22em] text-taupe">
-                      Name
-                    </span>
-                    <input
-                      type="text"
-                      required
-                      className="rounded-md border border-ink/15 bg-bone px-4 py-3 text-ink outline-none transition-colors focus:border-clay"
-                    />
-                  </label>
-                  <label className="flex flex-col gap-2">
-                    <span className="text-[0.72rem] uppercase tracking-[0.22em] text-taupe">
-                      E-Mail
-                    </span>
-                    <input
-                      type="email"
-                      required
-                      className="rounded-md border border-ink/15 bg-bone px-4 py-3 text-ink outline-none transition-colors focus:border-clay"
-                    />
-                  </label>
-                </div>
-                <label className="flex flex-col gap-2">
-                  <span className="text-[0.72rem] uppercase tracking-[0.22em] text-taupe">
-                    Betreff
-                  </span>
-                  <input
-                    type="text"
-                    className="rounded-md border border-ink/15 bg-bone px-4 py-3 text-ink outline-none transition-colors focus:border-clay"
-                  />
-                </label>
-                <label className="flex flex-col gap-2">
-                  <span className="text-[0.72rem] uppercase tracking-[0.22em] text-taupe">
-                    Nachricht
-                  </span>
-                  <textarea
-                    rows={6}
-                    required
-                    className="resize-y rounded-md border border-ink/15 bg-bone px-4 py-3 text-ink outline-none transition-colors focus:border-clay"
-                  />
-                </label>
-                <div className="mt-2">
-                  <CTA type="submit" variant="primary">
-                    Nachricht senden
-                  </CTA>
-                </div>
-                <p className="text-[0.78rem] text-taupe/70">
-                  Versand wird in Phase 5 integriert.
-                </p>
-              </form>
+            <Reveal delay={0.1} className="mt-8">
+              <ContactForm />
             </Reveal>
           </div>
         </div>
