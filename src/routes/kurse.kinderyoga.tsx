@@ -1,0 +1,83 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageHeader } from "@/components/page-header";
+import { Section } from "@/components/section";
+import { Reveal } from "@/components/reveal";
+import { CTA } from "@/components/cta";
+import { PhotoPlaceholder } from "@/components/photo-placeholder";
+
+export const Route = createFileRoute("/kurse/kinderyoga")({
+  head: () => ({
+    meta: [
+      { title: "Kinderyoga (3–6 Jahre) mit Begleitperson — Yoga mit Isabell" },
+      {
+        name: "description",
+        content:
+          "Spielerisches Kinderyoga für 3–6-Jährige mit Begleitperson. 6 Einheiten freitags, mit Svenja.",
+      },
+      { property: "og:title", content: "Kinderyoga mit Svenja" },
+      {
+        property: "og:description",
+        content: "Yoga für die Kleinen — spielerisch, liebevoll, gemeinsam mit einer Begleitperson.",
+      },
+    ],
+  }),
+  component: KinderyogaPage,
+});
+
+function KinderyogaPage() {
+  return (
+    <>
+      <PageHeader
+        eyebrow="3 – 6 Jahre · mit Svenja"
+        title={<>Kinder<em>yoga</em>.</>}
+        lead="Spielerisch, liebevoll, gemeinsam mit einer Begleitperson."
+      />
+
+      <Section bg="bone">
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-20">
+          <div>
+            <Reveal>
+              <p className="text-[1.08rem] leading-[1.75] text-taupe">
+                In unserem Kinderyoga tauchen die Kleinen gemeinsam mit ihrer
+                Begleitperson spielerisch in die Welt des Yoga ein. Geschichten,
+                Tier-Asanas, kleine Atemspiele und ruhige Momente wechseln sich
+                ab. Es geht um Spaß, Bewegung und das gemeinsame Erleben — nicht
+                um perfekte Posen.
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <div className="mt-12 rounded-md border border-ink/10 bg-sand/60 p-7">
+                <p className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
+                  Nächster Kurs
+                </p>
+                <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
+                  Freitags, 18.09. – 25.09.2026 · 15:30 – 16:30 Uhr
+                </p>
+                <p className="mt-2 text-taupe">
+                  6 Einheiten · 90 €
+                </p>
+                <div className="mt-6">
+                  <CTA asChild variant="primary">
+                    <a href="https://www.eversports.de" target="_blank" rel="noreferrer">
+                      Jetzt buchen
+                    </a>
+                  </CTA>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.1} className="relative mx-auto w-full max-w-[28rem]">
+            <div className="radius-organic overflow-hidden">
+              <PhotoPlaceholder
+                caption="Kinder in Tier-Asana mit Begleitperson, warmes Licht"
+                aspect="aspect-[4/5]"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+    </>
+  );
+}

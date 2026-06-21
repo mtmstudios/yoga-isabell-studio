@@ -9,38 +9,227 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UeberMichRouteImport } from './routes/ueber-mich'
+import { Route as TeamRouteImport } from './routes/team'
+import { Route as RetreatRouteImport } from './routes/retreat'
+import { Route as PreiseRouteImport } from './routes/preise'
+import { Route as KursplanRouteImport } from './routes/kursplan'
+import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
+import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
+import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
+import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
+import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
 
+const UeberMichRoute = UeberMichRouteImport.update({
+  id: '/ueber-mich',
+  path: '/ueber-mich',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RetreatRoute = RetreatRouteImport.update({
+  id: '/retreat',
+  path: '/retreat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreiseRoute = PreiseRouteImport.update({
+  id: '/preise',
+  path: '/preise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KursplanRoute = KursplanRouteImport.update({
+  id: '/kursplan',
+  path: '/kursplan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KurseSoundbathRoute = KurseSoundbathRouteImport.update({
+  id: '/kurse/soundbath',
+  path: '/kurse/soundbath',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KursePrivatBusinessRoute = KursePrivatBusinessRouteImport.update({
+  id: '/kurse/privat-business',
+  path: '/kurse/privat-business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
+  id: '/kurse/kinderyoga',
+  path: '/kurse/kinderyoga',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
+  id: '/kurse/beckenboden',
+  path: '/kurse/beckenboden',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
+  id: '/kurse/anfaengerkurs',
+  path: '/kurse/anfaengerkurs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kursplan': typeof KursplanRoute
+  '/preise': typeof PreiseRoute
+  '/retreat': typeof RetreatRoute
+  '/team': typeof TeamRoute
+  '/ueber-mich': typeof UeberMichRoute
+  '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
+  '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/privat-business': typeof KursePrivatBusinessRoute
+  '/kurse/soundbath': typeof KurseSoundbathRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kursplan': typeof KursplanRoute
+  '/preise': typeof PreiseRoute
+  '/retreat': typeof RetreatRoute
+  '/team': typeof TeamRoute
+  '/ueber-mich': typeof UeberMichRoute
+  '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
+  '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/privat-business': typeof KursePrivatBusinessRoute
+  '/kurse/soundbath': typeof KurseSoundbathRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/kursplan': typeof KursplanRoute
+  '/preise': typeof PreiseRoute
+  '/retreat': typeof RetreatRoute
+  '/team': typeof TeamRoute
+  '/ueber-mich': typeof UeberMichRoute
+  '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
+  '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/privat-business': typeof KursePrivatBusinessRoute
+  '/kurse/soundbath': typeof KurseSoundbathRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/kontakt'
+    | '/kursplan'
+    | '/preise'
+    | '/retreat'
+    | '/team'
+    | '/ueber-mich'
+    | '/kurse/anfaengerkurs'
+    | '/kurse/beckenboden'
+    | '/kurse/kinderyoga'
+    | '/kurse/privat-business'
+    | '/kurse/soundbath'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/kontakt'
+    | '/kursplan'
+    | '/preise'
+    | '/retreat'
+    | '/team'
+    | '/ueber-mich'
+    | '/kurse/anfaengerkurs'
+    | '/kurse/beckenboden'
+    | '/kurse/kinderyoga'
+    | '/kurse/privat-business'
+    | '/kurse/soundbath'
+  id:
+    | '__root__'
+    | '/'
+    | '/kontakt'
+    | '/kursplan'
+    | '/preise'
+    | '/retreat'
+    | '/team'
+    | '/ueber-mich'
+    | '/kurse/anfaengerkurs'
+    | '/kurse/beckenboden'
+    | '/kurse/kinderyoga'
+    | '/kurse/privat-business'
+    | '/kurse/soundbath'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  KursplanRoute: typeof KursplanRoute
+  PreiseRoute: typeof PreiseRoute
+  RetreatRoute: typeof RetreatRoute
+  TeamRoute: typeof TeamRoute
+  UeberMichRoute: typeof UeberMichRoute
+  KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
+  KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
+  KurseKinderyogaRoute: typeof KurseKinderyogaRoute
+  KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
+  KurseSoundbathRoute: typeof KurseSoundbathRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/ueber-mich': {
+      id: '/ueber-mich'
+      path: '/ueber-mich'
+      fullPath: '/ueber-mich'
+      preLoaderRoute: typeof UeberMichRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/retreat': {
+      id: '/retreat'
+      path: '/retreat'
+      fullPath: '/retreat'
+      preLoaderRoute: typeof RetreatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preise': {
+      id: '/preise'
+      path: '/preise'
+      fullPath: '/preise'
+      preLoaderRoute: typeof PreiseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kursplan': {
+      id: '/kursplan'
+      path: '/kursplan'
+      fullPath: '/kursplan'
+      preLoaderRoute: typeof KursplanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +237,57 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kurse/soundbath': {
+      id: '/kurse/soundbath'
+      path: '/kurse/soundbath'
+      fullPath: '/kurse/soundbath'
+      preLoaderRoute: typeof KurseSoundbathRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/privat-business': {
+      id: '/kurse/privat-business'
+      path: '/kurse/privat-business'
+      fullPath: '/kurse/privat-business'
+      preLoaderRoute: typeof KursePrivatBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/kinderyoga': {
+      id: '/kurse/kinderyoga'
+      path: '/kurse/kinderyoga'
+      fullPath: '/kurse/kinderyoga'
+      preLoaderRoute: typeof KurseKinderyogaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/beckenboden': {
+      id: '/kurse/beckenboden'
+      path: '/kurse/beckenboden'
+      fullPath: '/kurse/beckenboden'
+      preLoaderRoute: typeof KurseBeckenbodenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/anfaengerkurs': {
+      id: '/kurse/anfaengerkurs'
+      path: '/kurse/anfaengerkurs'
+      fullPath: '/kurse/anfaengerkurs'
+      preLoaderRoute: typeof KurseAnfaengerkursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  KursplanRoute: KursplanRoute,
+  PreiseRoute: PreiseRoute,
+  RetreatRoute: RetreatRoute,
+  TeamRoute: TeamRoute,
+  UeberMichRoute: UeberMichRoute,
+  KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
+  KurseBeckenbodenRoute: KurseBeckenbodenRoute,
+  KurseKinderyogaRoute: KurseKinderyogaRoute,
+  KursePrivatBusinessRoute: KursePrivatBusinessRoute,
+  KurseSoundbathRoute: KurseSoundbathRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
