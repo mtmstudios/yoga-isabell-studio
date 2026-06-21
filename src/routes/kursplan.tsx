@@ -133,7 +133,7 @@ function KursplanPage() {
           <CTA asChild variant="primary">
             <Link to="/buchen">
               Hier geht's zum Buchungskalender
-            </a>
+            </Link>
           </CTA>
         </Reveal>
       </Section>

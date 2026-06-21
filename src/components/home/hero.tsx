@@ -227,7 +227,7 @@ export function Hero() {
               <CTA asChild variant="primary">
                 <Link to="/buchen">
                   Probestunde buchen
-                </a>
+                </Link>
               </CTA>
               <CTA asChild variant="ghost">
                 <a href="/kurse">Kursplan ansehen</a>

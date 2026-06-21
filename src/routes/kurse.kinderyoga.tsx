@@ -61,7 +61,7 @@ function KinderyogaPage() {
                   <CTA asChild variant="primary">
                     <Link to="/buchen">
                       Jetzt buchen
-                    </a>
+                    </Link>
                   </CTA>
                 </div>
               </div>

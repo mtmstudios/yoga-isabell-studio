@@ -28,7 +28,7 @@ export function FinalCta() {
             >
               <Link to="/buchen">
                 Jetzt Probestunde buchen — 10 €
-              </a>
+              </Link>
             </CTA>
           </Reveal>
         </div>
