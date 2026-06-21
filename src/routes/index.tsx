@@ -15,18 +15,25 @@ import { LotusThread } from "@/components/lotus-thread";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart" },
+      { title: "Vinyasa Yoga Stuttgart-Steinhaldenfeld · Yoga mit Isabell" },
       {
         name: "description",
         content:
-          "Klein & fein: Vinyasa Yoga in Stuttgart-Steinhaldenfeld. Max. 12 Teilnehmer:innen, ganzheitlich begleitet von Isabell Thieleke.",
+          "Vinyasa Yoga in Stuttgart-Steinhaldenfeld, nahe Bad Cannstatt. Klein & fein, max. 12 Teilnehmer:innen — persönlich begleitet von Isabell Thieleke.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Yoga Stuttgart, Yoga Stuttgart-Steinhaldenfeld, Yoga Bad Cannstatt, Vinyasa Yoga Stuttgart, Yoga Anfängerkurs Stuttgart, Rückenyoga, Beckenboden Yoga Stuttgart",
       },
       { property: "og:title", content: "Yoga mit Isabell — Komm zur Ruhe. Finde Deine Mitte." },
       {
         property: "og:description",
-        content: "Persönliches, kreatives und ganzheitliches Yoga in Stuttgart-Steinhaldenfeld.",
+        content: "Persönliches, kreatives und ganzheitliches Vinyasa Yoga in Stuttgart-Steinhaldenfeld.",
       },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UeberMichRouteImport } from './routes/ueber-mich'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RetreatRouteImport } from './routes/retreat'
 import { Route as PreiseRouteImport } from './routes/preise'
 import { Route as KursplanRouteImport } from './routes/kursplan'
@@ -31,6 +32,11 @@ const UeberMichRoute = UeberMichRouteImport.update({
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RetreatRoute = RetreatRouteImport.update({
@@ -96,6 +102,7 @@ export interface FileRoutesByFullPath {
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
@@ -111,6 +118,7 @@ export interface FileRoutesByTo {
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
@@ -127,6 +135,7 @@ export interface FileRoutesById {
   '/kursplan': typeof KursplanRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
@@ -144,6 +153,7 @@ export interface FileRouteTypes {
     | '/kursplan'
     | '/preise'
     | '/retreat'
+    | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
@@ -159,6 +169,7 @@ export interface FileRouteTypes {
     | '/kursplan'
     | '/preise'
     | '/retreat'
+    | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
@@ -174,6 +185,7 @@ export interface FileRouteTypes {
     | '/kursplan'
     | '/preise'
     | '/retreat'
+    | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
@@ -190,6 +202,7 @@ export interface RootRouteChildren {
   KursplanRoute: typeof KursplanRoute
   PreiseRoute: typeof PreiseRoute
   RetreatRoute: typeof RetreatRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
   UeberMichRoute: typeof UeberMichRoute
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
@@ -213,6 +226,13 @@ declare module '@tanstack/react-router' {
       path: '/team'
       fullPath: '/team'
       preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/retreat': {
@@ -302,6 +322,7 @@ const rootRouteChildren: RootRouteChildren = {
   KursplanRoute: KursplanRoute,
   PreiseRoute: PreiseRoute,
   RetreatRoute: RetreatRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
   UeberMichRoute: UeberMichRoute,
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,

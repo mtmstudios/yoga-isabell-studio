@@ -21,7 +21,9 @@ export const Route = createFileRoute("/kursplan")({
         property: "og:description",
         content: "Sechs feste Formate pro Woche in Stuttgart-Steinhaldenfeld.",
       },
+      { property: "og:url", content: "/kursplan" }
     ],
+    links: [{ rel: "canonical", href: "/kursplan" }],
   }),
   component: KursplanPage,
 });

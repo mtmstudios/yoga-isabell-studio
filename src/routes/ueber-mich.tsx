@@ -19,7 +19,9 @@ export const Route = createFileRoute("/ueber-mich")({
         property: "og:description",
         content: "Mein Weg ins Yoga und warum mir kleine, persönliche Gruppen so wichtig sind.",
       },
+      { property: "og:url", content: "/ueber-mich" }
     ],
+    links: [{ rel: "canonical", href: "/ueber-mich" }],
   }),
   component: UeberMichPage,
 });
