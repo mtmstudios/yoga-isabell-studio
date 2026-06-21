@@ -40,6 +40,7 @@ function Index() {
       <Studio />
       <Retreat />
       <FinalCta />
+      <InstagramStrip />
       <Newsletter />
     </>
   );
