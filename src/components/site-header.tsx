@@ -77,7 +77,7 @@ export function SiteHeader() {
         )}
       >
         <div className="container-editorial flex items-center justify-between py-5">
-          <Brand />
+          <Brand scrolled={scrolled} />
 
           <nav className="hidden lg:flex items-center gap-7">
             {NAV.map((item) => (
