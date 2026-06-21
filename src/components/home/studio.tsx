@@ -3,6 +3,7 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { MapEmbed } from "@/components/map-embed";
 import { MapPin } from "lucide-react";
 
 export function Studio() {
@@ -51,15 +52,7 @@ export function Studio() {
             />
           </div>
           <div className="flex flex-col gap-5">
-            <div className="aspect-[4/3] w-full overflow-hidden rounded-md border border-ink/10 bg-bone">
-              <div className="flex h-full w-full items-center justify-center text-center">
-                <span className="px-4 text-[0.7rem] uppercase tracking-[0.22em] text-ink/40">
-                  Karte folgt
-                  <br />
-                  (Google Maps Embed)
-                </span>
-              </div>
-            </div>
+            <MapEmbed className="aspect-[4/3] w-full" />
             <div className="radius-organic overflow-hidden">
               <PhotoPlaceholder
                 caption="Eingang Bürger- und Siedlerhaus, Außenaufnahme"
