@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
-import { LotusMark, LotusOutline } from "./lotus-mark";
+import { LotusOutline } from "./lotus-mark";
 
 const NAV = [
   { label: "Home", href: "/" },
@@ -33,17 +33,11 @@ export function SiteFooter() {
         <div className="grid gap-14 lg:grid-cols-12">
           {/* Brand + claim */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-3">
-              <LotusMark size={32} className="text-clay" />
-              <div className="flex flex-col leading-none">
-                <span className="font-display text-[1.5rem] text-bone-soft italic">
-                  Yoga
-                </span>
-                <span className="font-sans text-[0.62rem] tracking-[0.32em] text-bone-muted mt-1">
-                  MIT ISABELL
-                </span>
-              </div>
-            </div>
+            <img
+              src="/images/logo-light.png"
+              alt="Yoga mit Isabell"
+              className="h-20 w-auto"
+            />
             <p className="mt-8 max-w-sm font-display text-[1.6rem] leading-[1.2] text-bone-soft [text-wrap:balance]">
               Klein <em className="text-clay not-italic">·</em> fein. Yoga in{" "}
               <em className="italic text-clay">Stuttgart-Steinhaldenfeld</em>.
