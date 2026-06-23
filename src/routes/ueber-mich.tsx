@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/ueber-mich")({
   head: () => ({
@@ -67,9 +67,11 @@ function UeberMichPage() {
           <Reveal className="relative mx-auto w-full max-w-[26rem] lg:sticky lg:top-32">
             <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Isabell, Portrait im Studio, Hochformat 4:5"
+              <Photo
+                src="/images/isabell-ueber-mich.jpg"
+                alt="Isabell Thieleke, Yogalehrerin und Studio-Inhaberin"
                 aspect="aspect-[4/5]"
+                position="object-[50%_25%]"
               />
             </div>
             <span className="script-accent absolute -bottom-4 -right-2 text-[2rem] leading-none">

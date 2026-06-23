@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/kursplan")({
   head: () => ({
@@ -50,37 +50,44 @@ type Course = {
   name: string;
   text: string;
   badge: string;
+  photo: string;
 };
 
 const COURSES: Course[] = [
   {
     name: "Rückenyoga",
     badge: "Mo · 19:00 – 20:15",
+    photo: "/images/isabell-updog.jpg",
     text: "Im Rückenyoga werden Kraft, Beweglichkeit und innere Balance verbunden. Mit sanften und kraftvollen Asanas werden Rückenmuskulatur und Körpermitte gestärkt und Verspannungen gelöst. Für Anfänger:innen geeignet.",
   },
   {
     name: "Vinyasa für Fortgeschrittene",
     badge: "Mi · 18:30 – 19:45",
+    photo: "/images/isabell-warrior.jpg",
     text: "Wir fließen durch klassische und kreative Flows — fließend, kraftvoll, dynamisch, aber auch entspannend. Balance zwischen Bewegung und Stille. Mit Vorkenntnissen.",
   },
   {
     name: "Vinyasa für Anfänger",
     badge: "Mi · 20:00 – 21:15",
+    photo: "/images/class-namaste.jpg",
     text: "Für Yoga-Neulinge und alle, die ihre Technik verfeinern möchten. Du lernst Grundlagen, Atemübungen und Meditation und tauchst sanft in die Welt des Yoga ein.",
   },
   {
     name: "Yoga Flow am Abend",
     badge: "Do · 18:00 – 19:15",
+    photo: "/images/isabell-forwardbend.jpg",
     text: "Finde am Abend zurück in Deine Mitte — bunter Stilmix, dynamisch fließend bis restorativ. Atemübungen, Meditation, Entspannung. Vorkenntnisse von Vorteil.",
   },
   {
     name: "Yin Yoga",
     badge: "1. + 3. Do · 18:00 – 19:15",
+    photo: "/images/isabell-seated.jpg",
     text: "Langsam, beharrlich, meditativ. Die Muskeln ruhen, gezielte Arbeit mit Faszien, Bindegewebe und Gelenken. Posen mehrere Minuten gehalten, Fokus auf der Atmung. Für alle Level.",
   },
   {
     name: "Yoga Sanft",
     badge: "Fr · 9:30 – 10:45",
+    photo: "/images/pose-1.jpg",
     text: "Für alle, die ein sanftes Yoga mögen, auch für Anfänger:innen. Grundlagen der Asanas, Atemübungen, leichte Flows und Entspannung.",
   },
 ];
@@ -164,8 +171,9 @@ function KursplanPage() {
                   className={`md:col-span-5 ${flip ? "md:[direction:ltr]" : ""}`}
                 >
                   <div className="radius-organic overflow-hidden">
-                    <PhotoPlaceholder
-                      caption={`Foto: ${c.name}`}
+                    <Photo
+                      src={c.photo}
+                      alt={c.name}
                       aspect="aspect-[4/3]"
                     />
                   </div>

@@ -9,7 +9,7 @@ import {
 import { ArrowDown, Star } from "lucide-react";
 import { CTA } from "@/components/cta";
 import { Eyebrow } from "@/components/eyebrow";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -231,7 +231,7 @@ export function Hero() {
                 </Link>
               </CTA>
               <CTA asChild variant="ghost">
-                <a href="/kurse">Kursplan ansehen</a>
+                <a href="/kursplan">Kursplan ansehen</a>
               </CTA>
             </motion.div>
 
@@ -266,9 +266,12 @@ export function Hero() {
               style={reduced ? undefined : { y: photoY, scale: photoScale }}
               className="radius-organic overflow-hidden"
             >
-              <PhotoPlaceholder
-                caption="ruhige Yoga-Szene / Isabell im Studio, warmes Naturlicht, Hochformat 3:4"
+              <Photo
+                src="/images/hero.jpg"
+                alt="Eine Yogastunde in ruhiger, lichtdurchfluteter Atmosphäre"
                 aspect="aspect-[3/4]"
+                position="object-[50%_35%]"
+                priority
               />
             </motion.div>
 

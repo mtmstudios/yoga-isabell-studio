@@ -2,7 +2,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 import { MapEmbed } from "@/components/map-embed";
 import { MapPin } from "lucide-react";
 
@@ -46,17 +46,20 @@ export function Studio() {
 
         <Reveal delay={0.15} className="grid grid-cols-2 gap-5">
           <div className="radius-organic overflow-hidden">
-            <PhotoPlaceholder
-              caption="Studio-Innenraum, Holzboden, weiches Tageslicht"
+            <Photo
+              src="/images/studio-1.jpg"
+              alt="Der Yogaraum im Bürger- und Siedlerhaus mit Bogenfenstern"
               aspect="aspect-[3/4]"
             />
           </div>
           <div className="flex flex-col gap-5">
             <MapEmbed className="aspect-[4/3] w-full" />
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Eingang Bürger- und Siedlerhaus, Außenaufnahme"
+              <Photo
+                src="/images/studio-2.jpg"
+                alt="Isabell beim Yoga im hellen Studio"
                 aspect="aspect-square"
+                position="object-[35%_50%]"
               />
             </div>
           </div>

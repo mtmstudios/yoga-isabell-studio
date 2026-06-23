@@ -3,7 +3,7 @@ import { LotusMark, LotusOutline } from "./lotus-mark";
 
 const NAV = [
   { label: "Home", href: "/" },
-  { label: "Kurse", href: "/kurse" },
+  { label: "Kurse", href: "/kursplan" },
   { label: "Über mich", href: "/ueber-mich" },
   { label: "Team", href: "/team" },
   { label: "Studio", href: "/studio" },

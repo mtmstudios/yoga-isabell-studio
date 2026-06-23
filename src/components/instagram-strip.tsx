@@ -1,9 +1,16 @@
 import { Instagram } from "lucide-react";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 const INSTAGRAM_URL = "https://www.instagram.com/yogamitisabell/";
+
+const IG_PHOTOS = [
+  "/images/ig-1.jpg",
+  "/images/ig-2.jpg",
+  "/images/ig-3.jpg",
+  "/images/ig-4.jpg",
+];
 
 /**
  * Quiet "follow me on Instagram" strip with a placeholder photo grid.
@@ -43,8 +50,8 @@ export function InstagramStrip() {
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <Reveal key={i} delay={0.05 * i}>
+        {IG_PHOTOS.map((src, i) => (
+          <Reveal key={src} delay={0.05 * i}>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
@@ -53,8 +60,9 @@ export function InstagramStrip() {
               aria-label="Instagram-Beitrag öffnen"
             >
               <div className="transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]">
-                <PhotoPlaceholder
-                  caption={`Instagram-Post ${i + 1}`}
+                <Photo
+                  src={src}
+                  alt={`Yoga mit Isabell auf Instagram — Eindruck ${i + 1}`}
                   aspect="aspect-square"
                 />
               </div>

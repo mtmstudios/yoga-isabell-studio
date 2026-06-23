@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/retreat")({
   head: () => ({
@@ -67,8 +67,9 @@ function RetreatPage() {
 
       {/* Hero photo */}
       <section className="relative h-[60vh] min-h-[26rem] w-full overflow-hidden">
-        <PhotoPlaceholder
-          caption="Schwarzwald, Nebel über Tannen, Querformat 16:9"
+        <Photo
+          src="/images/retreat-terrasse.jpg"
+          alt="Saiger Lounge im Schwarzwald — Panoramablick über die Hügel"
           aspect="h-full"
           className="!aspect-auto h-full"
         />
@@ -219,6 +220,61 @@ function RetreatPage() {
             <Link to="/kontakt">Über Kontaktformular buchen</Link>
           </CTA>
         </Reveal>
+      </Section>
+
+      {/* Impressionen */}
+      <Section bg="bone">
+        <Reveal>
+          <Eyebrow>Impressionen</Eyebrow>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <DisplayHeading size="h2" className="mt-6">
+            Die <em>Saiger Lounge</em>.
+          </DisplayHeading>
+        </Reveal>
+
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-12 md:gap-5">
+          <Reveal className="col-span-2 md:col-span-7">
+            <Photo
+              src="/images/retreat-haus.jpg"
+              alt="Retreat-Haus Saiger Lounge von außen, mitten im Schwarzwald"
+              aspect="aspect-[16/10]"
+              className="radius-organic"
+            />
+          </Reveal>
+          <Reveal delay={0.05} className="col-span-2 md:col-span-5">
+            <Photo
+              src="/images/retreat-details.jpg"
+              alt="Liebevolles Detail im Retreat-Haus"
+              aspect="aspect-[4/5]"
+              className="radius-organic"
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="col-span-1 md:col-span-4">
+            <Photo
+              src="/images/retreat-kamin.jpg"
+              alt="Offener Kaminbereich zum Entspannen"
+              aspect="aspect-[4/3]"
+              className="radius-organic"
+            />
+          </Reveal>
+          <Reveal delay={0.15} className="col-span-1 md:col-span-4">
+            <Photo
+              src="/images/retreat-kueche.jpg"
+              alt="Gemütlicher Essbereich mit vegetarischer Küche"
+              aspect="aspect-[4/3]"
+              className="radius-organic"
+            />
+          </Reveal>
+          <Reveal delay={0.2} className="col-span-2 md:col-span-4">
+            <Photo
+              src="/images/retreat-terrasse.jpg"
+              alt="Terrasse mit Panoramablick über die Hügel des Schwarzwalds"
+              aspect="aspect-[4/3]"
+              className="radius-organic"
+            />
+          </Reveal>
+        </div>
       </Section>
     </>
   );

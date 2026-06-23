@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/kurse/kinderyoga")({
   head: () => ({
@@ -72,8 +72,9 @@ function KinderyogaPage() {
 
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Kinder in Tier-Asana mit Begleitperson, warmes Licht"
+              <Photo
+                src="/images/kinderyoga.jpg"
+                alt="Kinderyoga — Kinder entdecken spielerisch Yoga-Haltungen"
                 aspect="aspect-[4/5]"
               />
             </div>

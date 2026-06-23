@@ -3,14 +3,15 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 import { ArrowUpRight } from "lucide-react";
 
 type Course = {
   name: string;
   blurb: string;
   time: string;
-  photoCaption: string;
+  photo: string;
+  alt: string;
   /** Tailwind grid placement for the bento layout. */
   grid: string;
   /** Photo aspect for the card. */
@@ -22,7 +23,8 @@ const COURSES: Course[] = [
     name: "Rückenyoga",
     blurb: "Kraft, Beweglichkeit & innere Balance, Verspannungen lösen.",
     time: "Mo · 19:00 – 20:15",
-    photoCaption: "Rückenarbeit am Boden, Seitenlicht",
+    photo: "/images/isabell-updog.jpg",
+    alt: "Isabell im heraufschauenden Hund — Arbeit für den Rücken",
     grid: "md:col-span-7 md:row-span-2",
     aspect: "aspect-[4/5]",
   },
@@ -30,7 +32,8 @@ const COURSES: Course[] = [
     name: "Vinyasa für Fortgeschrittene",
     blurb: "Fließend, kraftvoll, dynamisch.",
     time: "Mi · 18:30 – 19:45",
-    photoCaption: "Krieger-Sequenz im warmen Licht",
+    photo: "/images/isabell-warrior.jpg",
+    alt: "Isabell in der Kriegerhaltung im warmen Licht",
     grid: "md:col-span-5",
     aspect: "aspect-[5/4]",
   },
@@ -38,7 +41,8 @@ const COURSES: Course[] = [
     name: "Vinyasa für Anfänger",
     blurb: "Sanft eintauchen in die Welt des Yoga.",
     time: "Mi · 20:00 – 21:15",
-    photoCaption: "Berghaltung, ruhige Atmosphäre",
+    photo: "/images/class-namaste.jpg",
+    alt: "Yogagruppe im Namasté, ruhige Atmosphäre",
     grid: "md:col-span-5",
     aspect: "aspect-[5/4]",
   },
@@ -46,7 +50,8 @@ const COURSES: Course[] = [
     name: "Yoga Flow am Abend",
     blurb: "Zurück in Deine Mitte, dynamisch bis restorativ.",
     time: "Do · 18:00 – 19:15",
-    photoCaption: "Vorbeuge, Abendlicht durchs Fenster",
+    photo: "/images/isabell-forwardbend.jpg",
+    alt: "Isabell in der Vorbeuge im warmen Abendlicht",
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
   },
@@ -54,7 +59,8 @@ const COURSES: Course[] = [
     name: "Yin Yoga",
     blurb: "Langsam, meditativ, tief im Fasziensystem.",
     time: "1. + 3. Do · 18:00 – 19:15",
-    photoCaption: "Schmetterling am Boden, gedämpftes Licht",
+    photo: "/images/pose-3.jpg",
+    alt: "Ruhige, bodennahe Yin-Yoga-Haltung bei gedämpftem Licht",
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
   },
@@ -62,7 +68,8 @@ const COURSES: Course[] = [
     name: "Yoga Sanft",
     blurb: "Sanfter Einstieg, für alle Level.",
     time: "Fr · 9:30 – 10:45",
-    photoCaption: "Sanfte Dehnung, Morgenlicht",
+    photo: "/images/pose-1.jpg",
+    alt: "Sanfte Yoga-Dehnung im Morgenlicht",
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
   },
@@ -75,11 +82,11 @@ function CourseCard({ course, i }: { course: Course; i: number }) {
       className={`group relative flex flex-col ${course.grid}`}
     >
       <a
-        href="/kurse"
+        href="/kursplan"
         className="relative block overflow-hidden radius-organic"
       >
         <div className="transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]">
-          <PhotoPlaceholder caption={course.photoCaption} aspect={course.aspect} />
+          <Photo src={course.photo} alt={course.alt} aspect={course.aspect} />
         </div>
         <span
           aria-hidden
@@ -92,7 +99,7 @@ function CourseCard({ course, i }: { course: Course; i: number }) {
       <div className="mt-5 flex flex-col gap-2">
         <div className="flex items-baseline justify-between gap-4">
           <h3 className="font-display text-[1.4rem] leading-[1.15] text-ink relative inline-block">
-            <a href="/kurse" className="relative inline-block">
+            <a href="/kursplan" className="relative inline-block">
               <span className="relative">
                 {course.name}
                 <span
@@ -143,7 +150,7 @@ export function CoursesPreview() {
 
       <Reveal delay={0.1} className="mt-16 flex justify-center">
         <CTA asChild variant="primary">
-          <a href="/kurse">Zum kompletten Kursplan</a>
+          <a href="/kursplan">Zum kompletten Kursplan</a>
         </CTA>
       </Reveal>
     </Section>

@@ -3,7 +3,7 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export function AboutTeaser() {
   return (
@@ -12,9 +12,11 @@ export function AboutTeaser() {
         <Reveal className="relative mx-auto w-full max-w-[30rem] lg:max-w-none">
           <div className="radius-organic absolute -inset-3 -z-10 bg-sand/80" />
           <div className="radius-organic overflow-hidden">
-            <PhotoPlaceholder
-              caption="Isabell, Portrait im Studio, warmes Seitenlicht, Hochformat 4:5"
+            <Photo
+              src="/images/isabell-about.jpg"
+              alt="Isabell Thieleke, Portrait im Studio, warmes Seitenlicht"
               aspect="aspect-[4/5]"
+              position="object-[50%_25%]"
             />
           </div>
           <span className="script-accent absolute -bottom-4 -right-2 text-[2rem] leading-none">

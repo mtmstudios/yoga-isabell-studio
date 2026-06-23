@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/kurse/privat-business")({
   head: () => ({
@@ -40,8 +40,9 @@ function PrivatBusinessPage() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">
           <Reveal className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Eins-zu-eins Stunde, ruhiges Studio"
+              <Photo
+                src="/images/isabell-angle.jpg"
+                alt="Isabell in einer Yoga-Haltung im ruhigen Studio"
                 aspect="aspect-[4/5]"
               />
             </div>
@@ -135,8 +136,9 @@ function PrivatBusinessPage() {
 
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Yoga im Büro, kleine Gruppe, Mittagspause"
+              <Photo
+                src="/images/class-2.jpg"
+                alt="Yoga in der Gruppe — Business Yoga für Teams"
                 aspect="aspect-[4/5]"
               />
             </div>

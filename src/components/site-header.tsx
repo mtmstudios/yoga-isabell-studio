@@ -15,14 +15,14 @@ const NAV: NavItem[] = [
   { label: "Home", href: "/" },
   {
     label: "Kurse",
-    href: "/kurse",
+    href: "/kursplan",
     children: [
-      { label: "Kursplan & Offene Stunden", href: "/kurse" },
-      { label: "Anfängerkurs", href: "/kurse/anfaenger" },
+      { label: "Kursplan & Offene Stunden", href: "/kursplan" },
+      { label: "Anfängerkurs", href: "/kurse/anfaengerkurs" },
       { label: "Soundbath", href: "/kurse/soundbath" },
       { label: "Beckenboden Yoga", href: "/kurse/beckenboden" },
       { label: "Privat & Business", href: "/kurse/privat-business" },
-      { label: "Kinderyoga", href: "/kurse/kinder" },
+      { label: "Kinderyoga", href: "/kurse/kinderyoga" },
     ],
   },
   { label: "Über mich", href: "/ueber-mich" },

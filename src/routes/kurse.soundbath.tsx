@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/kurse/soundbath")({
   head: () => ({
@@ -39,8 +39,9 @@ function SoundbathPage() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">
           <Reveal className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Klangschalen, weiches Kerzenlicht, Hochformat 4:5"
+              <Photo
+                src="/images/soundbath.jpg"
+                alt="Klangschalen und Gongs bei einer Soundbath Meditation"
                 aspect="aspect-[4/5]"
               />
             </div>

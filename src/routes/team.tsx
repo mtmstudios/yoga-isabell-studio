@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -33,6 +34,8 @@ type Member = {
   /** Asymmetric placement classes for the bento grid. */
   grid: string;
   aspect: string;
+  /** Real portrait; falls back to placeholder when absent (e.g. Steffanie). */
+  photo?: string;
 };
 
 const TEAM: Member[] = [
@@ -43,6 +46,7 @@ const TEAM: Member[] = [
     quote: '„Dein Beckenboden darf weich und stark zugleich sein."',
     grid: "md:col-span-5 md:row-span-2",
     aspect: "aspect-[4/5]",
+    photo: "/images/team-stephie.jpg",
   },
   {
     name: "Lara",
@@ -51,6 +55,7 @@ const TEAM: Member[] = [
     quote: '„Stillstand ist auch Bewegung."',
     grid: "md:col-span-4",
     aspect: "aspect-[5/4]",
+    photo: "/images/team-lara.jpg",
   },
   {
     name: "Adrian",
@@ -59,6 +64,7 @@ const TEAM: Member[] = [
     quote: '„Bewegung ist Gebet."',
     grid: "md:col-span-3",
     aspect: "aspect-[3/4]",
+    photo: "/images/team-adrian.jpg",
   },
   {
     name: "Svenja",
@@ -67,6 +73,7 @@ const TEAM: Member[] = [
     quote: '„Kinder kennen ihren Körper noch — wir dürfen wieder lernen."',
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
+    photo: "/images/team-svenja.jpg",
   },
   {
     name: "Sina",
@@ -75,6 +82,7 @@ const TEAM: Member[] = [
     quote: '„Atme, was Du brauchst."',
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
+    photo: "/images/team-sina.jpg",
   },
   {
     name: "Steffanie",
@@ -91,6 +99,7 @@ const TEAM: Member[] = [
     quote: '„Ich liebe es, Menschen zurück in ihren Körper zu begleiten."',
     grid: "md:col-span-12 lg:col-span-8",
     aspect: "aspect-[16/9]",
+    photo: "/images/team-lena.jpg",
   },
 ];
 
@@ -99,7 +108,15 @@ function MemberCard({ m, i }: { m: Member; i: number }) {
     <Reveal delay={0.05 * i} className={`group relative flex flex-col ${m.grid}`}>
       <div className="relative overflow-hidden radius-organic">
         <div className="transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]">
-          <PhotoPlaceholder caption={`Portrait: ${m.name}`} aspect={m.aspect} />
+          {m.photo ? (
+            <Photo
+              src={m.photo}
+              alt={`${m.name} — Yogalehrer:in bei Yoga mit Isabell`}
+              aspect={m.aspect}
+            />
+          ) : (
+            <PhotoPlaceholder caption={`Portrait: ${m.name}`} aspect={m.aspect} />
+          )}
         </div>
         {/* Quote overlay on hover */}
         <div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-ink/80 via-ink/30 to-transparent p-6 opacity-0 transition-opacity duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100">

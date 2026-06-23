@@ -2,7 +2,7 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export function Retreat() {
   return (
@@ -13,8 +13,9 @@ export function Retreat() {
     >
       {/* Background photo (full-bleed placeholder) */}
       <div className="absolute inset-0">
-        <PhotoPlaceholder
-          caption="Schwarzwald, Nebelmorgen über Tannen, Querformat 16:9"
+        <Photo
+          src="/images/retreat-haus.jpg"
+          alt="Retreat-Haus Saiger Lounge im Schwarzwald"
           aspect="h-full"
           className="!aspect-auto h-full opacity-90"
         />
@@ -39,7 +40,7 @@ export function Retreat() {
           </Reveal>
           <Reveal delay={0.3} className="mt-9">
             <CTA asChild variant="primary">
-              <a href="/retreats">Mehr erfahren</a>
+              <a href="/retreat">Mehr erfahren</a>
             </CTA>
           </Reveal>
         </div>

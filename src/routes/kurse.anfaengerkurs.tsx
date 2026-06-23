@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/kurse/anfaengerkurs")({
   head: () => ({
@@ -70,8 +70,9 @@ function AnfaengerPage() {
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[26rem]">
             <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Anfänger:innen-Gruppe, sanfte Stimmung, Hochformat 4:5"
+              <Photo
+                src="/images/class-group.jpg"
+                alt="Yogagruppe im Studio in sanfter Stimmung"
                 aspect="aspect-[4/5]"
               />
             </div>

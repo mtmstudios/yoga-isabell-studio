@@ -2,7 +2,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 import { LotusOutline } from "@/components/lotus-mark";
 
 export function Intro() {
@@ -32,8 +32,9 @@ export function Intro() {
           </Reveal>
         </div>
         <Reveal delay={0.15} className="relative mx-auto w-full max-w-[22rem]">
-          <PhotoPlaceholder
-            caption="Detail: Hände in Anjali Mudra, warmes Naturlicht, Hochformat 4:5"
+          <Photo
+            src="/images/pose-2.jpg"
+            alt="Isabell in einer ruhigen Yoga-Haltung, warmes Naturlicht"
             aspect="aspect-[4/5]"
             className="radius-organic"
           />
