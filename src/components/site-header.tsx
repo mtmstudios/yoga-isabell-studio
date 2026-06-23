@@ -22,6 +22,8 @@ const NAV: NavItem[] = [
       { label: "Beckenboden Yoga", href: "/kurse/beckenboden" },
       { label: "Privat & Business", href: "/kurse/privat-business" },
       { label: "Kinderyoga", href: "/kurse/kinderyoga" },
+      { label: "Yoga-JGA", href: "/kurse/yoga-jga" },
+      { label: "Mother Blessing", href: "/kurse/motherblessing" },
     ],
   },
   { label: "Über mich", href: "/ueber-mich" },

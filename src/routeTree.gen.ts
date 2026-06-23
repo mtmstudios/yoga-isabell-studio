@@ -18,8 +18,10 @@ import { Route as KursplanRouteImport } from './routes/kursplan'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KurseYogaJgaRouteImport } from './routes/kurse.yoga-jga'
 import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
 import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
+import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
 import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
@@ -69,6 +71,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KurseYogaJgaRoute = KurseYogaJgaRouteImport.update({
+  id: '/kurse/yoga-jga',
+  path: '/kurse/yoga-jga',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const KurseSoundbathRoute = KurseSoundbathRouteImport.update({
   id: '/kurse/soundbath',
   path: '/kurse/soundbath',
@@ -77,6 +84,11 @@ const KurseSoundbathRoute = KurseSoundbathRouteImport.update({
 const KursePrivatBusinessRoute = KursePrivatBusinessRouteImport.update({
   id: '/kurse/privat-business',
   path: '/kurse/privat-business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseMotherblessingRoute = KurseMotherblessingRouteImport.update({
+  id: '/kurse/motherblessing',
+  path: '/kurse/motherblessing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
@@ -108,8 +120,10 @@ export interface FileRoutesByFullPath {
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
+  '/kurse/yoga-jga': typeof KurseYogaJgaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -124,8 +138,10 @@ export interface FileRoutesByTo {
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
+  '/kurse/yoga-jga': typeof KurseYogaJgaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -141,8 +157,10 @@ export interface FileRoutesById {
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
+  '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
+  '/kurse/yoga-jga': typeof KurseYogaJgaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -159,8 +177,10 @@ export interface FileRouteTypes {
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/kinderyoga'
+    | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
+    | '/kurse/yoga-jga'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -175,8 +195,10 @@ export interface FileRouteTypes {
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/kinderyoga'
+    | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
+    | '/kurse/yoga-jga'
   id:
     | '__root__'
     | '/'
@@ -191,8 +213,10 @@ export interface FileRouteTypes {
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/kinderyoga'
+    | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
+    | '/kurse/yoga-jga'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -208,8 +232,10 @@ export interface RootRouteChildren {
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
   KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
   KurseKinderyogaRoute: typeof KurseKinderyogaRoute
+  KurseMotherblessingRoute: typeof KurseMotherblessingRoute
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
   KurseSoundbathRoute: typeof KurseSoundbathRoute
+  KurseYogaJgaRoute: typeof KurseYogaJgaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -277,6 +303,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kurse/yoga-jga': {
+      id: '/kurse/yoga-jga'
+      path: '/kurse/yoga-jga'
+      fullPath: '/kurse/yoga-jga'
+      preLoaderRoute: typeof KurseYogaJgaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/kurse/soundbath': {
       id: '/kurse/soundbath'
       path: '/kurse/soundbath'
@@ -289,6 +322,13 @@ declare module '@tanstack/react-router' {
       path: '/kurse/privat-business'
       fullPath: '/kurse/privat-business'
       preLoaderRoute: typeof KursePrivatBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/motherblessing': {
+      id: '/kurse/motherblessing'
+      path: '/kurse/motherblessing'
+      fullPath: '/kurse/motherblessing'
+      preLoaderRoute: typeof KurseMotherblessingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kurse/kinderyoga': {
@@ -328,9 +368,21 @@ const rootRouteChildren: RootRouteChildren = {
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
   KurseBeckenbodenRoute: KurseBeckenbodenRoute,
   KurseKinderyogaRoute: KurseKinderyogaRoute,
+  KurseMotherblessingRoute: KurseMotherblessingRoute,
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,
   KurseSoundbathRoute: KurseSoundbathRoute,
+  KurseYogaJgaRoute: KurseYogaJgaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
