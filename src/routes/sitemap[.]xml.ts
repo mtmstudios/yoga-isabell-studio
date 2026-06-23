@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { SITE_URL } from "@/lib/site";
 
-// TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "";
+const BASE_URL = SITE_URL;
 
 interface SitemapEntry {
   path: string;
@@ -18,6 +18,8 @@ const ENTRIES: SitemapEntry[] = [
   { path: "/kurse/beckenboden", changefreq: "monthly", priority: "0.7" },
   { path: "/kurse/privat-business", changefreq: "monthly", priority: "0.7" },
   { path: "/kurse/kinderyoga", changefreq: "monthly", priority: "0.7" },
+  { path: "/kurse/yoga-jga", changefreq: "monthly", priority: "0.7" },
+  { path: "/kurse/motherblessing", changefreq: "monthly", priority: "0.7" },
   { path: "/ueber-mich", changefreq: "yearly", priority: "0.7" },
   { path: "/team", changefreq: "monthly", priority: "0.6" },
   { path: "/preise", changefreq: "monthly", priority: "0.8" },

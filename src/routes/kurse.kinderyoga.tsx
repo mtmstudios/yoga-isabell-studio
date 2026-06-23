@@ -4,6 +4,28 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+import { JsonLd } from "@/components/json-ld";
+import { courseSchema } from "@/lib/site";
+
+const FAQ = [
+  {
+    q: "Für welches Alter ist das Kinderyoga geeignet?",
+    a: "Für Kinder von 3 bis 6 Jahren – gemeinsam mit einer Begleitperson (Mama, Papa, Oma, Opa oder einer anderen Bezugsperson).",
+  },
+  {
+    q: "Muss eine Begleitperson dabei sein?",
+    a: "Ja. Die Begleitperson übt aktiv mit – mal als sicherer Anker, mal als Mitspieler, mal als Kuschelpartner in der Entspannung.",
+  },
+  {
+    q: "Was passiert in einer Kinderyoga-Stunde?",
+    a: "Eine Mischung aus Bewegung, Ruhe und Fantasie: einfache Yogahaltungen, kindgerechte Atemübungen und kleine Geschichten – ganz ohne Leistungsdruck.",
+  },
+  {
+    q: "Wann findet der nächste Kurs statt und was kostet er?",
+    a: "Freitags vom 18.09. bis 25.09.2026, 15:30–16:30 Uhr, 6 Einheiten für 90 €. Geleitet wird der Kurs von Svenja.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/kinderyoga")({
   head: () => ({
@@ -29,6 +51,15 @@ export const Route = createFileRoute("/kurse/kinderyoga")({
 function KinderyogaPage() {
   return (
     <>
+      <JsonLd
+        data={courseSchema({
+          name: "Kinderyoga (3–6 Jahre)",
+          description:
+            "Spielerisches Kinderyoga für 3–6-Jährige mit Begleitperson in Stuttgart-Steinhaldenfeld – Bewegung, Atemspiele und Geschichten, mit Svenja.",
+          path: "/kurse/kinderyoga",
+          about: ["Kinderyoga", "Yoga für Kinder", "Achtsamkeit"],
+        })}
+      />
       <PageHeader
         eyebrow="3 – 6 Jahre · mit Svenja"
         title={<>Kinder<em>yoga</em>.</>}
@@ -81,6 +112,8 @@ function KinderyogaPage() {
           </Reveal>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

@@ -4,6 +4,30 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { CTA } from "@/components/cta";
+import { Faq } from "@/components/faq";
+
+const FAQ = [
+  {
+    q: "Was kostet eine Probestunde?",
+    a: "Die Probestunde kostet 10 €. So kannst Du in Ruhe ausprobieren, ob es für Dich passt.",
+  },
+  {
+    q: "Wie lange sind die Karten gültig?",
+    a: "Die 10er-Karte ist 6 Monate gültig, die 5er-Karte 3 Monate.",
+  },
+  {
+    q: "Kann ich mit Wellpass teilnehmen?",
+    a: "Ja, Yoga mit Isabell ist Partner von Wellpass.",
+  },
+  {
+    q: "Wie kann ich bezahlen?",
+    a: "Per Überweisung (Infos im Buchungsportal) oder vor Ort.",
+  },
+  {
+    q: "Gibt es Gutscheine?",
+    a: "Ja, einen Yoga-Gutschein über jeden beliebigen Betrag – eine schöne kleine Auszeit zum Verschenken.",
+  },
+];
 
 export const Route = createFileRoute("/preise")({
   head: () => ({
@@ -127,6 +151,8 @@ function PreisePage() {
           </Reveal>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

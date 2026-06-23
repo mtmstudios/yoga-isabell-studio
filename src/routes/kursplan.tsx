@@ -6,6 +6,30 @@ import { CTA } from "@/components/cta";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+
+const FAQ = [
+  {
+    q: "Muss ich mich für die offenen Stunden anmelden?",
+    a: "Bitte buche Deinen Platz über den Buchungskalender – die Gruppen sind klein (max. 12 Personen), daher lohnt sich frühzeitiges Reservieren.",
+  },
+  {
+    q: "Kann ich jederzeit in einen Kurs einsteigen?",
+    a: "Ja. In die offenen Stunden ist der Einstieg jederzeit möglich, ganz ohne festen Kursbeginn.",
+  },
+  {
+    q: "Welcher Kurs passt für Anfänger:innen?",
+    a: "Vinyasa für Anfänger, Yoga Sanft und Rückenyoga eignen sich gut für den Einstieg. Für einen strukturierten Start gibt es zusätzlich den geschlossenen Anfängerkurs.",
+  },
+  {
+    q: "Was ist der Unterschied zwischen Vinyasa und Yin Yoga?",
+    a: "Vinyasa ist fließend, kraftvoll und dynamisch. Yin Yoga ist langsam und meditativ – die Posen werden mehrere Minuten gehalten, um gezielt mit Faszien und Bindegewebe zu arbeiten.",
+  },
+  {
+    q: "Wo finden die Kurse statt?",
+    a: "Im Studio im Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld. Das Studio öffnet 15 Minuten vor Kursbeginn.",
+  },
+];
 
 export const Route = createFileRoute("/kursplan")({
   head: () => ({
@@ -199,6 +223,8 @@ function KursplanPage() {
           })}
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="bone" />
     </>
   );
 }

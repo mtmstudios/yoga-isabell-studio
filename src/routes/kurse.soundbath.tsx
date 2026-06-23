@@ -4,6 +4,32 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+import { JsonLd } from "@/components/json-ld";
+import { courseSchema } from "@/lib/site";
+
+const FAQ = [
+  {
+    q: "Brauche ich Vorkenntnisse für eine Soundbath Meditation?",
+    a: "Nein. Du liegst entspannt auf der Matte und lässt die Klänge wirken – Yogaerfahrung oder Vorkenntnisse sind nicht nötig.",
+  },
+  {
+    q: "Was sollte ich mitbringen?",
+    a: "Warme, bequeme Kleidung. Gerne eine Decke und ein Kissen, damit Du es Dir richtig gemütlich machen kannst.",
+  },
+  {
+    q: "Wie läuft ein Soundbath ab?",
+    a: "Du machst es Dir im Liegen bequem, während Klangschalen, Gongs und sanfte Vibrationen einen Raum der Tiefenentspannung schaffen – wie eine Massage für die Seele.",
+  },
+  {
+    q: "Wo findet das Soundbath in Stuttgart statt?",
+    a: "Im Studio von Yoga mit Isabell im Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld.",
+  },
+  {
+    q: "Wann ist der nächste Termin?",
+    a: "Die Termine finden in loser Folge statt. Melde Dich für den Newsletter an, dann erfährst Du als Erste:r vom nächsten Soundbath.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/soundbath")({
   head: () => ({
@@ -29,6 +55,15 @@ export const Route = createFileRoute("/kurse/soundbath")({
 function SoundbathPage() {
   return (
     <>
+      <JsonLd
+        data={courseSchema({
+          name: "Soundbath Meditation",
+          description:
+            "Klangschalen, Gongs und sanfte Vibrationen – Tiefenentspannung wie eine Massage für die Seele, im Yogastudio in Stuttgart-Steinhaldenfeld.",
+          path: "/kurse/soundbath",
+          about: ["Klangschalen", "Meditation", "Tiefenentspannung"],
+        })}
+      />
       <PageHeader
         eyebrow="Klang · Meditation"
         title={<>Soundbath Meditation mit <em>Jasmin</em>.</>}
@@ -72,6 +107,8 @@ function SoundbathPage() {
           </div>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

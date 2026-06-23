@@ -4,6 +4,32 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
+import { Faq } from "@/components/faq";
+import { JsonLd } from "@/components/json-ld";
+import { courseSchema } from "@/lib/site";
+
+const FAQ = [
+  {
+    q: "Brauche ich Vorkenntnisse für Beckenboden Yoga?",
+    a: "Nein. „Pelvic Love“ ist für Anfänger:innen und Fortgeschrittene geeignet – Du brauchst keine Vorkenntnisse.",
+  },
+  {
+    q: "Ist Beckenboden Yoga auch nach einer Geburt geeignet?",
+    a: "Ja. Die Praxis ist sanft, respektvoll und in Deinem Tempo – auch nach Geburt, Operationen oder belastenden Erfahrungen.",
+  },
+  {
+    q: "Ist Beckenboden Yoga nur für Frauen?",
+    a: "Ein gesunder Beckenboden ist für alle wichtig. Der Kurs richtet sich vor allem an Frauen – achtsames Beckenbodentraining tut aber allen gut.",
+  },
+  {
+    q: "Wer leitet den Kurs?",
+    a: "Pelvic Love wird von Stephie geleitet, die viel Achtsamkeit und ein feines Gespür für den Körper mitbringt.",
+  },
+  {
+    q: "Wo findet Beckenboden Yoga in Stuttgart statt?",
+    a: "Im Studio von Yoga mit Isabell, Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/beckenboden")({
   head: () => ({
@@ -56,6 +82,15 @@ const BENEFITS = [
 function BeckenbodenPage() {
   return (
     <>
+      <JsonLd
+        data={courseSchema({
+          name: "Beckenboden Yoga – Pelvic Love",
+          description:
+            "Achtsames Beckenbodentraining für mehr Kraft, Beweglichkeit und Spürbewusstsein – in Stuttgart-Steinhaldenfeld, für Anfänger:innen und Fortgeschrittene.",
+          path: "/kurse/beckenboden",
+          about: ["Beckenboden", "Yoga", "Rückbildung"],
+        })}
+      />
       <PageHeader
         eyebrow="Pelvic Love · mit Stephie"
         title={<>Beckenboden <em>Yoga</em>.</>}
@@ -104,6 +139,8 @@ function BeckenbodenPage() {
           ))}
         </ol>
       </Section>
+
+      <Faq items={FAQ} bg="bone" />
     </>
   );
 }

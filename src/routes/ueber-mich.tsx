@@ -4,6 +4,8 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { Photo } from "@/components/photo";
+import { JsonLd } from "@/components/json-ld";
+import { ISABELL_PERSON } from "@/lib/site";
 
 export const Route = createFileRoute("/ueber-mich")({
   head: () => ({
@@ -55,6 +57,7 @@ function Paragraph({ children }: { children: React.ReactNode }) {
 function UeberMichPage() {
   return (
     <>
+      <JsonLd data={{ "@context": "https://schema.org", ...ISABELL_PERSON }} />
       <PageHeader
         eyebrow="Deine Yogalehrerin"
         title={<>Ich bin <em>Isabell</em>.</>}

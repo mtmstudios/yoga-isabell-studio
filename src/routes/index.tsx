@@ -11,6 +11,34 @@ import { Newsletter } from "@/components/home/newsletter";
 import { InstagramStrip } from "@/components/instagram-strip";
 import { Marquee } from "@/components/marquee";
 import { LotusThread } from "@/components/lotus-thread";
+import { Faq } from "@/components/faq";
+
+const FAQ = [
+  {
+    q: "Wo finde ich Yoga in Stuttgart-Steinhaldenfeld?",
+    a: "Das Studio von Yoga mit Isabell liegt im Bürger- und Siedlerhaus (1. Stock), Zuckerbergstraße 99, 70378 Stuttgart-Steinhaldenfeld – nahe Bad Cannstatt, gut mit U-Bahn und Bus „Steinhaldenfeld“ erreichbar.",
+  },
+  {
+    q: "Brauche ich Vorkenntnisse, um anzufangen?",
+    a: "Nein. Egal ob Anfänger:in oder fortgeschritten – Du bist willkommen. Es gibt offene Stunden für alle Level sowie einen geschlossenen Anfängerkurs.",
+  },
+  {
+    q: "Wie groß sind die Gruppen?",
+    a: "Wir sind klein & fein und üben in Gruppen von maximal 12 Teilnehmer:innen, damit wir individuell auf Dich eingehen können.",
+  },
+  {
+    q: "Was kostet eine Probestunde?",
+    a: "Die Probestunde kostet 10 €, eine Einzelstunde 15 €. Dazu gibt es eine 5er-Karte (70 €) und eine 10er-Karte (130 €). Wir sind Partner von Wellpass.",
+  },
+  {
+    q: "Welche Yogastile bietet Ihr an?",
+    a: "Vinyasa Yoga (für Anfänger und Fortgeschrittene), Rückenyoga, Yin Yoga, sanftes Yoga und Yoga Flow am Abend – dazu Beckenboden Yoga, Kinderyoga sowie besondere Formate wie Soundbath und Retreats.",
+  },
+  {
+    q: "Kann ich jederzeit einsteigen?",
+    a: "Ja, in die offenen Stunden ist der Einstieg jederzeit möglich. Buchen kannst Du bequem online über den Buchungskalender.",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,6 +79,7 @@ function Index() {
       <Studio />
       <Retreat />
       <FinalCta />
+      <Faq items={FAQ} bg="bone" />
       <InstagramStrip />
       <Newsletter />
     </>

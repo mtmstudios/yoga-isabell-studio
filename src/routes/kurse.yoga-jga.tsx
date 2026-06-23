@@ -4,6 +4,26 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Faq } from "@/components/faq";
+
+const FAQ = [
+  {
+    q: "Was ist ein Yoga-JGA?",
+    a: "Ein Junggesellinnenabschied mit Yoga: eine individuell gestaltete Yogastunde, in der ihr Euch bewegt, lacht, entspannt und gemeinsame Erinnerungen schafft.",
+  },
+  {
+    q: "Braucht die Gruppe Yogaerfahrung?",
+    a: "Nein. Egal ob mit oder ohne Erfahrung – wir passen die Stunde ganz an Euer Level und Eure Wünsche an.",
+  },
+  {
+    q: "Wo kann der Yoga-JGA stattfinden?",
+    a: "Im Studio in Stuttgart-Steinhaldenfeld oder an einem Ort Eurer Wahl, zum Beispiel draußen in der Natur.",
+  },
+  {
+    q: "Wie können wir einen Yoga-JGA anfragen?",
+    a: "Sprecht uns einfach über das Kontaktformular an – wir stimmen Ablauf, Ort und Termin gemeinsam mit Euch ab.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/yoga-jga")({
   head: () => ({
@@ -79,6 +99,8 @@ function YogaJgaPage() {
           </Reveal>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

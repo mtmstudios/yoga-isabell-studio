@@ -4,6 +4,32 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+import { JsonLd } from "@/components/json-ld";
+import { courseSchema } from "@/lib/site";
+
+const FAQ = [
+  {
+    q: "Ist der Anfängerkurs wirklich für komplette Neulinge geeignet?",
+    a: "Ja. Der Kurs ist genau für Yoga-Neulinge gemacht. Es ist nicht wichtig, wie beweglich oder sportlich Du bist – wir gehen die ersten Schritte gemeinsam.",
+  },
+  {
+    q: "Wie viele Einheiten umfasst der Kurs?",
+    a: "Der geschlossene Anfängerkurs läuft über 6 Einheiten, sodass Du die Grundlagen in Ruhe aufbauen kannst.",
+  },
+  {
+    q: "Was lerne ich im Anfängerkurs?",
+    a: "Die Grundlagen des Yoga: Körperhaltungen (Asanas), Atemübungen, Meditation und leichte Flows – Schritt für Schritt.",
+  },
+  {
+    q: "Wie groß sind die Gruppen?",
+    a: "Wir üben in kleinen Gruppen von maximal 12 Teilnehmer:innen, damit wir individuell auf Dich eingehen können.",
+  },
+  {
+    q: "Wann startet der nächste Anfängerkurs in Stuttgart?",
+    a: "Neue Termine geben wir über den Newsletter bekannt. Melde Dich an, dann erfährst Du als Erste:r vom nächsten Start.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/anfaengerkurs")({
   head: () => ({
@@ -29,6 +55,15 @@ export const Route = createFileRoute("/kurse/anfaengerkurs")({
 function AnfaengerPage() {
   return (
     <>
+      <JsonLd
+        data={courseSchema({
+          name: "Yoga Anfängerkurs",
+          description:
+            "Geschlossener Anfängerkurs in 6 Einheiten – sanfter Einstieg ins Yoga ohne Vorkenntnisse, in Stuttgart-Steinhaldenfeld.",
+          path: "/kurse/anfaengerkurs",
+          about: ["Yoga für Anfänger", "Vinyasa Yoga", "Atemübungen"],
+        })}
+      />
       <PageHeader
         eyebrow="Geschlossener Kurs · 6 Einheiten"
         title={<>Yoga Anfängerkurs — Dein sanfter <em>Einstieg</em>.</>}
@@ -79,6 +114,8 @@ function AnfaengerPage() {
           </Reveal>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

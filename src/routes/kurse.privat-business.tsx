@@ -4,6 +4,28 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+import { JsonLd } from "@/components/json-ld";
+import { courseSchema } from "@/lib/site";
+
+const FAQ = [
+  {
+    q: "Für wen eignet sich eine Privatstunde?",
+    a: "Für alle: zum ganz privaten Reinschnuppern, zum Verfeinern Deiner Technik als Fortgeschrittene:r oder einfach, um Dir etwas Besonderes zu gönnen.",
+  },
+  {
+    q: "Was kostet eine Privatstunde?",
+    a: "Da ich die Stunde individuell auf Dich abstimme, erstelle ich Dir gern ein Angebot auf Anfrage.",
+  },
+  {
+    q: "Bietet Ihr auch Business Yoga für Unternehmen an?",
+    a: "Ja. Gerne komme ich für Business Yoga in Dein Unternehmen in Stuttgart und Umgebung – als Mitarbeiterbenefit und für mehr Gesundheit im Team.",
+  },
+  {
+    q: "Habt Ihr Referenzen für Business Yoga?",
+    a: "Ja, u. a. der Gesundheitstag 2024 der Mercedes-Benz Customer Solutions GmbH und „Yoga in der Mittagspause“ bei der Bewährungs- und Gerichtshilfe Stuttgart.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/privat-business")({
   head: () => ({
@@ -29,6 +51,15 @@ export const Route = createFileRoute("/kurse/privat-business")({
 function PrivatBusinessPage() {
   return (
     <>
+      <JsonLd
+        data={courseSchema({
+          name: "Privatstunde & Business Yoga",
+          description:
+            "Yoga ganz privat (Einzelstunden) oder im Unternehmen (Business Yoga) in Stuttgart – individuell abgestimmt mit Isabell Thieleke.",
+          path: "/kurse/privat-business",
+          about: ["Privatstunde Yoga", "Business Yoga", "Firmenyoga Stuttgart"],
+        })}
+      />
       <PageHeader
         eyebrow="Privat · Unternehmen"
         title={<>Privatstunde & <em>Business Yoga</em>.</>}
@@ -145,6 +176,8 @@ function PrivatBusinessPage() {
           </Reveal>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="bone" />
     </>
   );
 }

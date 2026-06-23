@@ -6,6 +6,8 @@ import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { JsonLd } from "@/components/json-ld";
+import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
 export const Route = createFileRoute("/retreat")({
   head: () => ({
@@ -59,6 +61,54 @@ const SCHEDULE = [
 function RetreatPage() {
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: "Yoga Retreat im Schwarzwald 2027",
+          description:
+            "Yoga-Retreat-Wochenende im Schwarzwald (Saiger Lounge, nahe Titisee) mit 6 Yoga-Einheiten, Meditation, Atemarbeit und Halbpension.",
+          startDate: "2027-04-23",
+          endDate: "2027-04-25",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          image: OG_IMAGE,
+          location: {
+            "@type": "Place",
+            name: "Saiger Lounge",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Hochschwarzwald (nahe Titisee)",
+              addressRegion: "Baden-Württemberg",
+              addressCountry: "DE",
+            },
+          },
+          organizer: {
+            "@type": "Organization",
+            "@id": `${SITE_URL}/#org`,
+            name: "Yoga mit Isabell",
+            url: `${SITE_URL}/`,
+          },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Doppelzimmer",
+              price: "578",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/retreat`,
+            },
+            {
+              "@type": "Offer",
+              name: "Einzelzimmer",
+              price: "697",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/retreat`,
+            },
+          ],
+        }}
+      />
       <PageHeader
         eyebrow="Retreat 2027"
         title={<>Yoga Retreat im <em>Schwarzwald</em>.</>}

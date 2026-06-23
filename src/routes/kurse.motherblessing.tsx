@@ -6,6 +6,30 @@ import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
+import { Faq } from "@/components/faq";
+
+const FAQ = [
+  {
+    q: "Was ist ein Mother Blessing?",
+    a: "Ein Mother Blessing ist eine liebevolle Zeremonie für die werdende Mutter – eine Alternative zur klassischen Babyparty. Es orientiert sich am uralten Ritual der Navajo und stellt nicht das Baby, sondern die Mama in den Mittelpunkt.",
+  },
+  {
+    q: "Wann ist der beste Zeitpunkt für ein Mother Blessing?",
+    a: "Am schönsten ist es im 3. Trimester der Schwangerschaft.",
+  },
+  {
+    q: "Wie lange dauert ein Mother Blessing?",
+    a: "Etwa 2 bis 3 Stunden – ganz nach Euren Vorstellungen anpassbar.",
+  },
+  {
+    q: "Wo findet die Zeremonie statt?",
+    a: "An einem geschützten Ort, zum Beispiel zuhause bei der Schwangeren oder in einem schönen Garten in der Natur.",
+  },
+  {
+    q: "Wer organisiert das Mother Blessing?",
+    a: "Meist organisieren es die Teilnehmerinnen und schenken es der werdenden Mama – als Überraschung oder gemeinsam abgestimmt. Für ein individuelles Angebot sprich mich gern an.",
+  },
+];
 
 export const Route = createFileRoute("/kurse/motherblessing")({
   head: () => ({
@@ -193,6 +217,8 @@ function MotherBlessingPage() {
           </div>
         </div>
       </Section>
+
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }

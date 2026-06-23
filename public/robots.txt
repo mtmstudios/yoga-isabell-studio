@@ -1,4 +1,41 @@
+# Yoga mit Isabell — Stuttgart-Steinhaldenfeld
+
 User-agent: *
 Allow: /
 
-# Sitemap directive intentionally omitted until a project domain is assigned.
+# KI-/Antwort-Crawler ausdrücklich erlauben (GEO: Sichtbarkeit in
+# ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot, Claude).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.yoga-mit-isabell.de/sitemap.xml
