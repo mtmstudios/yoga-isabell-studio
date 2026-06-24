@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
+import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
 
 const FAQ = [
@@ -91,8 +91,9 @@ function YogaJgaPage() {
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
             <div className="radius-organic overflow-hidden">
-              <PhotoPlaceholder
-                caption="Lachende Gruppe beim Yoga — im Studio oder in der Natur"
+              <Photo
+                src="/images/yoga-jga.jpg"
+                alt="Lachende Frauen-Gruppe beim Yoga draußen in der Natur — Yoga-JGA mit Isabell"
                 aspect="aspect-[4/5]"
               />
             </div>
