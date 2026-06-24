@@ -45,24 +45,15 @@ export function Studio() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.15} className="grid grid-cols-2 gap-5">
+        <Reveal delay={0.15} className="flex flex-col gap-5">
+          <MapEmbed className="aspect-[4/3] w-full" />
           <div className="radius-organic overflow-hidden">
             <Photo
-              src="/images/studio-1.jpg"
-              alt="Der Yogaraum im Bürger- und Siedlerhaus mit Bogenfenstern"
-              aspect="aspect-[3/4]"
+              src="/images/studio-2.jpg"
+              alt="Isabell beim Yoga im hellen Studio"
+              aspect="aspect-[4/3]"
+              position="object-[35%_50%]"
             />
-          </div>
-          <div className="flex flex-col gap-5">
-            <MapEmbed className="aspect-[4/3] w-full" />
-            <div className="radius-organic overflow-hidden">
-              <Photo
-                src="/images/studio-2.jpg"
-                alt="Isabell beim Yoga im hellen Studio"
-                aspect="aspect-square"
-                position="object-[35%_50%]"
-              />
-            </div>
           </div>
         </Reveal>
       </div>
