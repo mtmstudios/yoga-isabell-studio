@@ -222,10 +222,16 @@ function RetreatPage() {
                   {d.day}
                 </span>
                 <ul className="mt-4 space-y-3 text-taupe">
-                  {d.items.map((it) => (
-                    <li key={it} className="flex gap-3">
-                      <span aria-hidden className="mt-2 h-px w-5 shrink-0 bg-clay/60" />
-                      <span>{it}</span>
+                  {d.items.map((it, j) => (
+                    <li key={`${it.time ?? "x"}-${j}`} className="flex gap-3">
+                      {it.time ? (
+                        <span className="mt-[2px] w-14 shrink-0 text-[0.72rem] uppercase tracking-[0.18em] text-clay">
+                          {it.time}
+                        </span>
+                      ) : (
+                        <span aria-hidden className="mt-2 h-px w-5 shrink-0 bg-clay/60" />
+                      )}
+                      <span>{it.text}</span>
                     </li>
                   ))}
                 </ul>
