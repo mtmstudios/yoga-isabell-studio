@@ -71,10 +71,6 @@ const RITUALE = [
     text: "Hände, Füße oder der ganze Körper werden liebevoll von den Teilnehmerinnen verwöhnt.",
   },
   {
-    title: "Geburtskerze",
-    text: "Eine Kerze, die am Tag der Geburt in Gedanken entzündet wird.",
-  },
-  {
     title: "Babybauch bemalen",
     text: "Der Bauch wird achtsam und kreativ gemeinsam gestaltet.",
   },
