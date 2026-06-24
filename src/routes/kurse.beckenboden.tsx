@@ -26,7 +26,7 @@ const FAQ = [
     a: "Pelvic Love wird von Stephie, zertifizierte Beckenbodenyogalehrerin, geleitet.",
   },
   {
-    q: "Wo findet der Beckenbodenyogakurs statt?",
+    q: "Wo findet Beckenboden Yoga statt?",
     a: "Im Studio von Yoga mit Isabell, Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld.",
   },
 ];
