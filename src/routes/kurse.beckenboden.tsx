@@ -158,7 +158,7 @@ function BeckenbodenPage() {
         </Reveal>
       </Section>
 
-      <Faq items={FAQ} bg="bone" />
+      <Faq items={FAQ} bg="sand" />
     </>
   );
 }
