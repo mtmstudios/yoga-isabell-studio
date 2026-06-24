@@ -21,11 +21,12 @@ export function Studio() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 max-w-[36rem] text-[1.05rem] leading-[1.75] text-taupe">
-              Meine Kurse finden im Bürger- und Siedlerhaus (1. Stock),
-              Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld statt — in einem
-              ruhigen Wohngebiet. Kostenfreie Parkplätze in den umliegenden
-              Straßen, U-Bahn & Bus „Steinhaldenfeld" nur wenige Meter entfernt.
-              Das Studio öffnet 15 Minuten vor Kursbeginn.
+              Meine Kurse finden im Bürger- und Siedlerhaus im 1. Stock, in der
+              Zuckerbergstraße 99 in Stuttgart-Steinhaldenfeld statt — in einem
+              ruhigen Wohngebiet. Kostenfreie Parkplätze gibt es in den
+              umliegenden Straßen, die U-Bahn- & Bushaltestelle
+              „Steinhaldenfeld" ist nur wenige Meter entfernt. Das Studio öffnet
+              15 Minuten vor Kursbeginn.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
