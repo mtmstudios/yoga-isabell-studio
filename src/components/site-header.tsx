@@ -20,7 +20,7 @@ const NAV: NavItem[] = [
       { label: "Anfängerkurs", href: "/kurse/anfaengerkurs" },
       { label: "Soundbath", href: "/kurse/soundbath" },
       { label: "Beckenboden Yoga", href: "/kurse/beckenboden" },
-      { label: "Privat & Business", href: "/kurse/privat-business" },
+      { label: "Privatstunde & Business Yoga", href: "/kurse/privat-business" },
       { label: "Kinderyoga", href: "/kurse/kinderyoga" },
       { label: "Yoga-JGA", href: "/kurse/yoga-jga" },
       { label: "Mother Blessing", href: "/kurse/motherblessing" },
