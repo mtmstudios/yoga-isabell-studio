@@ -105,8 +105,8 @@ function MemberCard({ m, i }: { m: Member; i: number }) {
           />
         </div>
         {/* Quote overlay on hover */}
-        <div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-ink/80 via-ink/30 to-transparent p-6 opacity-0 transition-opacity duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100">
-          <p className="font-display text-[1.05rem] leading-[1.3] text-bone [text-wrap:balance]">
+        <div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-ink/95 via-ink/70 to-ink/20 p-6 opacity-0 transition-opacity duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100">
+          <p className="font-display text-[1.15rem] leading-[1.35] text-bone [text-shadow:0_1px_12px_rgba(0,0,0,0.55)] [text-wrap:balance]">
             {m.quote}
           </p>
         </div>
