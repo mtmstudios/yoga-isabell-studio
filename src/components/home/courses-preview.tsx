@@ -66,7 +66,7 @@ const COURSES: Course[] = [
   },
   {
     name: "Yoga Sanft",
-    blurb: "Sanfter Einstieg, für alle Level.",
+    blurb: "Sanftes Yoga, für alle Level.",
     time: "Fr · 9:30 – 10:45",
     photo: "/images/pose-1.jpg",
     alt: "Sanfte Yoga-Dehnung im Morgenlicht",
