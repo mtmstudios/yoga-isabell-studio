@@ -15,7 +15,7 @@ import { Faq } from "@/components/faq";
 
 const FAQ = [
   {
-    q: "Wo finde ich Yoga in Stuttgart-Steinhaldenfeld?",
+    q: "Wo finde ich Yoga mit Isabell?",
     a: "Das Studio von Yoga mit Isabell liegt im Bürger- und Siedlerhaus (1. Stock), Zuckerbergstraße 99, 70378 Stuttgart-Steinhaldenfeld – nahe Bad Cannstatt, gut mit U-Bahn und Bus „Steinhaldenfeld“ erreichbar.",
   },
   {
