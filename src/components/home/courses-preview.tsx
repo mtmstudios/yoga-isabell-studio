@@ -21,7 +21,7 @@ type Course = {
 const COURSES: Course[] = [
   {
     name: "Rückenyoga",
-    blurb: "Kraft, Beweglichkeit & innere Balance, Verspannungen lösen.",
+    blurb: "Kraft, & Beweglichkeit für Deinen Rücken, Verspannungen lösen.",
     time: "Mo · 19:00 – 20:15",
     photo: "/images/isabell-updog.jpg",
     alt: "Isabell im heraufschauenden Hund — Arbeit für den Rücken",
