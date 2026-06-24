@@ -215,8 +215,8 @@ export function Hero() {
               className="mt-8 max-w-[34rem] text-[1.05rem] leading-[1.7] text-taupe"
             >
               Persönliches, kreatives und ganzheitliches Yoga in kleinen Gruppen
-              von max. 12 Menschen. Egal ob Anfänger:in oder fortgeschritten —
-              Du bist von Herzen willkommen.
+              von max. 12 Menschen.{"\u00A0"}Egal ob Anfänger:in oder
+              fortgeschritten — Du bist von Herzen willkommen!
             </motion.p>
 
             <motion.div
