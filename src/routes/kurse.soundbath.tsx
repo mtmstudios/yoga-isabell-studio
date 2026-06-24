@@ -84,9 +84,22 @@ function SoundbathPage() {
           <div>
             <Reveal>
               <p className="text-[1.1rem] leading-[1.75] text-taupe">
-                Klangschalen, Gongs und sanfte Vibrationen schaffen einen Raum
-                der Tiefenentspannung — wie eine Massage für die Seele. Bring
-                gern Decke und Kissen mit, trage warme, bequeme Kleidung.
+                Lass die hektische Welt für einen Moment hinter Dir und tauche
+                ein in die Magie heilender Klänge. Klangschalen, Gongs und
+                sanfte Vibrationen schaffen einen Raum der Tiefenentspannung,
+                in dem Du loslassen und zur Ruhe kommen kannst.
+                <br />
+                Eine Soundbath Meditation ist wie eine Massage für die Seele —
+                sie bringt Dich ins Hier und Jetzt, löst Spannungen und
+                schenkt Dir neue Energie.
+              </p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
+                Um Dich während der Meditation rundum wohlzufühlen, empfehle
+                ich Dir, warme und bequeme Kleidung zu tragen. Gerne kannst Du
+                eine Decke und ein Kissen mitbringen, um es Dir noch
+                gemütlicher zu machen.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
