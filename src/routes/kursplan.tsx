@@ -61,12 +61,11 @@ type Slot = {
 };
 
 const SCHEDULE: Slot[] = [
-  { day: "Montag", time: "19:00 – 20:15", name: "Rückenyoga", teacher: "Isabell" },
+  { day: "Montag", time: "19:00 – 20:15", name: "Rückenyoga", teacher: "Lara" },
   { day: "Mittwoch", time: "18:30 – 19:45", name: "Vinyasa Yoga für Fortgeschrittene", teacher: "Isabell" },
   { day: "Mittwoch", time: "20:00 – 21:15", name: "Vinyasa Yoga für Anfänger", teacher: "Isabell" },
-  { day: "Donnerstag", time: "18:00 – 19:15", name: "Yoga Flow am Abend", teacher: "Isabell" },
-  { day: "Donnerstag", time: "18:00 – 19:15", name: "Yin Yoga", teacher: "Lara", note: "1. + 3. Do im Monat" },
-  { day: "Donnerstag", time: "n. Absprache", name: "Beckenboden Yoga", teacher: "Stephie", note: "1× pro Monat" },
+  { day: "Donnerstag", time: "18:00 – 19:15", name: "Yoga Flow am Abend", teacher: "Stephie" },
+  { day: "Donnerstag", time: "18:00 – 19:15", name: "Yin Yoga", teacher: "Stephie", note: "1. + 3. Do im Monat" },
   { day: "Freitag", time: "9:30 – 10:45", name: "Yoga Sanft", teacher: "Isabell" },
 ];
 
