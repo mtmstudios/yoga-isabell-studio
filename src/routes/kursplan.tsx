@@ -15,7 +15,7 @@ const FAQ = [
   },
   {
     q: "Kann ich jederzeit in einen Kurs einsteigen?",
-    a: "Ja. In die offenen Stunden ist der Einstieg jederzeit möglich, ganz ohne festen Kursbeginn.",
+    a: "Ja. Bei den offenen Stunden ist der Einstieg jederzeit möglich, ganz ohne festen Kursbeginn.",
   },
   {
     q: "Welcher Kurs passt für Anfänger:innen?",
