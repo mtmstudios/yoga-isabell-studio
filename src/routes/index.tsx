@@ -28,7 +28,7 @@ const FAQ = [
   },
   {
     q: "Was kostet eine Probestunde?",
-    a: "Die Probestunde kostet 10 €, eine Einzelstunde 15 €. Dazu gibt es eine 5er-Karte (70 €) und eine 10er-Karte (130 €). Wir sind Partner von Wellpass.",
+    a: "Die Probestunde kostet 10 €, eine Einzelstunde 15 €. Dazu gibt es eine 5er-Karte (70 €) und eine 10er-Karte (130 €). Wir sind Partner von Wellhub.",
   },
   {
     q: "Welche Yogastile bietet Ihr an?",

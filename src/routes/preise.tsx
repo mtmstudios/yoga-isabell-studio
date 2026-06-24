@@ -16,8 +16,8 @@ const FAQ = [
     a: "Die 10er-Karte ist 6 Monate gültig, die 5er-Karte 3 Monate.",
   },
   {
-    q: "Kann ich mit Wellpass teilnehmen?",
-    a: "Ja, Yoga mit Isabell ist Partner von Wellpass.",
+    q: "Kann ich mit Wellhub teilnehmen?",
+    a: "Ja, Yoga mit Isabell ist Partner von Wellhub.",
   },
   {
     q: "Wie kann ich bezahlen?",
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/preise")({
       {
         name: "description",
         content:
-          "Probestunde, Einzelstunde, 10er- und 5er-Karte, Privatstunde und Gutscheine. Partner von Wellpass.",
+          "Probestunde, Einzelstunde, 10er- und 5er-Karte, Privatstunde und Gutscheine. Partner von Wellhub.",
       },
       { property: "og:title", content: "Preise — Yoga mit Isabell" },
       {
@@ -140,7 +140,7 @@ function PreisePage() {
           <Reveal delay={0.2}>
             <p className="mt-12 inline-flex items-center gap-3 rounded-pill border border-ink/15 px-4 py-2 text-[0.78rem] uppercase tracking-[0.22em] text-ink/70">
               <span aria-hidden className="h-1 w-1 rotate-45 bg-clay" />
-              Partner von Wellpass
+              Partner von Wellhub
             </p>
           </Reveal>
 
