@@ -19,7 +19,7 @@ const FAQ = [
   },
   {
     q: "Ist Beckenboden Yoga nur für Frauen?",
-    a: "Ein gesunder Beckenboden ist für alle wichtig. Der Kurs richtet sich vor allem an Frauen – achtsames Beckenbodentraining tut aber allen gut.",
+    a: "Ein gesunder Beckenboden ist für alle wichtig. Der Kurs richtet sich an Frauen & Männer.",
   },
   {
     q: "Wer leitet den Kurs?",
