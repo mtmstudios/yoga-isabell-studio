@@ -267,10 +267,10 @@ export function Hero() {
               className="radius-organic overflow-hidden"
             >
               <Photo
-                src="/images/hero.jpg"
-                alt="Eine Yogastunde in ruhiger, lichtdurchfluteter Atmosphäre"
+                src="/images/isabell-warrior.jpg"
+                alt="Isabell Thieleke im Krieger 1 — kraftvoll und geerdet"
                 aspect="aspect-[3/4]"
-                position="object-[50%_35%]"
+                position="object-[50%_30%]"
                 priority
               />
             </motion.div>
