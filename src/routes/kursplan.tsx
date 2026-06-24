@@ -43,7 +43,7 @@ export const Route = createFileRoute("/kursplan")({
       { property: "og:title", content: "Kursplan — Yoga mit Isabell" },
       {
         property: "og:description",
-        content: "Sechs feste Formate pro Woche in Stuttgart-Steinhaldenfeld.",
+        content: "Fünf feste Formate pro Woche in Stuttgart-Steinhaldenfeld.",
       },
       { property: "og:url", content: "/kursplan" }
     ],
@@ -122,7 +122,7 @@ function KursplanPage() {
       <PageHeader
         eyebrow="Wochenplan"
         title={<>Kursplan & <em>Kursbeschreibungen</em>.</>}
-        lead="Sechs feste Formate jede Woche, kleine Gruppen mit max. 12 Teilnehmer:innen. Einstieg jederzeit möglich."
+        lead="Fünf feste Formate jede Woche, kleine Gruppen mit max. 12 Teilnehmer:innen. Einstieg jederzeit möglich."
       />
 
       <Section bg="bone">

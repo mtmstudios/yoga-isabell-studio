@@ -136,7 +136,7 @@ export function CoursesPreview() {
         </div>
         <Reveal delay={0.2} className="md:text-right">
           <p className="max-w-md text-taupe md:ml-auto">
-            Sechs feste Formate, jede Woche — in kleinen Gruppen mit max. 12
+            Fünf feste Formate, jede Woche — in kleinen Gruppen mit max. 12
             Teilnehmer:innen.
           </p>
         </Reveal>
