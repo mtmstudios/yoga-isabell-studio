@@ -86,7 +86,7 @@ function AnfaengerPage() {
                 <br />
                 Es geht darum, die ersten Schritte zu gehen. Und ganz nebenbei
                 wird Dein Körper gestärkt, Verspannungen gelöst und Dein Geist
-                kommt zur Ruhe. :-)
+                kommt zur Ruhe.
               </p>
               <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
                 Auch Yoginis und Yogis mit Vorkenntnissen sind herzlich
