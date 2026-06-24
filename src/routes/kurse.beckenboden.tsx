@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "Wer leitet den Kurs?",
-    a: "Pelvic Love wird von Stephie geleitet, die viel Achtsamkeit und ein feines Gespür für den Körper mitbringt.",
+    a: "Pelvic Love wird von Stephie, zertifizierte Beckenbodenyogalehrerin, geleitet.",
   },
   {
     q: "Wo findet Beckenboden Yoga in Stuttgart statt?",
