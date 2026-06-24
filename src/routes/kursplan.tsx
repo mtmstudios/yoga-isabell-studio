@@ -11,7 +11,7 @@ import { Faq } from "@/components/faq";
 const FAQ = [
   {
     q: "Muss ich mich für die offenen Stunden anmelden?",
-    a: "Bitte buche Deinen Platz über den Buchungskalender – die Gruppen sind klein (max. 12 Personen), daher lohnt sich frühzeitiges Reservieren.",
+    a: "Bitte buche Deinen Platz über meinen Buchungskalender Eversports. Die Gruppen sind klein (max. 12 Personen), daher lohnt sich frühzeitiges Reservieren.",
   },
   {
     q: "Kann ich jederzeit in einen Kurs einsteigen?",
