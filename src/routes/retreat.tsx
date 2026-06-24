@@ -30,30 +30,36 @@ export const Route = createFileRoute("/retreat")({
   component: RetreatPage,
 });
 
-const SCHEDULE = [
+const SCHEDULE: { day: string; items: { time?: string; text: string }[] }[] = [
   {
     day: "Freitag",
     items: [
-      "Ankommen ab Nachmittag · Tee & Begrüßung",
-      "Sanfter Eröffnungs-Flow",
-      "Gemeinsames Abendessen",
+      { time: "ab 14:30", text: "Individuelle Anreise · lockeres Get-Together bei Kaffee, Tee & Snacks" },
+      { time: "17:00", text: "Vinyasa Yoga „Ankommen & Auftanken“ mit Isabell (alle Level)" },
+      { time: "18:30", text: "Gemeinsames Abendessen in Buffet-Form (vegetarisch)" },
+      { time: "21:00", text: "„Mondgrüße“ mit Alina (alle Level, 30 Minuten)" },
     ],
   },
   {
     day: "Samstag",
     items: [
-      "Morgen-Vinyasa & Meditation",
-      "Frühstück · freie Zeit / Wanderung",
-      "Atemarbeit & regenerierende Praxis",
-      "Abendessen & ruhiger Ausklang",
+      { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
+      { time: "08:00", text: "„Vinyasa Yoga meets Breathwork“ mit Alina (alle Level)" },
+      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
+      { text: "Zeit zur freien Verfügung — Umgebung erkunden oder Seele baumeln lassen" },
+      { time: "16:00", text: "„Yoga Music Flow“ mit Isabell (für Fortgeschrittene)" },
+      { time: "17:30", text: "„Yoga meets Thai Yoga Massage“ mit Alina (alle Level)" },
+      { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls, vegetarisch)" },
+      { text: "Im Anschluss lassen wir den Abend gemeinsam ausklingen" },
     ],
   },
   {
     day: "Sonntag",
     items: [
-      "Sonnen-Flow & Meditation",
-      "Frühstück · Abschlusskreis",
-      "Sanfte Yin-Praxis zum Abschied",
+      { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
+      { time: "08:00", text: "„Flow & Glow — Yoga meets Face Yoga“ mit Alina & Isabell (alle Level)" },
+      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
+      { time: "13:00", text: "Check-out" },
     ],
   },
 ];
@@ -216,10 +222,16 @@ function RetreatPage() {
                   {d.day}
                 </span>
                 <ul className="mt-4 space-y-3 text-taupe">
-                  {d.items.map((it) => (
-                    <li key={it} className="flex gap-3">
-                      <span aria-hidden className="mt-2 h-px w-5 shrink-0 bg-clay/60" />
-                      <span>{it}</span>
+                  {d.items.map((it, j) => (
+                    <li key={`${it.time ?? "x"}-${j}`} className="flex gap-3">
+                      {it.time ? (
+                        <span className="mt-[2px] w-14 shrink-0 text-[0.72rem] uppercase tracking-[0.18em] text-clay">
+                          {it.time}
+                        </span>
+                      ) : (
+                        <span aria-hidden className="mt-2 h-px w-5 shrink-0 bg-clay/60" />
+                      )}
+                      <span>{it.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -227,6 +239,9 @@ function RetreatPage() {
             </Reveal>
           ))}
         </ol>
+        <p className="mt-10 text-[0.78rem] uppercase tracking-[0.22em] text-taupe/70">
+          (Ablauf unter Vorbehalt)
+        </p>
       </Section>
 
       {/* Kosten */}
