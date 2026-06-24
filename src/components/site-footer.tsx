@@ -42,7 +42,7 @@ export function SiteFooter() {
               Klein <em className="text-clay not-italic">·</em> fein. Yoga in{" "}
               <em className="italic text-clay">Stuttgart-Steinhaldenfeld</em>.
             </p>
-            <p className="mt-6 text-sm text-bone-muted">Partner von Wellpass.</p>
+            <p className="mt-6 text-sm text-bone-muted">Partner von Wellhub.</p>
           </div>
 
           {/* Navigation */}

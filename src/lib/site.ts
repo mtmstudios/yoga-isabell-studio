@@ -74,7 +74,7 @@ export function localBusinessSchema() {
     email: NAP.email,
     priceRange: "€€",
     currenciesAccepted: "EUR",
-    paymentAccepted: "Überweisung, Barzahlung, Wellpass",
+    paymentAccepted: "Überweisung, Barzahlung, Wellhub",
     hasMap: MAPS_URL,
     address: {
       "@type": "PostalAddress",
