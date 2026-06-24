@@ -16,7 +16,7 @@ import { Faq } from "@/components/faq";
 const FAQ = [
   {
     q: "Wo finde ich Yoga mit Isabell?",
-    a: "Das Studio von Yoga mit Isabell liegt im Bürger- und Siedlerhaus (1. Stock), Zuckerbergstraße 99, 70378 Stuttgart-Steinhaldenfeld – nahe Bad Cannstatt, gut mit U-Bahn und Bus „Steinhaldenfeld“ erreichbar.",
+    a: "Meine Kurse finden statt im Bürger- und Siedlerhaus, im 1. Stock, in der Zuckerbergstraße 99 in Stuttgart-Steinhaldenfeld. Das Yogastudio befindet sich in einem ruhigen Wohngebiet. Kostenfreie Parkplätze findest Du in den umliegenden Straßen und direkt auf dem Grundstück. Auch mit öffentlichen Verkehrsmitteln gut erreichbar: Die Bushaltestelle „Zuckerbergstraße“ und die U-Bahnhaltestelle „Steinhaldenfeld“ sind nur wenige Meter entfernt.",
   },
   {
     q: "Brauche ich Vorkenntnisse, um anzufangen?",
