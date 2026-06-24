@@ -37,9 +37,11 @@ export function Studio() {
                 className="mt-0.5 shrink-0 text-clay"
               />
               <span>
-                Bürger- und Siedlerhaus, 1. Stock
+                Bürger- und Siedlerhaus
                 <br />
-                Zuckerbergstraße 99 · 70378 Stuttgart-Steinhaldenfeld
+                Zuckerbergstraße 99
+                <br />
+                70378 Stuttgart-Steinhaldenfeld
               </span>
             </div>
           </Reveal>

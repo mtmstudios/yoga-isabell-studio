@@ -70,9 +70,11 @@ function KontaktPage() {
                 <li className="flex items-start gap-3">
                   <MapPin size={18} strokeWidth={1.4} className="mt-1 shrink-0 text-clay" />
                   <span>
-                    Bürger- und Siedlerhaus, 1. Stock
+                    Bürger- und Siedlerhaus
                     <br />
-                    Zuckerbergstraße 99 · 70378 Stuttgart-Steinhaldenfeld
+                    Zuckerbergstraße 99
+                    <br />
+                    70378 Stuttgart-Steinhaldenfeld
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
