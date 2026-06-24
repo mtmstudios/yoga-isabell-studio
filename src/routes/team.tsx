@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { PhotoPlaceholder } from "@/components/photo-placeholder";
 import { Photo } from "@/components/photo";
 
 export const Route = createFileRoute("/team")({
@@ -12,7 +11,7 @@ export const Route = createFileRoute("/team")({
       {
         name: "description",
         content:
-          "Lerne unser Team kennen: Stephie, Lara, Adrian, Svenja, Sina, Steffanie und Lena unterstützen Isabell im Studio.",
+          "Lerne unser Team kennen: Stephie, Lara, Adrian, Svenja, Sina und Lena unterstützen Isabell im Studio.",
       },
       { property: "og:title", content: "Unser Team" },
       {
@@ -34,14 +33,13 @@ type Member = {
   /** Asymmetric placement classes for the bento grid. */
   grid: string;
   aspect: string;
-  /** Real portrait; falls back to placeholder when absent (e.g. Steffanie). */
-  photo?: string;
+  photo: string;
 };
 
 const TEAM: Member[] = [
   {
     name: "Stephie",
-    role: "Pelvic Love · Beckenboden Yoga",
+    role: "Yoga Flow am Abend · Beckenboden Yoga",
     bio: "Stephie bringt Achtsamkeit und Tiefe in jede Stunde — mit einem feinen Gespür für den weiblichen Körper.",
     quote: '„Dein Beckenboden darf weich und stark zugleich sein."',
     grid: "md:col-span-5 md:row-span-2",
@@ -50,17 +48,17 @@ const TEAM: Member[] = [
   },
   {
     name: "Lara",
-    role: "Yin Yoga",
-    bio: "Lara liebt das Stille, das Lange, das Leise. Bei ihr darf alles dauern, bis es sich wirklich löst.",
-    quote: '„Stillstand ist auch Bewegung."',
+    role: "Rückenyoga",
+    bio: "Lara unterrichtet mit Klarheit und einem feinen Blick für den Rücken — präzise, achtsam, kraftvoll.",
+    quote: '„Ein starker Rücken trägt Dich durchs Leben."',
     grid: "md:col-span-4",
     aspect: "aspect-[5/4]",
     photo: "/images/team-lara.jpg",
   },
   {
     name: "Adrian",
-    role: "Vinyasa & Vertretung",
-    bio: "Adrian unterrichtet kraftvolle Flows mit viel Klarheit — präzise Ansagen, freier Atem.",
+    role: "Yang & Yin Yoga · Vertretung",
+    bio: "Adrian verbindet kraftvolle Yang-Flows mit ruhigen Yin-Sequenzen — präzise Ansagen, freier Atem.",
     quote: '„Bewegung ist Gebet."',
     grid: "md:col-span-3",
     aspect: "aspect-[3/4]",
@@ -77,25 +75,17 @@ const TEAM: Member[] = [
   },
   {
     name: "Sina",
-    role: "Vinyasa & Vertretung",
-    bio: "Sina verbindet Kreativität und Klarheit. Ihre Sequenzen fühlen sich wie eine kleine Reise an.",
+    role: "Coach",
+    bio: "Sina begleitet Menschen als Coach auf ihrem Weg — mit Kreativität, Klarheit und einem offenen Ohr.",
     quote: '„Atme, was Du brauchst."',
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
     photo: "/images/team-sina.jpg",
   },
   {
-    name: "Steffanie",
-    role: "Yoga Sanft · Vertretung",
-    bio: "Steffanie führt sanft und respektvoll — perfekt für alle, die sanft im Yoga ankommen möchten.",
-    quote: '„Sanft heißt nicht weniger — sondern bewusst."',
-    grid: "md:col-span-4",
-    aspect: "aspect-[5/4]",
-  },
-  {
     name: "Lena",
-    role: "Vertretung & Workshops",
-    bio: "Lena springt mit Herz und Erfahrung ein — und bringt regelmäßig neue Workshops ins Studio.",
+    role: "Vertretung",
+    bio: "Lena springt mit Herz und Erfahrung ein — verlässlich, warm und mit einem feinen Gespür für die Gruppe.",
     quote: '„Ich liebe es, Menschen zurück in ihren Körper zu begleiten."',
     grid: "md:col-span-12 lg:col-span-8",
     aspect: "aspect-[16/9]",
@@ -108,15 +98,11 @@ function MemberCard({ m, i }: { m: Member; i: number }) {
     <Reveal delay={0.05 * i} className={`group relative flex flex-col ${m.grid}`}>
       <div className="relative overflow-hidden radius-organic">
         <div className="transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]">
-          {m.photo ? (
-            <Photo
-              src={m.photo}
-              alt={`${m.name} — Yogalehrer:in bei Yoga mit Isabell`}
-              aspect={m.aspect}
-            />
-          ) : (
-            <PhotoPlaceholder caption={`Portrait: ${m.name}`} aspect={m.aspect} />
-          )}
+          <Photo
+            src={m.photo}
+            alt={`${m.name} — Yogalehrer:in bei Yoga mit Isabell`}
+            aspect={m.aspect}
+          />
         </div>
         {/* Quote overlay on hover */}
         <div className="pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-ink/80 via-ink/30 to-transparent p-6 opacity-0 transition-opacity duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:opacity-100">
@@ -144,7 +130,7 @@ function TeamPage() {
       <PageHeader
         eyebrow="Yoga mit Herz"
         title={<>Unser <em>Team</em>.</>}
-        lead="Sieben Menschen, ein Studio. Jede:r mit eigener Handschrift."
+        lead="Sechs Menschen, ein Studio. Jede:r mit eigener Handschrift."
       />
 
       <Section bg="bone">
