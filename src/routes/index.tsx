@@ -23,7 +23,7 @@ const FAQ = [
     a: "Egal ob Anfänger:in oder fortgeschritten – Du bist willkommen! Suche Dir den passenden Kurs nach Deiner Erfahrung aus. Wenn Du Fragen hast, kontaktiere mich gerne.",
   },
   {
-    q: "Wie groß sind die GruppeZn?",
+    q: "Wie groß sind die Gruppen?",
     a: "Wir sind klein & fein und üben in Gruppen von maximal 12 Teilnehmer:innen, damit wir individuell auf Dich eingehen können.",
   },
   {
