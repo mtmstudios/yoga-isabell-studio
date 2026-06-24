@@ -29,6 +29,10 @@ const FAQ = [
     q: "Wo findet Beckenboden Yoga statt?",
     a: "Im Studio von Yoga mit Isabell, Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld.",
   },
+  {
+    q: "Wann findet der nächste Beckenbodenyoga Kurs statt?",
+    a: "Neue Termine geben wir über den Newsletter bekannt. Melde Dich an, dann erfährst Du als Erste:r vom nächsten Start.",
+  },
 ];
 
 export const Route = createFileRoute("/kurse/beckenboden")({
