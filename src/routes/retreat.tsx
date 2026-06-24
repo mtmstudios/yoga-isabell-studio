@@ -162,7 +162,7 @@ function RetreatPage() {
 
         <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-3">
           {[
-            { title: "6 Yoga-Einheiten", body: "Vinyasa & regenerierend, im Rhythmus des Tages." },
+            { title: "6 abwechslungsreiche Yoga-Einheiten", body: "Vinyasa & regenerierend, im Rhythmus des Tages." },
             { title: "Meditation", body: "Geführt und still — täglich morgens und abends." },
             { title: "Atemarbeit", body: "Pranayama als sanfter Anker für Körper und Geist." },
           ].map((b, i) => (
