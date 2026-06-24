@@ -29,7 +29,7 @@ const COURSES: Course[] = [
     aspect: "aspect-[4/5]",
   },
   {
-    name: "Vinyasa für Fortgeschrittene",
+    name: "Vinyasa Yoga für Fortgeschrittene",
     blurb: "Fließend, kraftvoll, dynamisch.",
     time: "Mi · 18:30 – 19:45",
     photo: "/images/isabell-angle.jpg",
