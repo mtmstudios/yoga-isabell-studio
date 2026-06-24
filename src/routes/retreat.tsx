@@ -239,6 +239,9 @@ function RetreatPage() {
             </Reveal>
           ))}
         </ol>
+        <p className="mt-10 text-[0.78rem] uppercase tracking-[0.22em] text-taupe/70">
+          (Ablauf unter Vorbehalt)
+        </p>
       </Section>
 
       {/* Kosten */}
