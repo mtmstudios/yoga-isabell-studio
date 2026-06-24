@@ -20,7 +20,7 @@ const FAQ = [
   },
   {
     q: "Brauche ich Vorkenntnisse, um anzufangen?",
-    a: "Nein. Egal ob Anfänger:in oder fortgeschritten – Du bist willkommen. Es gibt offene Stunden für alle Level sowie einen geschlossenen Anfängerkurs.",
+    a: "Egal ob Anfänger:in oder fortgeschritten – Du bist willkommen! Suche Dir den passenden Kurs nach Deiner Erfahrung aus. Wenn Du Fragen hast, kontaktiere mich gerne.",
   },
   {
     q: "Wie groß sind die Gruppen?",
