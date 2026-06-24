@@ -71,7 +71,7 @@ const BENEFITS = [
   },
   {
     title: "Raum für Heilung",
-    text: "Sanft, respektvoll, in Deinem Tempo — auch nach Geburt, Operationen oder belastenden Erfahrungen.",
+    text: "Die Praxis kann Beschwerden lindern, wie sie im Beckenraum, unteren Rücken oder Bauchraum auftreten können und fördert langfristig Deine körperliche Balance.",
   },
   {
     title: "Sexualität & Sinnlichkeit",
