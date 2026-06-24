@@ -1,7 +1,7 @@
-import { motion, useReducedMotion, type HTMLMotionProps } from "motion/react";
-import type { ReactNode } from "react";
+import { motion, useReducedMotion } from "motion/react";
+import type { ReactNode, ElementType } from "react";
 
-type Props = Omit<HTMLMotionProps<"div">, "children"> & {
+type Props = {
   children: ReactNode;
   /** Stagger delay in seconds. */
   delay?: number;
@@ -9,7 +9,9 @@ type Props = Omit<HTMLMotionProps<"div">, "children"> & {
   y?: number;
   /** When true, animate every time the element re-enters the viewport. */
   repeat?: boolean;
-  as?: "div" | "section" | "article" | "header" | "footer";
+  as?: "div" | "section" | "article" | "header" | "footer" | "li" | "span";
+  className?: string;
+  id?: string;
 };
 
 /**
