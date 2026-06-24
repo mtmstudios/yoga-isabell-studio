@@ -145,6 +145,19 @@ function BeckenbodenPage() {
         </ol>
       </Section>
 
+      <Section bg="bone">
+        <Reveal>
+          <div className="mx-auto max-w-[40rem]">
+            <CourseSignupForm
+              course="beckenboden"
+              title="Sei dabei beim nächsten Beckenboden Yoga Kurs"
+              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Pelvic Love Kurs startet."
+              successMessage="Danke! Wir melden uns, sobald der nächste Beckenboden Yoga Kurs startet."
+            />
+          </div>
+        </Reveal>
+      </Section>
+
       <Faq items={FAQ} bg="bone" />
     </>
   );
