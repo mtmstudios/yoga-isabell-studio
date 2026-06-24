@@ -156,7 +156,7 @@ function RetreatPage() {
         </Reveal>
         <Reveal delay={0.1}>
           <DisplayHeading size="h2" className="mt-6">
-            Drei Tage <em>Atem</em>.
+            Drei Tage <em>Yoga</em>.
           </DisplayHeading>
         </Reveal>
 
