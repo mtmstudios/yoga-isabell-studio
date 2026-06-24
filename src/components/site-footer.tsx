@@ -73,7 +73,7 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <MapPin size={16} strokeWidth={1.4} className="mt-1 shrink-0 text-clay" />
                 <span className="text-bone-soft">
-                  Bürger- und Siedlerhaus, 1. Stock<br />
+                  Bürger- und Siedlerhaus<br />
                   Zuckerbergstraße 99<br />
                   70378 Stuttgart-Steinhaldenfeld
                 </span>
