@@ -19,7 +19,7 @@ const FAQ = [
   },
   {
     q: "Welcher Kurs passt für Anfänger:innen?",
-    a: "Vinyasa für Anfänger, Yoga Sanft und Rückenyoga eignen sich gut für den Einstieg. Für einen strukturierten Start gibt es zusätzlich den geschlossenen Anfängerkurs.",
+    a: "Vinyasa Yoga für Anfänger, Yoga Sanft und Rückenyoga eignen sich gut für den Einstieg. Für einen strukturierten Start gibt es zusätzlich den geschlossenen Anfängerkurs.",
   },
   {
     q: "Was ist der Unterschied zwischen Vinyasa und Yin Yoga?",
@@ -63,7 +63,7 @@ type Slot = {
 const SCHEDULE: Slot[] = [
   { day: "Montag", time: "19:00 – 20:15", name: "Rückenyoga", teacher: "Isabell" },
   { day: "Mittwoch", time: "18:30 – 19:45", name: "Vinyasa Yoga für Fortgeschrittene", teacher: "Isabell" },
-  { day: "Mittwoch", time: "20:00 – 21:15", name: "Vinyasa für Anfänger", teacher: "Isabell" },
+  { day: "Mittwoch", time: "20:00 – 21:15", name: "Vinyasa Yoga für Anfänger", teacher: "Isabell" },
   { day: "Donnerstag", time: "18:00 – 19:15", name: "Yoga Flow am Abend", teacher: "Isabell" },
   { day: "Donnerstag", time: "18:00 – 19:15", name: "Yin Yoga", teacher: "Lara", note: "1. + 3. Do im Monat" },
   { day: "Donnerstag", time: "n. Absprache", name: "Beckenboden Yoga", teacher: "Stephie", note: "1× pro Monat" },
@@ -91,7 +91,7 @@ const COURSES: Course[] = [
     text: "Wir fließen durch klassische und kreative Flows — fließend, kraftvoll, dynamisch, aber auch entspannend. Balance zwischen Bewegung und Stille. Mit Vorkenntnissen.",
   },
   {
-    name: "Vinyasa für Anfänger",
+    name: "Vinyasa Yoga für Anfänger",
     badge: "Mi · 20:00 – 21:15",
     photo: "/images/class-namaste.jpg",
     text: "Für Yoga-Neulinge und alle, die ihre Technik verfeinern möchten. Du lernst Grundlagen, Atemübungen und Meditation und tauchst sanft in die Welt des Yoga ein.",
