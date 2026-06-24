@@ -75,12 +75,27 @@ function AnfaengerPage() {
           <div>
             <Reveal>
               <p className="text-[1.1rem] leading-[1.75] text-taupe">
-                Du wolltest schon immer Yoga ausprobieren? Hier findest Du als
-                Neuling einen sanften Einstieg — Körperhaltungen, Atemübungen,
-                Meditation und leichte Flows. Es ist nicht wichtig, wie
-                beweglich oder „sportlich" Du bist. Es geht darum, die ersten
-                Schritte zu gehen. Wir üben in kleinen Gruppen von max. 12
-                Teilnehmer:innen.
+                Du wolltest schon immer einmal Yoga ausprobieren?
+                <br />
+                Hier findest Du als Neuling einen sanften Einstieg ins Yoga. Du
+                lernst die Grundlagen des Yogas kennen, wie Körperhaltungen,
+                Atemübungen, Meditation und leichte Flows.
+                <br />
+                Dabei ist es nicht von Bedeutung, wie beweglich oder
+                „sportlich" Du bist.
+                <br />
+                Es geht darum, die ersten Schritte zu gehen. Und ganz nebenbei
+                wird Dein Körper gestärkt, Verspannungen gelöst und Dein Geist
+                kommt zur Ruhe. :-)
+              </p>
+              <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
+                Auch Yoginis und Yogis mit Vorkenntnissen sind herzlich
+                willkommen, um die Grundlagen zu festigen und die Technik zu
+                verfeinern.
+              </p>
+              <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
+                Wir üben in kleinen Gruppen von maximal 12 TeilnehmerInnen, so
+                dass individuell auf Deine Bedürfnisse eingegangen werden kann.
               </p>
             </Reveal>
 
