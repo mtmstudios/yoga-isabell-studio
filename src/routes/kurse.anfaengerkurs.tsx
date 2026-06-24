@@ -22,7 +22,7 @@ const FAQ = [
     a: "Die Grundlagen des Yoga: Körperhaltungen (Asanas), Atemübungen, Meditation und leichte Flows – Schritt für Schritt.",
   },
   {
-    q: "Wie groß sind die Gruppen?",
+    q: "Wie groß sind die GruppeZn?",
     a: "Wir üben in kleinen Gruppen von maximal 12 Teilnehmer:innen, damit wir individuell auf Dich eingehen können.",
   },
   {
