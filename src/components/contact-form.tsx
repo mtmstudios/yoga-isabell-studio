@@ -9,7 +9,7 @@ const COURSES = [
   "Probestunde",
   "Rückenyoga",
   "Vinyasa für Anfänger",
-  "Vinyasa für Fortgeschrittene",
+  "Vinyasa Yoga für Fortgeschrittene",
   "Yoga Flow am Abend",
   "Yin Yoga",
   "Yoga Sanft",

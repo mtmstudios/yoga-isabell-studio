@@ -62,7 +62,7 @@ type Slot = {
 
 const SCHEDULE: Slot[] = [
   { day: "Montag", time: "19:00 – 20:15", name: "Rückenyoga", teacher: "Isabell" },
-  { day: "Mittwoch", time: "18:30 – 19:45", name: "Vinyasa für Fortgeschrittene", teacher: "Isabell" },
+  { day: "Mittwoch", time: "18:30 – 19:45", name: "Vinyasa Yoga für Fortgeschrittene", teacher: "Isabell" },
   { day: "Mittwoch", time: "20:00 – 21:15", name: "Vinyasa für Anfänger", teacher: "Isabell" },
   { day: "Donnerstag", time: "18:00 – 19:15", name: "Yoga Flow am Abend", teacher: "Isabell" },
   { day: "Donnerstag", time: "18:00 – 19:15", name: "Yin Yoga", teacher: "Lara", note: "1. + 3. Do im Monat" },
@@ -85,7 +85,7 @@ const COURSES: Course[] = [
     text: "Im Rückenyoga werden Kraft, Beweglichkeit und innere Balance verbunden. Mit sanften und kraftvollen Asanas werden Rückenmuskulatur und Körpermitte gestärkt und Verspannungen gelöst. Für Anfänger:innen geeignet.",
   },
   {
-    name: "Vinyasa für Fortgeschrittene",
+    name: "Vinyasa Yoga für Fortgeschrittene",
     badge: "Mi · 18:30 – 19:45",
     photo: "/images/isabell-warrior.jpg",
     text: "Wir fließen durch klassische und kreative Flows — fließend, kraftvoll, dynamisch, aber auch entspannend. Balance zwischen Bewegung und Stille. Mit Vorkenntnissen.",
