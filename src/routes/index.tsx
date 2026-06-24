@@ -32,7 +32,7 @@ const FAQ = [
   },
   {
     q: "Welche Yogastile bietet Ihr an?",
-    a: "Vinyasa Yoga (für Anfänger und Fortgeschrittene), Rückenyoga, Yin Yoga, sanftes Yoga und Yoga Flow am Abend – dazu Beckenboden Yoga, Kinderyoga sowie besondere Formate wie Soundbath und Retreats.",
+    a: "Vinyasa Yoga (für Anfänger und Fortgeschrittene), Rückenyoga, Yin Yoga, Yoga Sanft und Yoga Flow am Abend. Darüberhinaus gibt es regelmäßig Workshops, wie Beckenboden Yoga, Kinderyoga sowie besondere Formate wie Soundbatsh und Retreats.",
   },
   {
     q: "Kann ich jederzeit einsteigen?",
