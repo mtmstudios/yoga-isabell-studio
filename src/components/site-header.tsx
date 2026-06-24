@@ -16,7 +16,7 @@ const NAV: NavItem[] = [
     label: "Kurse",
     href: "/kursplan",
     children: [
-      { label: "Kursplan & Offene Stunden", href: "/kursplan" },
+      { label: "Kursplan / Offene Stunden", href: "/kursplan" },
       { label: "Anfängerkurs", href: "/kurse/anfaengerkurs" },
       { label: "Soundbath", href: "/kurse/soundbath" },
       { label: "Beckenboden Yoga", href: "/kurse/beckenboden" },
