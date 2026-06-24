@@ -38,7 +38,7 @@ const COURSES: Course[] = [
     aspect: "aspect-[5/4]",
   },
   {
-    name: "Vinyasa für Anfänger",
+    name: "Vinyasa Yoga für Anfänger",
     blurb: "Sanft eintauchen in die Welt des Yoga.",
     time: "Mi · 20:00 – 21:15",
     photo: "/images/class-namaste.jpg",

@@ -8,7 +8,7 @@ import { Check, Loader2 } from "lucide-react";
 const COURSES = [
   "Probestunde",
   "Rückenyoga",
-  "Vinyasa für Anfänger",
+  "Vinyasa Yoga für Anfänger",
   "Vinyasa Yoga für Fortgeschrittene",
   "Yoga Flow am Abend",
   "Yin Yoga",
