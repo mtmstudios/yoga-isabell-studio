@@ -10,6 +10,26 @@ import { Photo } from "@/components/photo";
 import { JsonLd } from "@/components/json-ld";
 import { SITE_URL, OG_IMAGE } from "@/lib/site";
 
+import fruehstuecksraumAsset from "@/assets/retreat-gallery/retreat-fruehstuecksraum.jpg.asset.json";
+import stammtischAsset from "@/assets/retreat-gallery/retreat-stammtisch.jpg.asset.json";
+import zimmerAsset from "@/assets/retreat-gallery/retreat-zimmer.jpg.asset.json";
+import yogaChildsposeAsset from "@/assets/retreat-gallery/retreat-yoga-childspose.jpg.asset.json";
+import fruehstuecksbuffetAsset from "@/assets/retreat-gallery/retreat-fruehstuecksbuffet.jpg.asset.json";
+import essbereichAsset from "@/assets/retreat-gallery/retreat-essbereich-ausblick.jpg.asset.json";
+import fensterblickAsset from "@/assets/retreat-gallery/retreat-fensterblick.jpg.asset.json";
+import yogaraumAsset from "@/assets/retreat-gallery/retreat-yogaraum.jpg.asset.json";
+
+const GALLERY: { src: string; alt: string; aspect: string; span: string }[] = [
+  { src: yogaraumAsset.url, alt: "Yoga-Raum mit Panoramafenstern und Matten", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-5" },
+  { src: fensterblickAsset.url, alt: "Blick aus dem Panoramafenster über die Schwarzwaldhügel", aspect: "aspect-[4/3]", span: "col-span-2 md:col-span-7" },
+  { src: essbereichAsset.url, alt: "Essbereich mit langem Holztisch und Blick ins Tal", aspect: "aspect-[16/10]", span: "col-span-2 md:col-span-7" },
+  { src: zimmerAsset.url, alt: "Helles Zimmer mit Doppelbett und Balkonblick", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-5" },
+  { src: yogaChildsposeAsset.url, alt: "Gruppe in Child's Pose im Yoga-Raum", aspect: "aspect-[4/5]", span: "col-span-1 md:col-span-4" },
+  { src: fruehstuecksraumAsset.url, alt: "Eingedeckter Frühstückstisch mit Buffet im Hintergrund", aspect: "aspect-[4/5]", span: "col-span-1 md:col-span-4" },
+  { src: fruehstuecksbuffetAsset.url, alt: "Frühstücksbuffet mit Käse, Lachs, Müsli und frischem Gemüse", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-4" },
+  { src: stammtischAsset.url, alt: "Schwarzwälder Stammtisch mit Holzbank und traditionellen Leuchten", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-12" },
+];
+
 export const Route = createFileRoute("/retreat")({
   head: () => ({
     meta: [
