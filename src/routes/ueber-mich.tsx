@@ -135,7 +135,7 @@ function UeberMichPage() {
               </Paragraph>
               <Paragraph>
                 Und wer weiß, vielleicht begrüßt Du dann auch mal jemanden im
-                Kopfstand! :-)
+                Kopfstand?!
               </Paragraph>
               <p className="script-accent mt-2 text-[clamp(1.6rem,2.4vw,2rem)] leading-none">
                 Deine Isabell
