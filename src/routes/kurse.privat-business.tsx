@@ -91,8 +91,9 @@ function PrivatBusinessPage() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-6 text-[1.05rem] leading-[1.75] text-taupe">
-                Du möchtest ganz privat reinschnuppern, Deine Technik
-                verfeinern oder Dir etwas Besonderes gönnen? Sprich mich an.
+                Du möchtest ganz privat ins Yoga schnuppern, Deine Technik
+                verfeinern oder Dir etwas Besonderes gönnen? Sprich mich
+                gerne an.
               </p>
             </Reveal>
             <Reveal delay={0.3}>
