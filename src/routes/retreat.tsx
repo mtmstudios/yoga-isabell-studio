@@ -143,7 +143,7 @@ function RetreatPage() {
       <Section bg="bone">
         <Reveal>
           <p className="max-w-[44rem] text-[1.1rem] leading-[1.75] text-taupe">
-            Finde mit Alina von <span className="text-ink">Klein A Yoga</span> und Isabell in Deine Mitte.
+            Finde mit Alina von Klein A Yoga und Isabell in Deine Mitte.
             Nur etwa 2&nbsp;Stunden von Stuttgart entfernt liegt unser
             Retreat-Haus Saiger Lounge mitten im Schwarzwald, umgeben von
             Wald, klarer Luft und einem weiten Blick über die Hügel.
