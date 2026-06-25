@@ -189,10 +189,24 @@ function RetreatPage() {
           <Reveal>
             <Eyebrow>Unterkunft & Umgebung</Eyebrow>
             <p className="mt-6 text-[1.02rem] leading-[1.75] text-taupe">
-              Die Saiger Lounge liegt auf 1.020 m, mitten in der Stille des
-              Hochschwarzwalds. Wälder, klare Luft, Wege zum Spazieren — und
-              ein Haus, das sich anfühlt wie ein langes Ausatmen.
+              Nur 30 Minuten von Freiburg und doch schon im Hochschwarzwald
+              auf 1.020 m Höhe — heilklimatischer Luftkurort nahe Titisee,
+              ruhig inmitten der Natur, mit Panorama-Blick auf die sanften
+              Hügel des Schwarzwalds.
             </p>
+            <ul className="mt-6 space-y-2 text-[0.98rem] leading-[1.7] text-taupe">
+              {[
+                "Moderne Zimmer mit Bad/WC, Föhn, SAT-TV, WLAN",
+                "Eigener Balkon oder Terrasse",
+                "Offener Kaminbereich",
+                "Sauna zur freien Nutzung",
+              ].map((f) => (
+                <li key={f} className="flex gap-3">
+                  <span aria-hidden className="mt-[0.7rem] h-px w-4 shrink-0 bg-clay/60" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
           </Reveal>
           <Reveal delay={0.1}>
             <Eyebrow>Verpflegung</Eyebrow>
