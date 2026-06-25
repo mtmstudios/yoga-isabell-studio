@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
@@ -7,6 +8,11 @@ import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { ExternalLink, Loader2 } from "lucide-react";
+
+const EVERSPORTS_URL =
+  "https://www.eversports.de/org/widget/af46cfd1-5707-4169-bbf6-1037847bafa6?venueId=3cf8ca96-4a54-4de0-88a0-7af7df47b48e";
+
 
 const FAQ = [
   {
