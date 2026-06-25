@@ -34,7 +34,7 @@ function KontaktPage() {
       <PageHeader
         eyebrow="Schreib mir"
         title={<>Hast Du <em>Fragen</em>?</>}
-        lead="Kontaktiere mich gerne — ich freue mich!"
+        lead="Kontaktiere mich gerne. Ich freue mich!"
       />
 
       <Section bg="bone">
