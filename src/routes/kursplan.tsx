@@ -178,7 +178,8 @@ function KursplanPage() {
         </Reveal>
       </Section>
 
-      <Section bg="sand">
+      <Section bg="bone">
+
         <Reveal className="mb-8 flex flex-wrap items-end justify-between gap-6">
           <div>
             <Eyebrow>Online Buchen</Eyebrow>
