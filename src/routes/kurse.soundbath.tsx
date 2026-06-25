@@ -22,7 +22,7 @@ const FAQ = [
     a: "Du machst es Dir im Liegen bequem, während Klangschalen, Gongs und sanfte Vibrationen einen Raum der Tiefenentspannung schaffen – wie eine Massage für die Seele.",
   },
   {
-    q: "Wo findet das Soundbath in Stuttgart statt?",
+    q: "Wo findet die Soundbath Meditation statt?",
     a: "Im Studio von Yoga mit Isabell im Bürger- und Siedlerhaus, Zuckerbergstraße 99, Stuttgart-Steinhaldenfeld.",
   },
   {
