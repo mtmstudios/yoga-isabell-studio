@@ -104,14 +104,26 @@ function BeckenbodenPage() {
       />
 
       <Section bg="bone">
-        <Reveal>
-          <p className="max-w-[42rem] text-[1.08rem] leading-[1.75] text-taupe">
-            „Pelvic Love" ist achtsames Beckenbodentraining für mehr Kraft,
-            Beweglichkeit, Spürbewusstsein und innere Verbindung. In ruhigen,
-            bewussten Einheiten lernst Du Deinen Beckenboden neu kennen — als
-            zentralen Ort von Stabilität, Atem und Lebendigkeit.
-          </p>
-        </Reveal>
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-20">
+          <Reveal>
+            <p className="max-w-[42rem] text-[1.08rem] leading-[1.75] text-taupe">
+              „Pelvic Love" ist achtsames Beckenbodentraining für mehr Kraft,
+              Beweglichkeit, Spürbewusstsein und innere Verbindung. In ruhigen,
+              bewussten Einheiten lernst Du Deinen Beckenboden neu kennen — als
+              zentralen Ort von Stabilität, Atem und Lebendigkeit.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1} className="relative mx-auto w-full max-w-[26rem]">
+            <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
+            <div className="radius-organic overflow-hidden">
+              <Photo
+                src="/images/beckenboden-yoga.jpg"
+                alt="Frau in achtsamer Beckenboden-Yoga-Praxis auf der Matte"
+                aspect="aspect-[4/5]"
+              />
+            </div>
+          </Reveal>
+        </div>
       </Section>
 
       <Section bg="sand">
