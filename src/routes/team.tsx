@@ -41,7 +41,7 @@ const TEAM: Member[] = [
     name: "Stephie",
     role: "Yoga Flow am Abend · Beckenboden Yoga",
     bio: "Stephie bringt Achtsamkeit und Tiefe in jede Stunde, mit einem feinen Gespür für den weiblichen Körper.",
-    quote: '„Dein Beckenboden darf weich und stark zugleich sein."',
+    quote: '„Yoga ist der Weg in die Tiefe des Herzens und des persönlichen Wachstums."',
     grid: "md:col-span-5 md:row-span-2",
     aspect: "aspect-[4/5]",
     photo: "/images/team-stephie.jpg",
