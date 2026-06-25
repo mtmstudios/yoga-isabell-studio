@@ -20,20 +20,20 @@ type Course = {
 
 const COURSES: Course[] = [
   {
-    name: "Rückenyoga",
-    blurb: "Kraft, & Beweglichkeit für Deinen Rücken, Verspannungen lösen.",
-    time: "Mo · 19:00 – 20:15",
-    photo: "/images/isabell-updog.jpg",
-    alt: "Isabell im heraufschauenden Hund — Arbeit für den Rücken",
-    grid: "md:col-span-7 md:row-span-2",
-    aspect: "aspect-[4/5]",
-  },
-  {
     name: "Vinyasa Yoga für Fortgeschrittene",
     blurb: "Fließend, kraftvoll, dynamisch.",
     time: "Mi · 18:30 – 19:45",
     photo: "/images/isabell-angle.jpg",
     alt: "Isabell im seitlichen Winkel — kraftvoll und konzentriert",
+    grid: "md:col-span-7 md:row-span-2",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    name: "Rückenyoga",
+    blurb: "Kraft, & Beweglichkeit für Deinen Rücken, Verspannungen lösen.",
+    time: "Mo · 19:00 – 20:15",
+    photo: "/images/isabell-updog.jpg",
+    alt: "Isabell im heraufschauenden Hund — Arbeit für den Rücken",
     grid: "md:col-span-5",
     aspect: "aspect-[5/4]",
   },
