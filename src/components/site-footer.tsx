@@ -6,7 +6,7 @@ const NAV = [
   { label: "Kurse", href: "/kursplan" },
   { label: "Über mich", href: "/ueber-mich" },
   { label: "Team", href: "/team" },
-  { label: "Studio", href: "/studio" },
+  
   { label: "Preise", href: "/preise" },
   { label: "Retreat", href: "/retreat" },
   { label: "Kontakt", href: "/kontakt" },
