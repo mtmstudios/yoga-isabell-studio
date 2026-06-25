@@ -37,7 +37,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
     items: [
       { time: "ab 14:30", text: "Individuelle Anreise · lockeres Get-Together bei Kaffee, Tee & Snacks" },
       { time: "17:00", text: <>Vinyasa Yoga <em className="font-display not-italic text-ink">Ankommen & Auftanken</em> mit Isabell (alle Level)</> },
-      { time: "18:30", text: "Gemeinsames Abendessen in Buffet-Form (vegetarisch)" },
+      { time: "18:30", text: "Gemeinsames Abendessen in Buffet-Form" },
       { time: "21:00", text: <><em className="font-display not-italic text-ink">Mondgrüße</em> mit Alina (alle Level, 30 Minuten)</> },
     ],
   },
@@ -46,11 +46,11 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
     items: [
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
       { time: "08:00", text: <><em className="font-display not-italic text-ink">Vinyasa Yoga meets Breathwork</em> mit Alina (alle Level)</> },
-      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
+      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet" },
       { text: "Zeit zur freien Verfügung — Umgebung erkunden oder Seele baumeln lassen" },
       { time: "16:00", text: <><em className="font-display not-italic text-ink">Yoga Music Flow</em> mit Isabell (für Fortgeschrittene)</> },
       { time: "17:30", text: <><em className="font-display not-italic text-ink">Yoga meets Thai Yoga Massage</em> mit Alina (alle Level)</> },
-      { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls, vegetarisch)" },
+      { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls)" },
       { text: "Im Anschluss lassen wir den Abend gemeinsam ausklingen" },
     ],
   },
@@ -59,7 +59,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
     items: [
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
       { time: "08:00", text: <><em className="font-display not-italic text-ink">Flow & Glow — Yoga meets Face Yoga</em> mit Alina & Isabell (alle Level)</> },
-      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
+      { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet" },
       { time: "13:00", text: "Check-out" },
     ],
   },
@@ -212,7 +212,7 @@ function RetreatPage() {
           <Reveal delay={0.1}>
             <Eyebrow>Verpflegung</Eyebrow>
             <p className="mt-6 text-[1.02rem] leading-[1.75] text-taupe">
-              Halbpension, vegetarisch / vegan, frisch zubereitet. Eine 24h
+              Halbpension / vegan, frisch zubereitet. Eine 24h
               Tee- und Kaffeebar steht Dir zur Verfügung.
             </p>
           </Reveal>
