@@ -113,6 +113,19 @@ function AnfaengerPage() {
         </div>
       </Section>
 
+      <Section bg="bone">
+        <Reveal>
+          <div className="mx-auto max-w-[40rem]">
+            <CourseSignupForm
+              course="anfaengerkurs"
+              title="Sei dabei beim nächsten Anfängerkurs"
+              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Anfängerkurs startet."
+              successMessage="Danke! Wir melden uns, sobald der nächste Anfängerkurs startet."
+            />
+          </div>
+        </Reveal>
+      </Section>
+
       <Faq items={FAQ} bg="sand" />
     </>
   );
