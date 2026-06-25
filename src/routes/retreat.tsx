@@ -243,31 +243,31 @@ function RetreatPage() {
           </h2>
         </Reveal>
 
-        <ol className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="mt-16 mx-auto max-w-3xl space-y-20">
           {SCHEDULE.map((d, i) => (
             <Reveal key={d.day} delay={0.06 * i} as="div">
-              <li className="relative border-t border-ink/15 pt-6">
-                <span className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
+              <div className="flex items-baseline gap-6">
+                <h3 className="font-display text-[clamp(1.5rem,2.4vw,2rem)] text-ink">
                   {d.day}
-                </span>
-                <ul className="mt-4 space-y-3 text-taupe">
-                  {d.items.map((it, j) => (
-                    <li key={`${it.time ?? "x"}-${j}`} className="flex gap-3">
-                      {it.time ? (
-                        <span className="mt-[2px] w-14 shrink-0 text-[0.72rem] uppercase tracking-[0.18em] text-clay">
-                          {it.time}
-                        </span>
-                      ) : (
-                        <span aria-hidden className="mt-2 h-px w-5 shrink-0 bg-clay/60" />
-                      )}
-                      <span>{it.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+                </h3>
+                <span aria-hidden className="h-px flex-1 bg-ink/10" />
+              </div>
+              <ul className="mt-8 divide-y divide-ink/10">
+                {d.items.map((it, j) => (
+                  <li
+                    key={`${it.time ?? "x"}-${j}`}
+                    className="grid grid-cols-[5rem_1fr] gap-6 py-4 text-taupe sm:grid-cols-[6rem_1fr] sm:gap-8"
+                  >
+                    <span className="pt-[2px] text-[0.72rem] uppercase tracking-[0.2em] text-clay">
+                      {it.time ?? ""}
+                    </span>
+                    <span className="leading-[1.7]">{it.text}</span>
+                  </li>
+                ))}
+              </ul>
             </Reveal>
           ))}
-        </ol>
+        </div>
         <p className="mt-10 text-[0.78rem] uppercase tracking-[0.22em] text-taupe/70">
           (Ablauf unter Vorbehalt)
         </p>
