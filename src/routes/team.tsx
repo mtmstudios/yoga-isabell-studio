@@ -49,7 +49,7 @@ const TEAM: Member[] = [
   {
     name: "Lara",
     role: "Rückenyoga",
-    bio: "Lara unterrichtet mit Klarheit und einem feinen Blick für den Rücken — präzise, achtsam, kraftvoll.",
+    bio: "Lara unterrichtet mit Klarheit & Achtsamkeit und einem feinen Blick für den Rücken.",
     quote: '„Ein starker Rücken trägt Dich durchs Leben."',
     grid: "md:col-span-4",
     aspect: "aspect-[5/4]",
