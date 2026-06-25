@@ -47,7 +47,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
       { time: "08:00", text: <><em className="font-display not-italic text-ink">Vinyasa Yoga meets Breathwork</em> mit Alina (alle Level)</> },
       { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet" },
-      { text: "Zeit zur freien Verfügung — Umgebung erkunden oder Seele baumeln lassen" },
+      { text: "Zeit zur freien Verfügung, um die Umgebung zu erkunden oder Seele baumeln lassen" },
       { time: "16:00", text: <><em className="font-display not-italic text-ink">Yoga Music Flow</em> mit Isabell (für Fortgeschrittene)</> },
       { time: "17:30", text: <><em className="font-display not-italic text-ink">Yoga meets Thai Yoga Massage</em> mit Alina (alle Level)</> },
       { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls)" },
