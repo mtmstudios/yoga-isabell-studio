@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
@@ -7,6 +8,11 @@ import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { ExternalLink, Loader2 } from "lucide-react";
+
+const EVERSPORTS_URL =
+  "https://www.eversports.de/org/widget/af46cfd1-5707-4169-bbf6-1037847bafa6?venueId=3cf8ca96-4a54-4de0-88a0-7af7df47b48e";
+
 
 const FAQ = [
   {
@@ -116,7 +122,9 @@ const COURSES: Course[] = [
 ];
 
 function KursplanPage() {
+  const [loaded, setLoaded] = useState(false);
   return (
+
     <>
       <PageHeader
         eyebrow="Wochenplan"
@@ -170,10 +178,53 @@ function KursplanPage() {
         </Reveal>
       </Section>
 
+      <Section bg="bone">
+
+        <Reveal className="mb-8 flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <Eyebrow>Online Buchen</Eyebrow>
+            <DisplayHeading size="h2" className="mt-6">
+              Kursplan <em>live</em>.
+            </DisplayHeading>
+          </div>
+          <CTA asChild variant="ghost" size="sm">
+            <a href={EVERSPORTS_URL} target="_blank" rel="noreferrer">
+              In neuem Tab öffnen
+              <ExternalLink size={14} strokeWidth={1.4} />
+            </a>
+          </CTA>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="relative overflow-hidden rounded-md border border-ink/10 bg-bone/40">
+            {!loaded && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-bone/60 backdrop-blur-sm">
+                <div className="flex items-center gap-3 text-taupe">
+                  <Loader2 size={18} className="animate-spin text-clay" />
+                  <span className="text-[0.85rem] uppercase tracking-[0.22em]">
+                    Kursplan wird geladen…
+                  </span>
+                </div>
+              </div>
+            )}
+            <iframe
+              src={EVERSPORTS_URL}
+              title="Eversports Kursplan — Yoga mit Isabell"
+              className="block h-[min(82vh,1100px)] w-full border-0"
+              loading="lazy"
+              onLoad={() => setLoaded(true)}
+              allow="payment"
+            />
+          </div>
+        </Reveal>
+      </Section>
+
       <Section bg="sand">
+
         <Reveal>
           <Eyebrow>Im Detail</Eyebrow>
         </Reveal>
+
         <Reveal delay={0.1}>
           <DisplayHeading size="h2" className="mt-6">
             Die Kurse.
