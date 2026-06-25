@@ -212,11 +212,11 @@ function RetreatPage() {
           <Reveal delay={0.1}>
             <Eyebrow>Verpflegung</Eyebrow>
             <p className="mt-6 text-[1.02rem] leading-[1.75] text-taupe">
-              Halbpension, frisch zubereitet — und eine 24h Tee- und Kaffeebar
-              steht Dir zur Verfügung.
+              Halbpension
             </p>
             <ul className="mt-6 space-y-2 text-[0.98rem] leading-[1.7] text-taupe">
               {[
+                "Frisch zubereitet",
                 "Vegetarisch / vegan",
                 "Saisonale Zutaten",
                 "24h Tee- und Kaffeebar",
