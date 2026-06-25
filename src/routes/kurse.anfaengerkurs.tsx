@@ -1,10 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
