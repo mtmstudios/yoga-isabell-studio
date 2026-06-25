@@ -122,7 +122,9 @@ const COURSES: Course[] = [
 ];
 
 function KursplanPage() {
+  const [loaded, setLoaded] = useState(false);
   return (
+
     <>
       <PageHeader
         eyebrow="Wochenplan"
