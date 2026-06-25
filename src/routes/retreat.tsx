@@ -368,6 +368,15 @@ function RetreatPage() {
               className="radius-organic"
             />
           </Reveal>
+          {GALLERY.map((g, i) => (
+            <Reveal
+              key={g.src}
+              delay={0.05 * (i % 4)}
+              className={g.span}
+            >
+              <Photo src={g.src} alt={g.alt} aspect={g.aspect} className="radius-organic" />
+            </Reveal>
+          ))}
         </div>
       </Section>
     </>
