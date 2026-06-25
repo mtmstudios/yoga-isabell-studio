@@ -22,18 +22,18 @@ import kuecheAsset from "@/assets/retreat-gallery/retreat-kueche.jpg.asset.json"
 import loungeKaminAsset from "@/assets/retreat-gallery/retreat-lounge-kamin.jpg.asset.json";
 import terrassePanoramaAsset from "@/assets/retreat-gallery/retreat-terrasse-panorama.jpg.asset.json";
 
-const GALLERY: { src: string; alt: string; aspect: string; span: string }[] = [
-  { src: yogaraumAsset.url, alt: "Yoga-Raum mit Panoramafenstern und Matten", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-5" },
-  { src: fensterblickAsset.url, alt: "Blick aus dem Panoramafenster über die Schwarzwaldhügel", aspect: "aspect-[4/3]", span: "col-span-2 md:col-span-7" },
-  { src: terrassePanoramaAsset.url, alt: "Sonnige Terrasse mit Liegestühlen und weitem Blick über den Schwarzwald", aspect: "aspect-[16/9]", span: "col-span-2 md:col-span-12" },
-  { src: essbereichAsset.url, alt: "Essbereich mit langem Holztisch und Blick ins Tal", aspect: "aspect-[16/10]", span: "col-span-2 md:col-span-7" },
-  { src: zimmerAsset.url, alt: "Helles Zimmer mit Doppelbett und Balkonblick", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-5" },
-  { src: loungeKaminAsset.url, alt: "Großzügige Lounge mit Kaminbereich und Holzboden", aspect: "aspect-[3/2]", span: "col-span-2 md:col-span-8" },
-  { src: kuecheAsset.url, alt: "Helle, moderne Küche mit Kochinsel und Blick nach draußen", aspect: "aspect-[3/2]", span: "col-span-2 md:col-span-4" },
-  { src: yogaChildsposeAsset.url, alt: "Gruppe in Child's Pose im Yoga-Raum", aspect: "aspect-[4/5]", span: "col-span-1 md:col-span-4" },
-  { src: fruehstuecksraumAsset.url, alt: "Eingedeckter Frühstückstisch mit Buffet im Hintergrund", aspect: "aspect-[4/5]", span: "col-span-1 md:col-span-4" },
-  { src: fruehstuecksbuffetAsset.url, alt: "Frühstücksbuffet mit Käse, Lachs, Müsli und frischem Gemüse", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-4" },
-  { src: stammtischAsset.url, alt: "Schwarzwälder Stammtisch mit Holzbank und traditionellen Leuchten", aspect: "aspect-[4/5]", span: "col-span-2 md:col-span-12" },
+const GALLERY: { src: string; alt: string }[] = [
+  { src: yogaraumAsset.url, alt: "Yoga-Raum mit Panoramafenstern und Matten" },
+  { src: fensterblickAsset.url, alt: "Blick aus dem Panoramafenster über die Schwarzwaldhügel" },
+  { src: terrassePanoramaAsset.url, alt: "Sonnige Terrasse mit Liegestühlen und weitem Blick über den Schwarzwald" },
+  { src: essbereichAsset.url, alt: "Essbereich mit langem Holztisch und Blick ins Tal" },
+  { src: zimmerAsset.url, alt: "Helles Zimmer mit Doppelbett und Balkonblick" },
+  { src: loungeKaminAsset.url, alt: "Großzügige Lounge mit Kaminbereich und Holzboden" },
+  { src: kuecheAsset.url, alt: "Helle, moderne Küche mit Kochinsel und Blick nach draußen" },
+  { src: yogaChildsposeAsset.url, alt: "Gruppe in Child's Pose im Yoga-Raum" },
+  { src: fruehstuecksraumAsset.url, alt: "Eingedeckter Frühstückstisch mit Buffet im Hintergrund" },
+  { src: fruehstuecksbuffetAsset.url, alt: "Frühstücksbuffet mit Käse, Lachs, Müsli und frischem Gemüse" },
+  { src: stammtischAsset.url, alt: "Schwarzwälder Stammtisch mit Holzbank und traditionellen Leuchten" },
 ];
 
 export const Route = createFileRoute("/retreat")({
@@ -353,54 +353,15 @@ function RetreatPage() {
           </DisplayHeading>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-12 md:gap-5">
-          <Reveal className="col-span-2 md:col-span-7">
-            <Photo
-              src="/images/retreat-haus.jpg"
-              alt="Retreat-Haus Saiger Lounge von außen, mitten im Schwarzwald"
-              aspect="aspect-[16/10]"
-              className="radius-organic"
-            />
-          </Reveal>
-          <Reveal delay={0.05} className="col-span-2 md:col-span-5">
-            <Photo
-              src="/images/retreat-details.jpg"
-              alt="Liebevolles Detail im Retreat-Haus"
-              aspect="aspect-[4/5]"
-              className="radius-organic"
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="col-span-1 md:col-span-4">
-            <Photo
-              src="/images/retreat-kamin.jpg"
-              alt="Offener Kaminbereich zum Entspannen"
-              aspect="aspect-[4/3]"
-              className="radius-organic"
-            />
-          </Reveal>
-          <Reveal delay={0.15} className="col-span-1 md:col-span-4">
-            <Photo
-              src="/images/retreat-kueche.jpg"
-              alt="Gemütlicher Essbereich mit vegetarischer Küche"
-              aspect="aspect-[4/3]"
-              className="radius-organic"
-            />
-          </Reveal>
-          <Reveal delay={0.2} className="col-span-2 md:col-span-4">
-            <Photo
-              src="/images/retreat-terrasse.jpg"
-              alt="Terrasse mit Panoramablick über die Hügel des Schwarzwalds"
-              aspect="aspect-[4/3]"
-              className="radius-organic"
-            />
-          </Reveal>
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
           {GALLERY.map((g, i) => (
-            <Reveal
-              key={g.src}
-              delay={0.05 * (i % 4)}
-              className={g.span}
-            >
-              <Photo src={g.src} alt={g.alt} aspect={g.aspect} className="radius-organic" />
+            <Reveal key={g.src} delay={0.05 * (i % 3)}>
+              <Photo
+                src={g.src}
+                alt={g.alt}
+                aspect="aspect-[4/5]"
+                className="radius-organic"
+              />
             </Reveal>
           ))}
         </div>
