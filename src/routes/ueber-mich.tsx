@@ -106,15 +106,6 @@ function UeberMichPage() {
               </Paragraph>
             </div>
 
-            <Reveal delay={0.15}>
-              <blockquote className="my-6 border-l-2 border-clay pl-6 font-display text-[clamp(1.4rem,2.6vw,2rem)] leading-[1.2] text-ink [text-wrap:balance]">
-                „Hey, sei nicht so hart zu dir selbst — es ist ok wenn du
-                fällst."
-                <footer className="mt-3 font-sans text-[0.78rem] uppercase tracking-[0.22em] text-taupe/80">
-                  Andreas Bourani
-                </footer>
-              </blockquote>
-            </Reveal>
 
             <div className="flex flex-col gap-5">
               <ChapterHeading>Inspiration für den Alltag</ChapterHeading>
