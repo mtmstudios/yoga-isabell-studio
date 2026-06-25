@@ -74,8 +74,8 @@ function KinderyogaPage() {
                 In unserem Kinderyoga tauchen die Kleinen gemeinsam mit ihrer
                 Begleitperson spielerisch in die Welt des Yoga ein. Geschichten,
                 Tier-Asanas, kleine Atemspiele und ruhige Momente wechseln sich
-                ab. Es geht um Spaß, Bewegung und das gemeinsame Erleben — nicht
-                um perfekte Posen.
+                ab. Es geht um Spaß, Bewegung und das gemeinsame Erleben, ganz
+                ohne Leistungsdruck. Für Kinder von 3 – 6 Jahre mit Begleitperson.
               </p>
             </Reveal>
 
