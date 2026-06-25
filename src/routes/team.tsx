@@ -86,7 +86,7 @@ const TEAM: Member[] = [
     name: "Lena",
     role: "Vertretung",
     bio: "Lena springt mit Herz und Erfahrung ein — verlässlich, warm und mit einem feinen Gespür für die Gruppe.",
-    quote: '„Ich liebe es, Menschen zurück in ihren Körper zu begleiten."',
+    quote: '„Your body, your Yoga. Jede:r soll sich bei der Praxis wohl fühlen!"',
     grid: "md:col-span-12 lg:col-span-8",
     aspect: "aspect-[16/9]",
     photo: "/images/team-lena.jpg",
