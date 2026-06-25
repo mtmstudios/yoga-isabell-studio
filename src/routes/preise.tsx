@@ -21,7 +21,7 @@ const FAQ = [
   },
   {
     q: "Wie kann ich bezahlen?",
-    a: "Per Überweisung (Infos im Buchungsportal) oder vor Ort.",
+    a: "Überweisung oder in bar vor Ort.",
   },
   {
     q: "Gibt es Gutscheine?",
@@ -131,7 +131,7 @@ function PreisePage() {
                   Zahlung
                 </p>
                 <p className="mt-3 text-taupe">
-                  Per Überweisung (Infos im Buchungsportal) oder vor Ort.
+                  Überweisung oder in bar vor Ort.
                 </p>
               </div>
             </div>
