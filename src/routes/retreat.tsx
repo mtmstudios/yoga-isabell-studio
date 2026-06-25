@@ -170,7 +170,7 @@ function RetreatPage() {
 
         <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {[
-            { title: "6 abwechslungsreiche Yoga-Einheiten", body: "Geballte Yoga-Expertise im Schwarzwald." },
+            { title: "6 abwechslungsreiche Yoga-Einheiten", body: "Zwei erfahrene Lehrerinnen, ein gemeinsamer Raum." },
             { title: "Vinyasa & ruhige Praxis", body: "Kraftvolle Flows und regenerierende Sequenzen im Wechsel." },
             { title: "Meditation & Atemarbeit", body: "Sanfte Anker für Körper und Geist." },
             { title: "Freie Zeit", body: "Ausreichend Raum zwischen den Sessions." },
