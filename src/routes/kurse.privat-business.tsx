@@ -72,8 +72,8 @@ function PrivatBusinessPage() {
           <Reveal className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
               <Photo
-                src="/images/isabell-angle.jpg"
-                alt="Isabell in einer Yoga-Haltung im ruhigen Studio"
+                src="/images/isabell-assist.jpg"
+                alt="Isabell assistiert einer Schülerin in einer Yoga-Haltung"
                 aspect="aspect-[4/5]"
               />
             </div>
