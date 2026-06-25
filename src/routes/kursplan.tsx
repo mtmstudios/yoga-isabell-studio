@@ -111,7 +111,7 @@ const COURSES: Course[] = [
     name: "Yin Yoga",
     badge: "1. + 3. Do · 18:00 – 19:15",
     photo: "/images/isabell-seated.jpg",
-    text: "Langsam, beharrlich, meditativ. Die Muskeln ruhen, gezielte Arbeit mit Faszien, Bindegewebe und Gelenken. Posen mehrere Minuten gehalten, Fokus auf der Atmung. Für alle Level.",
+    text: "Langsam, beharrlich, meditativ. Die Muskeln ruhen dabei völlig, damit die gezielte Arbeit mit dem Fasziensystem, dem Bindegewebe und den Gelenken möglich ist. Die einzelnen Posen werden mehrere Minuten lang gehalten, während der Fokus auf der Atmung liegt. Für alle Level geeignet.",
   },
   {
     name: "Yoga Sanft",
