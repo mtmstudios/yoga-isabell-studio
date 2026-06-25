@@ -93,7 +93,7 @@ const COURSES: Course[] = [
     name: "Vinyasa Yoga für Fortgeschrittene",
     badge: "Mi · 18:30 – 19:45",
     photo: "/images/isabell-warrior.jpg",
-    text: "Wir suchen die Balance zwischen Bewegung und Stille.",
+    text: "Wir fließen durch klassische und kreative Flows — fließend, kraftvoll und dynamisch, aber auch entspannend. Wir suchen die Balance zwischen Bewegung und Stille. Geeignet für alle Yoginis und Yogis mit Vorkenntnissen.",
   },
   {
     name: "Vinyasa Yoga für Anfänger",
