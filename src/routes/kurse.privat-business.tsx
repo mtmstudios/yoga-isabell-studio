@@ -169,8 +169,8 @@ function PrivatBusinessPage() {
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[28rem]">
             <div className="radius-organic overflow-hidden">
               <Photo
-                src="/images/class-2.jpg"
-                alt="Yoga in der Gruppe — Business Yoga für Teams"
+                src="/images/business-yoga.jpg"
+                alt="Business Yoga — Team in entspannter Seitdehnung im Büro"
                 aspect="aspect-[4/5]"
               />
             </div>
