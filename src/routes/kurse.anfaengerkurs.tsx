@@ -89,9 +89,8 @@ function AnfaengerPage() {
                 kommt zur Ruhe.
               </p>
               <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
-                Auch Yoginis und Yogis mit Vorkenntnissen sind herzlich
-                willkommen, um die Grundlagen zu festigen und die Technik zu
-                verfeinern.
+                Auch Menschen mit Vorkenntnissen sind herzlich willkommen, um
+                die Grundlagen zu festigen und die Technik zu verfeinern.
               </p>
               <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
                 Wir üben in kleinen Gruppen von maximal 12 TeilnehmerInnen, so
