@@ -31,7 +31,7 @@ export const Route = createFileRoute("/retreat")({
   component: RetreatPage,
 });
 
-const SCHEDULE: { day: string; items: { time?: string; text: React.ReactNode }[] }[] = [
+const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] = [
   {
     day: "Freitag",
     items: [
