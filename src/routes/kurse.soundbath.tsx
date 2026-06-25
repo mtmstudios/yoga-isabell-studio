@@ -102,23 +102,21 @@ function SoundbathPage() {
                 gemütlicher zu machen.
               </p>
             </Reveal>
-            <Reveal delay={0.15}>
-              <div className="mt-12 rounded-md border border-ink/10 bg-sand/50 p-7">
-                <p className="font-display text-[1.3rem] text-ink">
-                  Neuer Termin folgt.
-                </p>
-                <p className="mt-3 text-taupe">
-                  Melde Dich für den Newsletter an, wenn Du beim nächsten Soundbath dabei sein möchtest.
-                </p>
-                <div className="mt-6">
-                  <CTA asChild variant="primary">
-                    <Link to="/kontakt">Zum Newsletter</Link>
-                  </CTA>
-                </div>
-              </div>
-            </Reveal>
           </div>
         </div>
+      </Section>
+
+      <Section bg="bone">
+        <Reveal>
+          <div className="mx-auto max-w-[40rem]">
+            <CourseSignupForm
+              course="soundbath"
+              title="Sei beim nächsten Soundbath dabei"
+              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Soundbath-Termin steht."
+              successMessage="Danke! Wir melden uns, sobald der nächste Soundbath-Termin steht."
+            />
+          </div>
+        </Reveal>
       </Section>
 
       <Faq items={FAQ} bg="sand" />
