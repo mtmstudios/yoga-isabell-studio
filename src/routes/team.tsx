@@ -50,7 +50,7 @@ const TEAM: Member[] = [
     name: "Lara",
     role: "Rückenyoga",
     bio: "Lara unterrichtet mit Klarheit & Achtsamkeit und einem feinen Blick für den Rücken.",
-    quote: '„Ein starker Rücken trägt Dich durchs Leben."',
+    quote: '„Yoga ist die Reise des Selbst, durch sich selbst, zu sich selbst." (Bhagavad Gita)',
     grid: "md:col-span-4",
     aspect: "aspect-[5/4]",
     photo: "/images/team-lara.jpg",
