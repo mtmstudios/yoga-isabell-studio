@@ -59,7 +59,7 @@ const TEAM: Member[] = [
     name: "Adrian",
     role: "Yang & Yin Yoga · Vertretung",
     bio: "Adrian verbindet kraftvolle Yang-Flows mit ruhigen Yin-Sequenzen.",
-    quote: '„Im Yoga lernt man, dass man sich auch in unkomfortablen Positionen entspannen und ausruhen kann. Man lernt, dass der Atem dein wichtigster Begleiter in schwierigen Lebenssituationen ist."',
+    quote: '„Im Yoga lernt man, dass man sich auch in unkomfortablen Positionen entspannen und ausruhen kann."',
     grid: "md:col-span-3",
     aspect: "aspect-[3/4]",
     photo: "/images/team-adrian.jpg",
