@@ -125,6 +125,22 @@ function UeberMichPage() {
                 warum ich das mache.
               </Paragraph>
             </div>
+
+            <div className="flex flex-col gap-5">
+              <ChapterHeading>Komm vorbei</ChapterHeading>
+              <Paragraph>
+                Unsere Kurse finden bewusst in kleinen Gruppen statt, damit wir
+                jedem individuell gerecht werden können. Komm zum Schnuppern
+                vorbei und lass Dich von der Kraft des Yoga überraschen.
+              </Paragraph>
+              <Paragraph>
+                Und wer weiß, vielleicht begrüßt Du dann auch mal jemanden im
+                Kopfstand! :-)
+              </Paragraph>
+              <p className="mt-2 font-script text-[clamp(1.6rem,2.4vw,2rem)] leading-none text-clay">
+                Deine Isabell
+              </p>
+            </div>
           </div>
         </div>
       </Section>
