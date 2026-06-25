@@ -1,4 +1,3 @@
-import { motion, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 const DEFAULT_WORDS = [
@@ -20,10 +19,13 @@ type Props = {
 
 /**
  * Sehr langsames Laufband in Fraunces — trennendes Band zwischen Sektionen.
- * Pausiert bei prefers-reduced-motion.
+ * CSS-Keyframe-Animation (statt Motion/WAAPI) für verlässliche %-Translation
+ * in Chrome, Firefox, Safari und Mobile Safari. Pausiert automatisch bei
+ * prefers-reduced-motion (siehe styles.css).
  */
 export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Props) {
-  const reduced = useReducedMotion();
+  // Dreifache Sequenz → endlose Schleife ohne sichtbaren Sprung,
+  // weil wir um exakt -33.333% (= eine Sequenzbreite) translatieren.
   const items = [...words, ...words, ...words];
 
   return (
@@ -38,14 +40,9 @@ export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Pro
       <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-bone to-transparent z-10" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-bone to-transparent z-10" />
 
-      <motion.div
-        className="flex whitespace-nowrap will-change-transform"
-        animate={reduced ? undefined : { x: ["0%", "-33.333%"] }}
-        transition={{
-          duration,
-          ease: "linear",
-          repeat: Infinity,
-        }}
+      <div
+        className="marquee-track flex whitespace-nowrap will-change-transform"
+        style={{ animationDuration: `${duration}s` }}
       >
         {items.map((w, i) => (
           <span
@@ -56,7 +53,7 @@ export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Pro
             <span className="text-clay/60 text-[0.7em]">·</span>
           </span>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
