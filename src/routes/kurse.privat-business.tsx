@@ -11,7 +11,7 @@ import { courseSchema } from "@/lib/site";
 const FAQ = [
   {
     q: "Für wen eignet sich eine Privatstunde?",
-    a: "Für alle: zum ganz privaten Reinschnuppern, zum Verfeinern Deiner Technik als Fortgeschrittene:r oder einfach, um Dir etwas Besonderes zu gönnen.",
+    a: "Für alle. Zum Schnuppern, zum Verfeinern Deiner Technik als Fortgeschrittene:r oder einfach, um Dir etwas Besonderes zu gönnen.",
   },
   {
     q: "Was kostet eine Privatstunde?",
