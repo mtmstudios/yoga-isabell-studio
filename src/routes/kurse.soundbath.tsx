@@ -112,7 +112,7 @@ function SoundbathPage() {
                 </p>
                 <div className="mt-6">
                   <CTA asChild variant="primary">
-                    <Link to="/" hash="newsletter">Zum Newsletter</Link>
+                    <Link to="/kontakt">Zum Newsletter</Link>
                   </CTA>
                 </div>
               </div>
