@@ -179,9 +179,50 @@ function KursplanPage() {
       </Section>
 
       <Section bg="sand">
+        <Reveal className="mb-8 flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <Eyebrow>Online Buchen</Eyebrow>
+            <DisplayHeading size="h2" className="mt-6">
+              Kursplan <em>live</em>.
+            </DisplayHeading>
+          </div>
+          <CTA asChild variant="ghost" size="sm">
+            <a href={EVERSPORTS_URL} target="_blank" rel="noreferrer">
+              In neuem Tab öffnen
+              <ExternalLink size={14} strokeWidth={1.4} />
+            </a>
+          </CTA>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="relative overflow-hidden rounded-md border border-ink/10 bg-bone/40">
+            {!loaded && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-bone/60 backdrop-blur-sm">
+                <div className="flex items-center gap-3 text-taupe">
+                  <Loader2 size={18} className="animate-spin text-clay" />
+                  <span className="text-[0.85rem] uppercase tracking-[0.22em]">
+                    Kursplan wird geladen…
+                  </span>
+                </div>
+              </div>
+            )}
+            <iframe
+              src={EVERSPORTS_URL}
+              title="Eversports Kursplan — Yoga mit Isabell"
+              className="block h-[min(82vh,1100px)] w-full border-0"
+              loading="lazy"
+              onLoad={() => setLoaded(true)}
+              allow="payment"
+            />
+          </div>
+        </Reveal>
+      </Section>
+
+      <Section bg="bone">
         <Reveal>
           <Eyebrow>Im Detail</Eyebrow>
         </Reveal>
+
         <Reveal delay={0.1}>
           <DisplayHeading size="h2" className="mt-6">
             Die Kurse.
