@@ -212,9 +212,21 @@ function RetreatPage() {
           <Reveal delay={0.1}>
             <Eyebrow>Verpflegung</Eyebrow>
             <p className="mt-6 text-[1.02rem] leading-[1.75] text-taupe">
-              Halbpension / vegan, frisch zubereitet. Eine 24h
-              Tee- und Kaffeebar steht Dir zur Verfügung.
+              Halbpension, frisch zubereitet — und eine 24h Tee- und Kaffeebar
+              steht Dir zur Verfügung.
             </p>
+            <ul className="mt-6 space-y-2 text-[0.98rem] leading-[1.7] text-taupe">
+              {[
+                "Vegetarisch / vegan",
+                "Saisonale Zutaten",
+                "24h Tee- und Kaffeebar",
+              ].map((f) => (
+                <li key={f} className="flex gap-3">
+                  <span aria-hidden className="mt-[0.7rem] h-px w-4 shrink-0 bg-clay/60" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </Section>
