@@ -4,6 +4,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { DisplayHeading } from "@/components/display-heading";
+import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
 import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
