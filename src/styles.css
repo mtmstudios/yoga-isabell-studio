@@ -211,3 +211,14 @@
     filter: none !important;
   }
 }
+
+/* Marquee laufband */
+@keyframes marquee-x {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-33.3333%, 0, 0); }
+}
+.marquee-track {
+  animation: marquee-x linear infinite;
+  backface-visibility: hidden;
+}
+
