@@ -58,7 +58,7 @@ const TEAM: Member[] = [
   {
     name: "Adrian",
     role: "Yang & Yin Yoga · Vertretung",
-    bio: "Adrian verbindet kraftvolle Yang-Flows mit ruhigen Yin-Sequenzen — präzise Ansagen, freier Atem.",
+    bio: "Adrian verbindet kraftvolle Yang-Flows mit ruhigen Yin-Sequenzen.",
     quote: '„Bewegung ist Gebet."',
     grid: "md:col-span-3",
     aspect: "aspect-[3/4]",
