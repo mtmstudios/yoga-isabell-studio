@@ -117,7 +117,7 @@ const COURSES: Course[] = [
     name: "Yoga Sanft",
     badge: "Fr · 9:30 – 10:45",
     photo: "/images/pose-1.jpg",
-    text: "Für alle, die ein sanftes Yoga mögen, auch für Anfänger:innen. Grundlagen der Asanas, Atemübungen, leichte Flows und Entspannung.",
+    text: "Für alle, die ein sanftes Yoga mögen, auch für AnfängerInnen geeignet. Hier lernst Du die Grundlagen der Asanas, Atemübungen, leichte Flows und natürlich Entspannung. Für alle Level geeignet.",
   },
 ];
 
