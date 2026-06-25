@@ -52,7 +52,7 @@ const TEAM: Member[] = [
     bio: "Lara unterrichtet mit Klarheit & Achtsamkeit und einem feinen Blick für den Rücken.",
     quote: '„Yoga ist die Reise des Selbst, durch sich selbst, zu sich selbst." (Bhagavad Gita)',
     grid: "md:col-span-4",
-    aspect: "aspect-[5/4]",
+    aspect: "aspect-[4/5]",
     photo: "/images/team-lara.jpg",
   },
   {
@@ -87,8 +87,8 @@ const TEAM: Member[] = [
     role: "Vertretung",
     bio: "Lena springt mit Herz und Erfahrung ein — verlässlich, warm und mit einem feinen Gespür für die Gruppe.",
     quote: '„Your body, your Yoga. Jede:r soll sich bei der Praxis wohl fühlen!"',
-    grid: "md:col-span-12 lg:col-span-8",
-    aspect: "aspect-[16/9]",
+    grid: "md:col-span-4",
+    aspect: "aspect-[4/5]",
     photo: "/images/team-lena.jpg",
   },
 ];
