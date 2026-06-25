@@ -220,7 +220,8 @@ function KursplanPage() {
       </Section>
 
 
-      <Section bg="sand">
+      <Section bg="bone">
+
 
         <Reveal>
           <Eyebrow>Im Detail</Eyebrow>
