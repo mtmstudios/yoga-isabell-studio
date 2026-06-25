@@ -168,24 +168,21 @@ function RetreatPage() {
           </DisplayHeading>
         </Reveal>
 
-        <Reveal delay={0.15}>
-          <p className="mt-10 text-[1.05rem] leading-[1.75] text-ink">
-            6 abwechslungsreiche Yoga-Einheiten
-          </p>
-          <ul className="mt-6 space-y-2 text-[1rem] leading-[1.7] text-taupe max-w-xl">
-            {[
-              "Geballte Yoga-Expertise",
-              "Vinyasa Yoga & ruhige, regenerierende Praxis",
-              "Meditation und Atemarbeit",
-              "Ausreichend freie Zeit zwischen den Sessions",
-            ].map((f) => (
-              <li key={f} className="flex gap-3">
-                <span aria-hidden className="mt-[0.7rem] h-px w-4 shrink-0 bg-clay/60" />
-                <span>{f}</span>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+        <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+          {[
+            { title: "6 abwechslungsreiche Yoga-Einheiten", body: "Geballte Yoga-Expertise im Schwarzwald." },
+            { title: "Vinyasa & ruhige Praxis", body: "Kraftvolle Flows und regenerierende Sequenzen im Wechsel." },
+            { title: "Meditation & Atemarbeit", body: "Sanfte Anker für Körper und Geist." },
+            { title: "Freie Zeit", body: "Ausreichend Raum zwischen den Sessions." },
+          ].map((b, i) => (
+            <Reveal key={b.title} delay={0.05 * i}>
+              <h3 className="font-display text-[1.4rem] leading-[1.2] text-ink">
+                {b.title}
+              </h3>
+              <p className="mt-3 text-taupe">{b.body}</p>
+            </Reveal>
+          ))}
+        </div>
       </Section>
 
       {/* Unterkunft & Verpflegung */}
