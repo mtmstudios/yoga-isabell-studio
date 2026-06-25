@@ -93,7 +93,7 @@ function AnfaengerPage() {
                 die Grundlagen zu festigen und die Technik zu verfeinern.
               </p>
               <p className="mt-6 text-[1.1rem] leading-[1.75] text-taupe">
-                Wir üben in kleinen Gruppen von maximal 12 TeilnehmerInnen, so
+                Wir üben in kleinen Gruppen von maximal 12 Teilnehmer:innen, so
                 dass individuell auf Deine Bedürfnisse eingegangen werden kann.
               </p>
             </Reveal>
