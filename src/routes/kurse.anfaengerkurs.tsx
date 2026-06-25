@@ -1,10 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -98,22 +98,6 @@ function AnfaengerPage() {
               </p>
             </Reveal>
 
-            <Reveal delay={0.15}>
-              <div className="mt-12 rounded-md border border-ink/10 bg-sand/50 p-7">
-                <p className="font-display text-[1.3rem] text-ink">
-                  Neuer Termin folgt.
-                </p>
-                <p className="mt-3 text-taupe">
-                  Melde Dich für den Newsletter an — Du erfährst als Erste:r,
-                  wenn der nächste Anfängerkurs startet.
-                </p>
-                <div className="mt-6">
-                  <CTA asChild variant="primary">
-                    <Link to="/kontakt">Zum Newsletter</Link>
-                  </CTA>
-                </div>
-              </div>
-            </Reveal>
           </div>
 
           <Reveal delay={0.1} className="relative mx-auto w-full max-w-[26rem]">
@@ -127,6 +111,19 @@ function AnfaengerPage() {
             </div>
           </Reveal>
         </div>
+      </Section>
+
+      <Section bg="bone">
+        <Reveal>
+          <div className="mx-auto max-w-[40rem]">
+            <CourseSignupForm
+              course="anfaengerkurs"
+              title="Sei dabei beim nächsten Anfängerkurs"
+              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Anfängerkurs startet."
+              successMessage="Danke! Wir melden uns, sobald der nächste Anfängerkurs startet."
+            />
+          </div>
+        </Reveal>
       </Section>
 
       <Faq items={FAQ} bg="sand" />
