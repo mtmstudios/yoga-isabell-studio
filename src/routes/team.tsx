@@ -76,7 +76,7 @@ const TEAM: Member[] = [
   {
     name: "Sina",
     role: "Coach",
-    bio: "Sina begleitet Menschen als Coach auf ihrem Weg — mit Kreativität, Klarheit und einem offenen Ohr.",
+    bio: "Sina begleitet Menschen als Coach auf ihrem Weg mit Kreativität, Klarheit und einem offenen Ohr.",
     quote: '„Atme, was Du brauchst."',
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
