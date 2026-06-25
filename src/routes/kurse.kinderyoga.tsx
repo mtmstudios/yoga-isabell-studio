@@ -92,9 +92,9 @@ function KinderyogaPage() {
                 </p>
                 <div className="mt-6">
                   <CTA asChild variant="primary">
-                    <Link to="/buchen">
+                    <a href="mailto:hello@yoga-mit-isabell.de?subject=Anmeldung%20Kinderyoga">
                       Jetzt buchen
-                    </Link>
+                    </a>
                   </CTA>
                 </div>
               </div>
