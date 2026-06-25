@@ -131,7 +131,7 @@ function PreisePage() {
                   Zahlung
                 </p>
                 <p className="mt-3 text-taupe">
-                  Per Überweisung (Infos im Buchungsportal) oder vor Ort.
+                  Überweisung oder in bar vor Ort.
                 </p>
               </div>
             </div>
