@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
@@ -30,25 +31,25 @@ export const Route = createFileRoute("/retreat")({
   component: RetreatPage,
 });
 
-const SCHEDULE: { day: string; items: { time?: string; text: string }[] }[] = [
+const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] = [
   {
     day: "Freitag",
     items: [
       { time: "ab 14:30", text: "Individuelle Anreise · lockeres Get-Together bei Kaffee, Tee & Snacks" },
-      { time: "17:00", text: "Vinyasa Yoga „Ankommen & Auftanken“ mit Isabell (alle Level)" },
+      { time: "17:00", text: <>Vinyasa Yoga <em className="font-display not-italic text-ink">Ankommen & Auftanken</em> mit Isabell (alle Level)</> },
       { time: "18:30", text: "Gemeinsames Abendessen in Buffet-Form (vegetarisch)" },
-      { time: "21:00", text: "„Mondgrüße“ mit Alina (alle Level, 30 Minuten)" },
+      { time: "21:00", text: <><em className="font-display not-italic text-ink">Mondgrüße</em> mit Alina (alle Level, 30 Minuten)</> },
     ],
   },
   {
     day: "Samstag",
     items: [
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
-      { time: "08:00", text: "„Vinyasa Yoga meets Breathwork“ mit Alina (alle Level)" },
+      { time: "08:00", text: <><em className="font-display not-italic text-ink">Vinyasa Yoga meets Breathwork</em> mit Alina (alle Level)</> },
       { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
       { text: "Zeit zur freien Verfügung — Umgebung erkunden oder Seele baumeln lassen" },
-      { time: "16:00", text: "„Yoga Music Flow“ mit Isabell (für Fortgeschrittene)" },
-      { time: "17:30", text: "„Yoga meets Thai Yoga Massage“ mit Alina (alle Level)" },
+      { time: "16:00", text: <><em className="font-display not-italic text-ink">Yoga Music Flow</em> mit Isabell (für Fortgeschrittene)</> },
+      { time: "17:30", text: <><em className="font-display not-italic text-ink">Yoga meets Thai Yoga Massage</em> mit Alina (alle Level)</> },
       { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls, vegetarisch)" },
       { text: "Im Anschluss lassen wir den Abend gemeinsam ausklingen" },
     ],
@@ -57,7 +58,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: string }[] }[] = [
     day: "Sonntag",
     items: [
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
-      { time: "08:00", text: "„Flow & Glow — Yoga meets Face Yoga“ mit Alina & Isabell (alle Level)" },
+      { time: "08:00", text: <><em className="font-display not-italic text-ink">Flow & Glow — Yoga meets Face Yoga</em> mit Alina & Isabell (alle Level)</> },
       { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet (vegetarisch)" },
       { time: "13:00", text: "Check-out" },
     ],
@@ -142,7 +143,7 @@ function RetreatPage() {
       <Section bg="bone">
         <Reveal>
           <p className="max-w-[44rem] text-[1.1rem] leading-[1.75] text-taupe">
-            Finde mit Alina von „Klein A Yoga“ und Isabell in Deine Mitte.
+            Finde mit Alina von <em className="font-display not-italic text-ink">Klein A Yoga</em> und Isabell in Deine Mitte.
             Nur etwa 2&nbsp;Stunden von Stuttgart entfernt liegt unser
             Retreat-Haus Saiger Lounge mitten im Schwarzwald, umgeben von
             Wald, klarer Luft und einem weiten Blick über die Hügel.
