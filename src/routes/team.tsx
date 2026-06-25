@@ -68,7 +68,7 @@ const TEAM: Member[] = [
     name: "Svenja",
     role: "Kinderyoga",
     bio: "Mit Svenja entdecken schon die Kleinen die Freude an Bewegung, Atem und gemeinsamen Geschichten.",
-    quote: '„Kinder kennen ihren Körper noch — wir dürfen wieder lernen."',
+    quote: '„Yoga für Kinder soll Freude bereiten und ihren Alltag positiv bereichern."',
     grid: "md:col-span-4",
     aspect: "aspect-[4/5]",
     photo: "/images/team-svenja.jpg",
