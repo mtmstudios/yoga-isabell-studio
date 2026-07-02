@@ -95,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Klein & fein: Vinyasa Yoga in Stuttgart-Steinhaldenfeld. Max. 12 Teilnehmer:innen, ganzheitlich und persönlich begleitet von Isabell Thieleke.",
       },
       { name: "author", content: "Yoga mit Isabell" },
-      { property: "og:title", content: "Yoga mit Isabell" },
+      { property: "og:title", content: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld" },
       {
         property: "og:description",
         content: "Vinyasa Yoga in Stuttgart — klein, persönlich, ganzheitlich.",
@@ -111,6 +111,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: OG_IMAGE },
       { property: "og:url", content: `${SITE_URL}/` },
       { name: "theme-color", content: "#F6F1E8" },
+      { name: "twitter:title", content: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld" },
+      { name: "description", content: "Yoga Isabell Studio offers a warm, holistic yoga experience in Stuttgart, focusing on individual well-being and community." },
+      { property: "og:description", content: "Yoga Isabell Studio offers a warm, holistic yoga experience in Stuttgart, focusing on individual well-being and community." },
+      { name: "twitter:description", content: "Yoga Isabell Studio offers a warm, holistic yoga experience in Stuttgart, focusing on individual well-being and community." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9743b76-0ed8-45db-997a-0a590ce8ab52/id-preview-a4a89152--4fd2adc8-1474-4589-b196-83b446210dbc.lovable.app-1782977911722.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9743b76-0ed8-45db-997a-0a590ce8ab52/id-preview-a4a89152--4fd2adc8-1474-4589-b196-83b446210dbc.lovable.app-1782977911722.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
