@@ -1,0 +1,73 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { z } from "zod";
+
+/**
+ * Public form-submit endpoint. Validates and forwards form payloads to the
+ * n8n webhook stored in the N8N_WEBHOOK_URL secret. Used by the contact
+ * form, course-signup form and newsletter form.
+ */
+const schema = z.object({
+  form: z.enum(["contact", "course-signup", "newsletter"]),
+  data: z.record(z.string(), z.union([z.string(), z.boolean(), z.null()])),
+});
+
+export const Route = createFileRoute("/api/public/form-submit")({
+  server: {
+    handlers: {
+      POST: async ({ request }) => {
+        let body: unknown;
+        try {
+          body = await request.json();
+        } catch {
+          return Response.json({ ok: false, error: "invalid_json" }, { status: 400 });
+        }
+
+        const parsed = schema.safeParse(body);
+        if (!parsed.success) {
+          return Response.json(
+            { ok: false, error: "invalid_payload" },
+            { status: 400 },
+          );
+        }
+
+        const webhookUrl = process.env.N8N_WEBHOOK_URL;
+        if (!webhookUrl) {
+          console.error("[form-submit] N8N_WEBHOOK_URL is not configured");
+          return Response.json(
+            { ok: false, error: "not_configured" },
+            { status: 503 },
+          );
+        }
+
+        try {
+          const res = await fetch(webhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              form: parsed.data.form,
+              submittedAt: new Date().toISOString(),
+              source: "yoga-mit-isabell.de",
+              data: parsed.data.data,
+            }),
+          });
+
+          if (!res.ok) {
+            console.error("[form-submit] n8n webhook error", res.status);
+            return Response.json(
+              { ok: false, error: "upstream_error" },
+              { status: 502 },
+            );
+          }
+        } catch (err) {
+          console.error("[form-submit] n8n webhook failed", err);
+          return Response.json(
+            { ok: false, error: "upstream_unreachable" },
+            { status: 502 },
+          );
+        }
+
+        return Response.json({ ok: true });
+      },
+    },
+  },
+});

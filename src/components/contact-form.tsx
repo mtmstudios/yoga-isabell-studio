@@ -61,34 +61,32 @@ export function ContactForm() {
     defaultValues: { name: "", email: "", phone: "", interest: "", message: "" },
   });
 
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
   async function onSubmit(data: FormData) {
-    // TODO: connect to real endpoint (server function / email service).
-    // For now we build a mailto fallback so nothing is lost.
+    setSubmitError(null);
     try {
-      await new Promise((r) => setTimeout(r, 600));
-      const subject = `Anfrage: ${data.interest || "Yoga mit Isabell"}`;
-      const body = [
-        `Name: ${data.name}`,
-        `E-Mail: ${data.email}`,
-        data.phone ? `Telefon: ${data.phone}` : null,
-        data.interest ? `Kurs-Interesse: ${data.interest}` : null,
-        "",
-        data.message,
-      ]
-        .filter(Boolean)
-        .join("\n");
-
-      // Open user's mail client as a graceful fallback.
-      if (typeof window !== "undefined") {
-        window.location.href = `mailto:hello@yoga-mit-isabell.de?subject=${encodeURIComponent(
-          subject,
-        )}&body=${encodeURIComponent(body)}`;
-      }
-
+      const res = await fetch("/api/public/form-submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          form: "contact",
+          data: {
+            name: data.name,
+            email: data.email,
+            phone: data.phone ?? "",
+            interest: data.interest ?? "",
+            message: data.message,
+          },
+        }),
+      });
+      if (!res.ok) throw new Error("request_failed");
       setSubmitted(true);
       reset();
     } catch {
-      // noop — surfaced via form state in a later phase
+      setSubmitError(
+        "Deine Nachricht konnte nicht gesendet werden. Bitte versuche es später erneut oder schreibe direkt an hello@yoga-mit-isabell.de.",
+      );
     }
   }
 
