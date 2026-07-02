@@ -43,12 +43,18 @@ export function NewsletterForm({
     }
     setStatus("loading");
     try {
-      // TODO: replace with real provider endpoint
-      // await fetch("/api/newsletter", { method: "POST", body: JSON.stringify({ email: parsed.data }) });
-      await new Promise((r) => setTimeout(r, 700));
+      const res = await fetch("/api/public/form-submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          form: "newsletter",
+          data: { email: parsed.data },
+        }),
+      });
+      if (!res.ok) throw new Error("request_failed");
       setStatus("ok");
       setEmail("");
-    } catch (err) {
+    } catch {
       setStatus("error");
       setError("Etwas ist schiefgelaufen. Versuche es bitte später erneut.");
     }
