@@ -103,8 +103,7 @@ export function ContactForm() {
           Danke für Deine Nachricht.
         </h3>
         <p className="mt-3 text-taupe">
-          Ich melde mich so bald wie möglich bei Dir. Falls Dein Mail-Programm
-          sich geöffnet hat — schick die Nachricht gern auch dort einmal ab.
+          Ich melde mich so bald wie möglich bei Dir.
         </p>
         <button
           type="button"
