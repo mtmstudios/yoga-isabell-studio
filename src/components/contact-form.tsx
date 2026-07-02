@@ -204,6 +204,11 @@ export function ContactForm() {
           )}
         </CTA>
       </div>
+      {submitError && (
+        <p role="alert" className="text-[0.85rem] text-clay-deep">
+          {submitError}
+        </p>
+      )}
       <p className="text-[0.78rem] text-taupe/70">
         Mit dem Absenden stimmst Du zu, dass Deine Angaben für die Bearbeitung
         Deiner Anfrage verwendet werden.
