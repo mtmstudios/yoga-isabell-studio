@@ -26,6 +26,7 @@ import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherbl
 import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
+import { Route as ApiPublicFormSubmitRouteImport } from './routes/api/public/form-submit'
 
 const UeberMichRoute = UeberMichRouteImport.update({
   id: '/ueber-mich',
@@ -112,6 +113,11 @@ const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
   path: '/kurse/anfaengerkurs',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicFormSubmitRoute = ApiPublicFormSubmitRouteImport.update({
+  id: '/api/public/form-submit',
+  path: '/api/public/form-submit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -131,6 +137,7 @@ export interface FileRoutesByFullPath {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -150,6 +157,7 @@ export interface FileRoutesByTo {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -170,6 +178,7 @@ export interface FileRoutesById {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -191,6 +200,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/api/public/form-submit'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -210,6 +220,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/api/public/form-submit'
   id:
     | '__root__'
     | '/'
@@ -229,6 +240,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/api/public/form-submit'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -249,6 +261,7 @@ export interface RootRouteChildren {
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
   KurseSoundbathRoute: typeof KurseSoundbathRoute
   KurseYogaJgaRoute: typeof KurseYogaJgaRoute
+  ApiPublicFormSubmitRoute: typeof ApiPublicFormSubmitRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -372,6 +385,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KurseAnfaengerkursRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/form-submit': {
+      id: '/api/public/form-submit'
+      path: '/api/public/form-submit'
+      fullPath: '/api/public/form-submit'
+      preLoaderRoute: typeof ApiPublicFormSubmitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -393,6 +413,7 @@ const rootRouteChildren: RootRouteChildren = {
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,
   KurseSoundbathRoute: KurseSoundbathRoute,
   KurseYogaJgaRoute: KurseYogaJgaRoute,
+  ApiPublicFormSubmitRoute: ApiPublicFormSubmitRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
