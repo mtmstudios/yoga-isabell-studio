@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 const DEFAULT_WORDS = [
@@ -12,24 +14,41 @@ const DEFAULT_WORDS = [
 
 type Props = {
   words?: string[];
-  /** Sekunden für einen vollen Durchlauf (langsam!). */
-  duration?: number;
+  /** Wie stark das Band beim Scrollen nach links wandert (in %). */
+  scrollDistance?: number;
   className?: string;
 };
 
 /**
- * Sehr langsames Laufband in Fraunces — trennendes Band zwischen Sektionen.
- * CSS-Keyframe-Animation (statt Motion/WAAPI) für verlässliche %-Translation
- * in Chrome, Firefox, Safari und Mobile Safari. Pausiert automatisch bei
- * prefers-reduced-motion (siehe styles.css).
+ * Scroll-getriebenes Laufband: Die Wörter wandern beim Scrollen nach links.
+ * Nutzt useScroll — kein Auto-Loop mehr, die Bewegung ist an den Scroll-
+ * Fortschritt gekoppelt. Bei prefers-reduced-motion bleibt das Band still.
  */
-export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Props) {
-  // Dreifache Sequenz → endlose Schleife ohne sichtbaren Sprung,
-  // weil wir um exakt -33.333% (= eine Sequenzbreite) translatieren.
+export function Marquee({
+  words = DEFAULT_WORDS,
+  scrollDistance = 40,
+  className,
+}: Props) {
+  const reduced = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["0%", `-${scrollDistance}%`],
+  );
+
+  // Dreifache Sequenz → genug Puffer, damit beim Scrollen nichts abreißt.
   const items = [...words, ...words, ...words];
 
   return (
     <div
+      ref={ref}
       className={cn(
         "relative overflow-hidden border-y border-line bg-bone py-10 select-none",
         className,
@@ -40,9 +59,9 @@ export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Pro
       <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-bone to-transparent z-10" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-bone to-transparent z-10" />
 
-      <div
-        className="marquee-track flex whitespace-nowrap will-change-transform"
-        style={{ animationDuration: `${duration}s` }}
+      <motion.div
+        style={reduced ? undefined : { x }}
+        className="flex whitespace-nowrap will-change-transform"
       >
         {items.map((w, i) => (
           <span
@@ -53,7 +72,7 @@ export function Marquee({ words = DEFAULT_WORDS, duration = 60, className }: Pro
             <span className="text-clay/60 text-[0.7em]">·</span>
           </span>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
