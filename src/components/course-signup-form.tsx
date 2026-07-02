@@ -58,13 +58,18 @@ export function CourseSignupForm({
 
     setStatus("loading");
     try {
-      // TODO: connect to a real provider / Lovable Cloud table
-      // await fetch("/api/course-signup", {
-      //   method: "POST",
-      //   body: JSON.stringify({ email: parsed.data, course }),
-      // });
-      void course;
-      await new Promise((r) => setTimeout(r, 700));
+      const res = await fetch("/api/public/form-submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          form: "course-signup",
+          data: {
+            email: parsed.data,
+            course: course ?? "",
+          },
+        }),
+      });
+      if (!res.ok) throw new Error("request_failed");
       setStatus("ok");
       setEmail("");
       setConsent(false);
