@@ -52,6 +52,16 @@ function KontaktPage() {
               </p>
             </Reveal>
 
+            <Reveal delay={0.12} className="mt-6 max-w-[20rem]">
+              <div className="radius-organic overflow-hidden">
+                <Photo
+                  src={isabellSitzend.url}
+                  alt="Isabell Thieleke sitzend, schwarz-weiß Portrait"
+                  aspect="aspect-[4/5]"
+                />
+              </div>
+            </Reveal>
+
             <Reveal delay={0.15}>
               <ul className="mt-8 space-y-5 text-[1rem] text-ink/85">
                 <li className="flex items-start gap-3">
