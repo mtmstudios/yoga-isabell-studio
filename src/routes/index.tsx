@@ -11,6 +11,7 @@ import { Newsletter } from "@/components/home/newsletter";
 import { InstagramStrip } from "@/components/instagram-strip";
 import { Marquee } from "@/components/marquee";
 import { LotusThread } from "@/components/lotus-thread";
+import { SectionDivider } from "@/components/section-divider";
 import { Faq } from "@/components/faq";
 
 const FAQ = [
@@ -71,9 +72,10 @@ function Index() {
     <>
       <Hero />
       <Intro />
-      <LotusThread heightClass="h-[18rem]" className="-my-12 bg-bone" />
+      <SectionDivider bg="bone" />
       <CoursesPreview />
       <AboutTeaser />
+      <SectionDivider bg="bone" />
       <Marquee />
       <Quote />
       <Studio />
