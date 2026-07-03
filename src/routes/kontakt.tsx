@@ -39,7 +39,7 @@ function KontaktPage() {
         lead="Kontaktiere mich gerne. Ich freue mich!"
       />
 
-      <Section bg="bone">
+      <Section bg="bone" className="!pt-10 md:!pt-14">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           {/* Contact details */}
           <div>
