@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { Eyebrow } from "@/components/eyebrow";
+
 import { CTA } from "@/components/cta";
 import { Faq } from "@/components/faq";
 
