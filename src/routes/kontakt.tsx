@@ -5,6 +5,8 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { MapEmbed } from "@/components/map-embed";
 import { ContactForm } from "@/components/contact-form";
+import { Photo } from "@/components/photo";
+import isabellSitzend from "@/assets/isabell-sitzend.jpg.asset.json";
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 export const Route = createFileRoute("/kontakt")({
