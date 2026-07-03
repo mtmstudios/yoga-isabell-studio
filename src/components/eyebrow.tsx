@@ -29,7 +29,7 @@ export function Eyebrow({ children, className, tone = "clay" }: Props) {
     >
       <span
         aria-hidden
-        className="inline-block h-px w-8 bg-current opacity-70"
+        className="inline-block h-[2px] w-10 bg-current opacity-80"
       />
       <span
         aria-hidden
