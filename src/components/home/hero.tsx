@@ -173,7 +173,7 @@ export function Hero() {
   return (
     <section
       ref={wrapRef}
-      className="relative overflow-hidden bg-bone pt-32 pb-24 lg:pt-40 lg:pb-32"
+      className="relative overflow-hidden bg-bone pt-32 pb-10 lg:pt-40 lg:pb-14"
     >
       <PaperGrain />
 
@@ -299,7 +299,7 @@ export function Hero() {
           initial={reduced ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 1.8, ease: EASE }}
-          className="mt-20 flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.28em] text-taupe/70 lg:mt-24"
+          className="mt-8 flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.28em] text-taupe/70 lg:mt-10"
         >
           <motion.span
             aria-hidden
