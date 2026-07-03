@@ -5,6 +5,8 @@ import { Reveal } from "@/components/reveal";
 import { Eyebrow } from "@/components/eyebrow";
 import { MapEmbed } from "@/components/map-embed";
 import { ContactForm } from "@/components/contact-form";
+import { Photo } from "@/components/photo";
+import isabellSitzend from "@/assets/isabell-sitzend.jpg.asset.json";
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 export const Route = createFileRoute("/kontakt")({
@@ -48,6 +50,16 @@ function KontaktPage() {
               <p className="mt-6 font-display text-[1.6rem] text-ink">
                 Isabell Thieleke
               </p>
+            </Reveal>
+
+            <Reveal delay={0.12} className="mt-6 max-w-[20rem]">
+              <div className="radius-organic overflow-hidden">
+                <Photo
+                  src={isabellSitzend.url}
+                  alt="Isabell Thieleke sitzend, schwarz-weiß Portrait"
+                  aspect="aspect-[4/5]"
+                />
+              </div>
             </Reveal>
 
             <Reveal delay={0.15}>
