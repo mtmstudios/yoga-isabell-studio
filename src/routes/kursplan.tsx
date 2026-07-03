@@ -134,10 +134,10 @@ function KursplanPage() {
 
       <Section bg="bone">
 
-        <Reveal className="mb-3 flex flex-wrap items-end justify-between gap-6">
+        <Reveal className="mb-2 flex flex-wrap items-end justify-between gap-6">
           <div>
             <Eyebrow>Online Buchen</Eyebrow>
-            <DisplayHeading size="h2" className="mt-6">
+            <DisplayHeading size="h2" className="mt-2">
               Kursplan <em>live</em>.
             </DisplayHeading>
           </div>
