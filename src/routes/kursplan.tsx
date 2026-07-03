@@ -132,9 +132,9 @@ function KursplanPage() {
         lead="Fünf feste Formate jede Woche, kleine Gruppen mit max. 12 Teilnehmer:innen. Einstieg jederzeit möglich."
       />
 
-      <Section bg="bone">
+      <Section bg="bone" className="!pt-10 md:!pt-14">
 
-        <Reveal className="mb-2 flex flex-wrap items-end justify-between gap-6">
+        <Reveal className="mb-4 flex flex-wrap items-end justify-between gap-6">
           <div>
             <Eyebrow>Online Buchen</Eyebrow>
             <DisplayHeading size="h2" className="mt-2">
