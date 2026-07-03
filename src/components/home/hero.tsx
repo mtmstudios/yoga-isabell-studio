@@ -173,7 +173,7 @@ export function Hero() {
   return (
     <section
       ref={wrapRef}
-      className="relative overflow-hidden bg-bone pt-32 pb-24 lg:pt-40 lg:pb-32"
+      className="relative overflow-hidden bg-bone pt-32 pb-10 lg:pt-40 lg:pb-14"
     >
       <PaperGrain />
 
