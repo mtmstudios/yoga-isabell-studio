@@ -74,6 +74,7 @@ function Index() {
       <Intro />
       <SectionDivider bg="bone" />
       <CoursesPreview />
+      <SectionDivider bg="bone" />
       <AboutTeaser />
       <SectionDivider bg="bone" />
       <Marquee />
