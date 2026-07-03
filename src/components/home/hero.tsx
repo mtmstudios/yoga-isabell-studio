@@ -309,9 +309,9 @@ export function Hero() {
                 : { y: [0, 6, 0], opacity: [0.5, 1, 0.5] }
             }
             transition={{ duration: 2.6, ease: "easeInOut", repeat: Infinity }}
-            className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-ink/20 text-ink/60"
+            className="inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-ink/70 text-ink"
           >
-            <ArrowDown size={13} strokeWidth={1.4} />
+            <ArrowDown size={14} strokeWidth={2.5} />
           </motion.span>
           Scroll
         </motion.div>
