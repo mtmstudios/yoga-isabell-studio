@@ -41,7 +41,7 @@ export function Faq({
             <Eyebrow>{eyebrow}</Eyebrow>
           </Reveal>
           <Reveal delay={0.1}>
-            <DisplayHeading size="h2" className="mt-6">
+            <DisplayHeading as="h2" size="h2" className="mt-6">
               {title ?? (
                 <>
                   Gut zu <em>wissen</em>.
