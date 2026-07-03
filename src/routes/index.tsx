@@ -11,6 +11,7 @@ import { Newsletter } from "@/components/home/newsletter";
 import { InstagramStrip } from "@/components/instagram-strip";
 import { Marquee } from "@/components/marquee";
 import { LotusThread } from "@/components/lotus-thread";
+import { SectionDivider } from "@/components/section-divider";
 import { Faq } from "@/components/faq";
 
 const FAQ = [
