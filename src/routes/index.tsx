@@ -72,9 +72,10 @@ function Index() {
     <>
       <Hero />
       <Intro />
-      <LotusThread heightClass="h-[18rem]" className="-my-12 bg-bone" />
+      <SectionDivider bg="bone" />
       <CoursesPreview />
       <AboutTeaser />
+      <SectionDivider bg="bone" />
       <Marquee />
       <Quote />
       <Studio />
