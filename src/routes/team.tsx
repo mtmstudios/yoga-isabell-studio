@@ -112,9 +112,9 @@ function MemberCard({ m, i }: { m: Member; i: number }) {
         </div>
       </div>
       <div className="mt-5 flex flex-col gap-2">
-        <h3 className="font-display text-[1.4rem] leading-[1.1] text-ink">
+        <h2 className="font-display text-[1.4rem] leading-[1.1] text-ink">
           {m.name}
-        </h3>
+        </h2>
         <span className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
           {m.role}
         </span>

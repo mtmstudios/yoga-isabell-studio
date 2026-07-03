@@ -199,10 +199,13 @@ export function Hero() {
             <h1
               className="relative mt-8 font-display font-normal text-ink [font-variation-settings:'SOFT'_100,'opsz'_144] text-[clamp(2.8rem,7vw,6rem)] leading-[0.98] tracking-[-0.02em] [text-wrap:balance]"
             >
-              <span className="block">
+              <span className="sr-only">
+                Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld.{" "}
+              </span>
+              <span aria-hidden className="block">
                 <ClipWords text="Komm zur Ruhe." delay={0.15} />
               </span>
-              <span className="block mt-1">
+              <span aria-hidden className="block mt-1">
                 <ClipWords text="Finde Deine" delay={0.55} />{" "}
                 <ClipWords text="Mitte." delay={0.85} italic accent />
               </span>

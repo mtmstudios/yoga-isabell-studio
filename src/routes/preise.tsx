@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
-import { Eyebrow } from "@/components/eyebrow";
+
 import { CTA } from "@/components/cta";
 import { Faq } from "@/components/faq";
 
@@ -63,7 +63,9 @@ function PriceList({ title, rows }: { title: string; rows: Row[] }) {
   return (
     <div>
       <Reveal>
-        <Eyebrow>{title}</Eyebrow>
+        <h2 className="font-display text-[clamp(2rem,4.5vw,3rem)] leading-[1.05] tracking-[-0.015em] text-ink">
+          {title}
+        </h2>
       </Reveal>
       <ul className="mt-8 divide-y divide-ink/10 border-y border-ink/10">
         {rows.map((r, i) => (
