@@ -99,7 +99,7 @@ function PreisePage() {
         lead="Einfache Karten für offene Kurse, individuelle Privatstunden und Gutscheine."
       />
 
-      <Section bg="bone">
+      <Section bg="bone" className="!pt-10 md:!pt-14">
         <div className="mx-auto max-w-[42rem]">
           <PriceList title="Offene Kurse" rows={OPEN_CLASSES} />
 
