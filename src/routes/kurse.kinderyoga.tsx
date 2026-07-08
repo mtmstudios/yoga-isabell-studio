@@ -5,6 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { AiImageNotice } from "@/components/ai-image-notice";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -109,6 +110,7 @@ function KinderyogaPage() {
                 aspect="aspect-[4/5]"
               />
             </div>
+            <AiImageNotice />
           </Reveal>
         </div>
       </Section>

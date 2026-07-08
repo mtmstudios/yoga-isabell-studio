@@ -5,6 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { AiImageNotice } from "@/components/ai-image-notice";
 
 const FAQ = [
   {
@@ -97,6 +98,7 @@ function YogaJgaPage() {
                 aspect="aspect-[4/5]"
               />
             </div>
+            <AiImageNotice />
           </Reveal>
         </div>
       </Section>
