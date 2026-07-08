@@ -368,7 +368,7 @@ function HormonyogaPage() {
             </Reveal>
             <Reveal delay={0.25}>
               <CTA asChild variant="primary" size="lg">
-                <Link to="/buchen">Jetzt Platz sichern</Link>
+                <Link to="/kontakt">Jetzt buchen über Kontaktformular</Link>
               </CTA>
             </Reveal>
           </div>
