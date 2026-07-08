@@ -19,7 +19,7 @@ const FAQ = [
   },
   {
     q: "Was sollte ich mitbringen?",
-    a: "Bequeme Kleidung, eine Yogamatte, einen Handtuch und etwas zu trinken. Eine Decke und ein Kissen für die Entspannungsphase sind ebenfalls willkommen.",
+    a: "Bequeme Kleidung, etwas zu trinken und gerne etwas zu essen. Yogamatten, Yogablöcke und Decken sind vorhanden und können gerne genutzt werden.",
   },
   {
     q: "Wie viele Teilnehmerinnen sind im Workshop?",
