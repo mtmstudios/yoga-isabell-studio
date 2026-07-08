@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "Wie viele Teilnehmerinnen sind im Workshop?",
-    a: "Der Workshop findet in kleinen Gruppen von mindestens 8 und maximal 12 Teilnehmerinnen statt, damit individuell auf Deine Bedürfnisse eingegangen werden kann.",
+    a: "Der Workshop findet in einer kleinen Gruppe von maximal 12 Teilnehmerinnen statt, damit individuell auf Deine Bedürfnisse eingegangen werden kann.",
   },
   {
     q: "Wo findet der Workshop statt?",
