@@ -409,8 +409,8 @@ function HormonyogaPage() {
             <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
             <div className="radius-organic overflow-hidden">
               <Photo
-                src="/images/hormonyoga.jpg"
-                alt="Ursula unterrichtet Hormonyoga in entspannter Workshop-Atmosphäre"
+                src={ursulaAsset.url}
+                alt="Ursula – zertifizierte Hormonyogalehrerin"
                 aspect="aspect-[4/5]"
               />
             </div>
