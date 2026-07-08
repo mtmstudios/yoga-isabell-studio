@@ -10,6 +10,7 @@ import { Faq } from "@/components/faq";
 import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
+import ursulaAsset from "@/assets/ursula.jpg.asset.json";
 
 const FAQ = [
   {
