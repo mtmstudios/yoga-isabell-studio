@@ -25,6 +25,7 @@ import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
 import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
 import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
 import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
+import { Route as KurseHormonyogaRouteImport } from './routes/kurse.hormonyoga'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
 import { Route as ApiPublicFormSubmitRouteImport } from './routes/api/public/form-submit'
@@ -109,6 +110,11 @@ const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
   path: '/kurse/kinderyoga',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KurseHormonyogaRoute = KurseHormonyogaRouteImport.update({
+  id: '/kurse/hormonyoga',
+  path: '/kurse/hormonyoga',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
   id: '/kurse/beckenboden',
   path: '/kurse/beckenboden',
@@ -139,6 +145,7 @@ export interface FileRoutesByFullPath {
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -160,6 +167,7 @@ export interface FileRoutesByTo {
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -182,6 +190,7 @@ export interface FileRoutesById {
   '/ueber-mich': typeof UeberMichRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
+  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -205,6 +214,7 @@ export interface FileRouteTypes {
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
+    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -226,6 +236,7 @@ export interface FileRouteTypes {
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
+    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -247,6 +258,7 @@ export interface FileRouteTypes {
     | '/ueber-mich'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
+    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -269,6 +281,7 @@ export interface RootRouteChildren {
   UeberMichRoute: typeof UeberMichRoute
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
   KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
+  KurseHormonyogaRoute: typeof KurseHormonyogaRoute
   KurseKinderyogaRoute: typeof KurseKinderyogaRoute
   KurseMotherblessingRoute: typeof KurseMotherblessingRoute
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
@@ -391,6 +404,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KurseKinderyogaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kurse/hormonyoga': {
+      id: '/kurse/hormonyoga'
+      path: '/kurse/hormonyoga'
+      fullPath: '/kurse/hormonyoga'
+      preLoaderRoute: typeof KurseHormonyogaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/kurse/beckenboden': {
       id: '/kurse/beckenboden'
       path: '/kurse/beckenboden'
@@ -429,6 +449,7 @@ const rootRouteChildren: RootRouteChildren = {
   UeberMichRoute: UeberMichRoute,
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
   KurseBeckenbodenRoute: KurseBeckenbodenRoute,
+  KurseHormonyogaRoute: KurseHormonyogaRoute,
   KurseKinderyogaRoute: KurseKinderyogaRoute,
   KurseMotherblessingRoute: KurseMotherblessingRoute,
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,

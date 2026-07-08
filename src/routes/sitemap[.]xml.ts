@@ -14,6 +14,7 @@ const ENTRIES: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/kursplan", changefreq: "weekly", priority: "0.9" },
   { path: "/kurse/anfaengerkurs", changefreq: "monthly", priority: "0.8" },
+  { path: "/kurse/hormonyoga", changefreq: "monthly", priority: "0.7" },
   { path: "/kurse/soundbath", changefreq: "monthly", priority: "0.7" },
   { path: "/kurse/beckenboden", changefreq: "monthly", priority: "0.7" },
   { path: "/kurse/privat-business", changefreq: "monthly", priority: "0.7" },
