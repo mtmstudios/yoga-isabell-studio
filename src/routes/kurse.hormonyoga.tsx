@@ -159,6 +159,24 @@ function HormonyogaPage() {
                 Workshops.
               </p>
             </Reveal>
+            <Reveal delay={0.2}>
+              <p className="mt-6 text-[1.05rem] leading-[1.75] text-taupe">
+                Hormonyoga wirkt auf natürliche Weise vorbeugend oder mildernd
+                gegen die Symptome der Hormonumstellung in den Wechseljahren
+                (z. B. Schlafstörungen, Stimmungsschwankungen, Hitzewallungen).
+                Die Organ- und Drüsenfunktionen werden angeregt bzw.
+                harmonisiert, Muskeln und Knochen werden gekräftigt. Dadurch kann
+                auch ernsteren Beschwerden, wie z. B. Osteoporose, ein erhöhter
+                Cholesterinspiegel oder Herzerkrankungen vorgebeugt werden. Die
+                Vitalität und das Wohlbefinden werden gesteigert, der Geist
+                angeregt und geklärt. Bei regelmäßiger Übungspraxis kann
+                Hormonyoga eine natürliche und wirksame Alternative zur
+                klassischen Hormonersatzbehandlung sein. Hormonyoga bedeutet
+                auch, sich ganz bewusst Zeit für sich zu nehmen. Schon nach
+                kurzer Zeit wirst Du die positiven Auswirkungen dieser
+                Yogatechnik erfahren.
+              </p>
+            </Reveal>
           </div>
         </div>
       </Section>
