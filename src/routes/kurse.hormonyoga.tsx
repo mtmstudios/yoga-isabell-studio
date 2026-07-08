@@ -7,7 +7,7 @@ import { DisplayHeading } from "@/components/display-heading";
 import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
-import { CourseSignupForm } from "@/components/course-signup-form";
+
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 import ursulaAsset from "@/assets/ursula.jpg.asset.json";
