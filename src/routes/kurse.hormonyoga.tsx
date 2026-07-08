@@ -418,19 +418,6 @@ function HormonyogaPage() {
         </div>
       </Section>
 
-      <Section bg="sand">
-        <Reveal>
-          <div className="mx-auto max-w-[40rem]">
-            <CourseSignupForm
-              course="hormonyoga"
-              title="Interesse am Hormonyoga-Workshop?"
-              description="Trag Dich ein und wir informieren Dich über freie Plätze und kommende Termine."
-              successMessage="Danke! Wir melden uns mit Infos zum Hormonyoga-Workshop."
-            />
-          </div>
-        </Reveal>
-      </Section>
-
       <Faq items={FAQ} bg="bone" />
     </>
   );
