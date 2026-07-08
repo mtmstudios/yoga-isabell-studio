@@ -387,10 +387,11 @@ function HormonyogaPage() {
             </Reveal>
           </div>
           <Reveal className="relative mx-auto w-full max-w-[28rem] order-1 lg:order-2">
+            <div className="radius-organic absolute -inset-3 -z-10 bg-sand/70" />
             <div className="radius-organic overflow-hidden">
               <Photo
-                src="/images/isabell-about.jpg"
-                alt="Ursula, zertifizierte Hormonyogalehrerin"
+                src="/images/hormonyoga.jpg"
+                alt="Ursula unterrichtet Hormonyoga in entspannter Workshop-Atmosphäre"
                 aspect="aspect-[4/5]"
               />
             </div>
