@@ -134,6 +134,7 @@ function HormonyogaPage() {
                 aspect="aspect-[4/5]"
               />
             </div>
+            <AiImageNotice />
           </Reveal>
           <div>
             <Reveal>

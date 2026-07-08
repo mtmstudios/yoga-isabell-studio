@@ -78,6 +78,7 @@ function PrivatBusinessPage() {
                 aspect="aspect-[4/5]"
               />
             </div>
+            <AiImageNotice />
           </Reveal>
           <div>
             <Reveal>
@@ -175,6 +176,7 @@ function PrivatBusinessPage() {
                 aspect="aspect-[4/5]"
               />
             </div>
+            <AiImageNotice />
           </Reveal>
         </div>
       </Section>
