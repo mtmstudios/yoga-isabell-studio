@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "sdk_version": "0.22.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "yoga-mit-isabell-mcp",
+      "version": "0.1.0",
+      "title": "Yoga mit Isabell"
+    },
+    "tools": [
+      {
+        "name": "list_courses",
+        "title": "Liste alle Kurse & Angebote",
+        "description": "Gibt alle Yoga-Kurse, Workshops und Angebote von Yoga mit Isabell zurück — inklusive Kurzbeschreibung und URL zur jeweiligen Detailseite.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_studio_info",
+        "title": "Studio-Informationen abrufen",
+        "description": "Gibt öffentliche Kontakt- und Standortdaten des Yogastudios Yoga mit Isabell in Stuttgart-Steinhaldenfeld zurück (Adresse, Telefon, E-Mail, Website, Social-Profile, Einzugsgebiet).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "submit_contact_message",
+        "title": "Kontaktnachricht senden",
+        "description": "Sendet eine Kontaktnachricht an Yoga mit Isabell. Wird über den bestehenden n8n-Workflow an das Studio zugestellt (gleicher Kanal wie das öffentliche Kontaktformular auf der Website).",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 2,
+              "description": "Name der anfragenden Person."
+            },
+            "email": {
+              "type": "string",
+              "format": "email",
+              "description": "E-Mail-Adresse für die Rückmeldung."
+            },
+            "message": {
+              "type": "string",
+              "minLength": 5,
+              "description": "Nachricht / Anfrage an das Studio."
+            },
+            "interest": {
+              "type": "string",
+              "description": "Optional: Kurs oder Thema, für das sich die Person interessiert."
+            }
+          },
+          "required": [
+            "name",
+            "email",
+            "message"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
