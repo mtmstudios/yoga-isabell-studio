@@ -14,6 +14,7 @@ import { Route as TeamRouteImport } from './routes/team'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RetreatRouteImport } from './routes/retreat'
 import { Route as PreiseRouteImport } from './routes/preise'
+import { Route as McpRouteImport } from './routes/mcp'
 import { Route as KursplanRouteImport } from './routes/kursplan'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as ImpressumRouteImport } from './routes/impressum'
@@ -29,7 +30,10 @@ import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
 import { Route as KurseHormonyogaRouteImport } from './routes/kurse.hormonyoga'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as ApiPublicFormSubmitRouteImport } from './routes/api/public/form-submit'
+import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 
 const UeberMichRoute = UeberMichRouteImport.update({
   id: '/ueber-mich',
@@ -54,6 +58,11 @@ const RetreatRoute = RetreatRouteImport.update({
 const PreiseRoute = PreiseRouteImport.update({
   id: '/preise',
   path: '/preise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KursplanRoute = KursplanRouteImport.update({
@@ -131,11 +140,29 @@ const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
   path: '/kurse/anfaengerkurs',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicFormSubmitRoute = ApiPublicFormSubmitRouteImport.update({
   id: '/api/public/form-submit',
   path: '/api/public/form-submit',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Char91DotmcpChar93InvokeToolToolRoute =
+  Char91DotmcpChar93InvokeToolToolRouteImport.update({
+    id: '/.mcp/invoke-tool/$tool',
+    path: '/.mcp/invoke-tool/$tool',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -145,11 +172,14 @@ export interface FileRoutesByFullPath {
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
+  '/mcp': typeof McpRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/hormonyoga': typeof KurseHormonyogaRoute
@@ -158,6 +188,7 @@ export interface FileRoutesByFullPath {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRoutesByTo {
@@ -168,11 +199,14 @@ export interface FileRoutesByTo {
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
+  '/mcp': typeof McpRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/hormonyoga': typeof KurseHormonyogaRoute
@@ -181,6 +215,7 @@ export interface FileRoutesByTo {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRoutesById {
@@ -192,11 +227,14 @@ export interface FileRoutesById {
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
+  '/mcp': typeof McpRoute
   '/preise': typeof PreiseRoute
   '/retreat': typeof RetreatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/ueber-mich': typeof UeberMichRoute
+  '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
+  '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
   '/kurse/hormonyoga': typeof KurseHormonyogaRoute
@@ -205,6 +243,7 @@ export interface FileRoutesById {
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
   '/kurse/yoga-jga': typeof KurseYogaJgaRoute
+  '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
   '/api/public/form-submit': typeof ApiPublicFormSubmitRoute
 }
 export interface FileRouteTypes {
@@ -217,11 +256,14 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
+    | '/mcp'
     | '/preise'
     | '/retreat'
     | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/hormonyoga'
@@ -230,6 +272,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/.mcp/invoke-tool/$tool'
     | '/api/public/form-submit'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -240,11 +283,14 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
+    | '/mcp'
     | '/preise'
     | '/retreat'
     | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/hormonyoga'
@@ -253,6 +299,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/.mcp/invoke-tool/$tool'
     | '/api/public/form-submit'
   id:
     | '__root__'
@@ -263,11 +310,14 @@ export interface FileRouteTypes {
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
+    | '/mcp'
     | '/preise'
     | '/retreat'
     | '/sitemap.xml'
     | '/team'
     | '/ueber-mich'
+    | '/.mcp/list-tools'
+    | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
     | '/kurse/hormonyoga'
@@ -276,6 +326,7 @@ export interface FileRouteTypes {
     | '/kurse/privat-business'
     | '/kurse/soundbath'
     | '/kurse/yoga-jga'
+    | '/.mcp/invoke-tool/$tool'
     | '/api/public/form-submit'
   fileRoutesById: FileRoutesById
 }
@@ -287,11 +338,14 @@ export interface RootRouteChildren {
   ImpressumRoute: typeof ImpressumRoute
   KontaktRoute: typeof KontaktRoute
   KursplanRoute: typeof KursplanRoute
+  McpRoute: typeof McpRoute
   PreiseRoute: typeof PreiseRoute
   RetreatRoute: typeof RetreatRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
   UeberMichRoute: typeof UeberMichRoute
+  Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
+  Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
   KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
   KurseHormonyogaRoute: typeof KurseHormonyogaRoute
@@ -300,6 +354,7 @@ export interface RootRouteChildren {
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
   KurseSoundbathRoute: typeof KurseSoundbathRoute
   KurseYogaJgaRoute: typeof KurseYogaJgaRoute
+  Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
   ApiPublicFormSubmitRoute: typeof ApiPublicFormSubmitRoute
 }
 
@@ -338,6 +393,13 @@ declare module '@tanstack/react-router' {
       path: '/preise'
       fullPath: '/preise'
       preLoaderRoute: typeof PreiseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kursplan': {
@@ -445,11 +507,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KurseAnfaengerkursRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/form-submit': {
       id: '/api/public/form-submit'
       path: '/api/public/form-submit'
       fullPath: '/api/public/form-submit'
       preLoaderRoute: typeof ApiPublicFormSubmitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/invoke-tool/$tool': {
+      id: '/.mcp/invoke-tool/$tool'
+      path: '/.mcp/invoke-tool/$tool'
+      fullPath: '/.mcp/invoke-tool/$tool'
+      preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -463,11 +546,15 @@ const rootRouteChildren: RootRouteChildren = {
   ImpressumRoute: ImpressumRoute,
   KontaktRoute: KontaktRoute,
   KursplanRoute: KursplanRoute,
+  McpRoute: McpRoute,
   PreiseRoute: PreiseRoute,
   RetreatRoute: RetreatRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
   UeberMichRoute: UeberMichRoute,
+  Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
+  Char91DotwellKnownChar93OauthProtectedResourceRoute:
+    Char91DotwellKnownChar93OauthProtectedResourceRoute,
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
   KurseBeckenbodenRoute: KurseBeckenbodenRoute,
   KurseHormonyogaRoute: KurseHormonyogaRoute,
@@ -476,6 +563,7 @@ const rootRouteChildren: RootRouteChildren = {
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,
   KurseSoundbathRoute: KurseSoundbathRoute,
   KurseYogaJgaRoute: KurseYogaJgaRoute,
+  Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
   ApiPublicFormSubmitRoute: ApiPublicFormSubmitRoute,
 }
 export const routeTree = rootRouteImport
