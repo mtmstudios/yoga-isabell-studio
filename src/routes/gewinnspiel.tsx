@@ -30,7 +30,8 @@ function GewinnspielPage() {
             Heute Biergarten. <em>Morgen Yogamatte.</em>
           </>
         }
-        lead="Trage Dich mit wenigen Angaben ein und gewinn eine Yogastunde. Wir verlosen unter allen Teilnehmer:innen eine Yoga-Überraschung."
+        lead="Trage Dich mit wenigen Angaben ein. Wir verlosen unter allen Teilnehmer:innen eine Yogastunde."
+        leadClassName="text-[1.2rem]"
       />
 
       <Section bg="bone" className="!pt-10 md:!pt-14">
