@@ -27,10 +27,10 @@ function GewinnspielPage() {
         eyebrow="Willkommen"
         title={
           <>
-            Schön, dass Du <em>hier</em> bist.
+            Heute Biergarten. <em>Morgen Yogamatte.</em>
           </>
         }
-        lead="Trage Dich mit wenigen Angaben ein und nimm an unserem Gewinnspiel teil. Wir verlosen unter allen Teilnehmer:innen eine Yoga-Überraschung."
+        lead="Trage Dich mit wenigen Angaben ein und gewinn eine Yogastunde. Wir verlosen unter allen Teilnehmer:innen eine Yoga-Überraschung."
       />
 
       <Section bg="bone" className="!pt-10 md:!pt-14">
