@@ -3,8 +3,10 @@ import { z } from "zod";
 
 /**
  * Public form-submit endpoint. Validates and forwards form payloads to the
- * n8n webhook stored in the N8N_WEBHOOK_URL secret. Used by the contact
- * form, course-signup form and newsletter form.
+ * n8n webhook stored in the N8N_WEBHOOK_URL secret. Adds a human-readable
+ * `formLabel` and optional `campaign` field so the receiving email can show
+ * where the submission came from. Used by the contact form, course-signup
+ * form, newsletter form and the Gewinnspiel lead form.
  */
 const schema = z.object({
   form: z.enum(["contact", "course-signup", "newsletter", "gewinnspiel"]),
