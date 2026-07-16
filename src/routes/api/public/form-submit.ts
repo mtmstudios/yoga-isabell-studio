@@ -7,7 +7,7 @@ import { z } from "zod";
  * form, course-signup form and newsletter form.
  */
 const schema = z.object({
-  form: z.enum(["contact", "course-signup", "newsletter"]),
+  form: z.enum(["contact", "course-signup", "newsletter", "gewinnspiel"]),
   data: z.record(z.string(), z.union([z.string(), z.boolean(), z.null()])),
 });
 
