@@ -39,14 +39,23 @@ export const Route = createFileRoute("/api/public/form-submit")({
           );
         }
 
+        const formLabel: Record<string, string> = {
+          contact: "Kontaktanfrage",
+          "course-signup": "Kursanmeldung",
+          newsletter: "Newsletter-Anmeldung",
+          gewinnspiel: "Gewinnspiel",
+        };
+
         try {
           const res = await fetch(webhookUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               form: parsed.data.form,
+              formLabel: formLabel[parsed.data.form] ?? parsed.data.form,
               submittedAt: new Date().toISOString(),
               source: "yoga-mit-isabell.de",
+              campaign: typeof parsed.data.data.source === "string" ? parsed.data.data.source : undefined,
               data: parsed.data.data,
             }),
           });
