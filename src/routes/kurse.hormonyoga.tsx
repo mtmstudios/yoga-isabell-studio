@@ -46,12 +46,12 @@ const FUER_WEN = [
 
 const WAS_ERWARTET = [
   "Einführung in die Hormonyoga-Serie nach Dinah Rodrigues",
-  "Dynamische Yoga-Übungen zur Aktivierung der Hormonproduktion",
-  "Spezielle Atemtechniken zur Regulierung des Hormonhaushalts",
+  "Dynamische Yoga-Übungen & spezielle Atemtechniken zur Aktivierung der Hormonproduktion",
+  "Energielenkungen zur Regulierung des Hormonhaushalts",
   "Entspannungsübungen für mehr innere Ruhe",
   "Tipps für eine hormonfreundliche Lebensweise (Ernährung & Lebensführung)",
   "Übung in kleinen Gruppen von max. 12 Teilnehmerinnen",
-  "Ein Handout und eine Audiodatei der Hormonyoga-Serie",
+  "Ein Handout and eine Audiodatei der Hormonyoga-Serie",
 ];
 
 const VORTEILE = [
