@@ -6,6 +6,7 @@ import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
 import { AiImageNotice } from "@/components/ai-image-notice";
+import { LotusOutline } from "@/components/lotus-mark";
 
 const FAQ = [
   {
@@ -99,6 +100,38 @@ function YogaJgaPage() {
               />
             </div>
             <AiImageNotice />
+          </Reveal>
+        </div>
+      </Section>
+
+      <Section bg="ink" className="relative overflow-hidden text-bone-soft">
+        <LotusOutline
+          size={460}
+          className="pointer-events-none absolute -left-24 -bottom-20 text-bone/10"
+        />
+        <LotusOutline
+          size={340}
+          className="pointer-events-none absolute -right-16 -top-10 text-bone/[0.07]"
+        />
+
+        <div className="relative mx-auto max-w-[52rem] text-center">
+          <Reveal>
+            <span aria-hidden className="mx-auto block h-px w-16 bg-bone/30" />
+          </Reveal>
+          <Reveal delay={0.15} y={32}>
+            <blockquote className="mt-10 font-display text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.15] tracking-[-0.012em] text-bone [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
+              <span className="text-clay">„</span>
+              Mit ganz viel Liebe, Achtsamkeit und Blick fürs Detail hat Isabell für meine Freundinnen und mich für einen besonderen Anlass eine ganz besondere Yogastunde vorbereitet. Ganz herzlichen Dank dafür!
+              <span className="text-clay">"</span>
+            </blockquote>
+          </Reveal>
+          <Reveal delay={0.35}>
+            <div className="mt-10 flex flex-col items-center gap-3">
+              <span aria-hidden className="h-px w-10 bg-bone/25" />
+              <span className="text-[0.7rem] uppercase tracking-[0.28em] text-bone-muted/70">
+                JGA-Teilnehmerin
+              </span>
+            </div>
           </Reveal>
         </div>
       </Section>
