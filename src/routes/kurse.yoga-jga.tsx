@@ -6,6 +6,7 @@ import { CTA } from "@/components/cta";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
 import { AiImageNotice } from "@/components/ai-image-notice";
+import { LotusOutline } from "@/components/lotus-mark";
 
 const FAQ = [
   {
