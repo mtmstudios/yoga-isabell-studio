@@ -10,8 +10,9 @@ import { Faq } from "@/components/faq";
 import { AiImageNotice } from "@/components/ai-image-notice";
 
 import { JsonLd } from "@/components/json-ld";
-import { courseSchema } from "@/lib/site";
+import { courseSchema, SITE_URL } from "@/lib/site";
 import ursulaAsset from "@/assets/ursula.jpg.asset.json";
+import hormonyogaAsset from "@/assets/hormonyoga.png.asset.json";
 
 const FAQ = [
   {
@@ -88,6 +89,10 @@ export const Route = createFileRoute("/kurse/hormonyoga")({
           "Natürliche Balance für Dein Wohlbefinden – lerne die Hormonyoga-Serie nach Dinah Rodrigues.",
       },
       { property: "og:url", content: "/kurse/hormonyoga" },
+      { property: "og:image", content: `${SITE_URL}${hormonyogaAsset.url}` },
+      { property: "og:image:alt", content: "Ursula leitet eine Hormonyoga-Sitzung im Studio Yoga mit Isabell" },
+      { name: "twitter:image", content: `${SITE_URL}${hormonyogaAsset.url}` },
+      { name: "twitter:image:alt", content: "Ursula leitet eine Hormonyoga-Sitzung im Studio Yoga mit Isabell" },
     ],
     links: [{ rel: "canonical", href: "/kurse/hormonyoga" }],
   }),
