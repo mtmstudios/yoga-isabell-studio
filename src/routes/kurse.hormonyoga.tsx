@@ -10,8 +10,9 @@ import { Faq } from "@/components/faq";
 import { AiImageNotice } from "@/components/ai-image-notice";
 
 import { JsonLd } from "@/components/json-ld";
-import { courseSchema } from "@/lib/site";
+import { courseSchema, SITE_URL } from "@/lib/site";
 import ursulaAsset from "@/assets/ursula.jpg.asset.json";
+import hormonyogaAsset from "@/assets/hormonyoga.png.asset.json";
 
 const FAQ = [
   {
