@@ -32,8 +32,8 @@ function GewinnspielPage() {
         }
         lead={
           <>
-            Trage Dich mit wenigen Angaben ein. Wir verlosen unter allen Teilnehmer:innen eine{" "}
-            <em className="not-italic text-clay">Yogastunde</em>.
+            Trage Dich mit wenigen Angaben ein. Wir verlosen unter allen Teilnehmer:innen{" "}
+            <em className="not-italic text-clay">5 Yogastunden</em>.
           </>
         }
         leadClassName="text-[1.2rem]"
