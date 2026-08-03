@@ -9,85 +9,35 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as UeberMichRouteImport } from './routes/ueber-mich'
-import { Route as TeamRouteImport } from './routes/team'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as RetreatRouteImport } from './routes/retreat'
-import { Route as PreiseRouteImport } from './routes/preise'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as KursplanRouteImport } from './routes/kursplan'
-import { Route as KontaktRouteImport } from './routes/kontakt'
-import { Route as ImpressumRouteImport } from './routes/impressum'
-import { Route as GewinnspielRouteImport } from './routes/gewinnspiel'
-import { Route as DatenschutzRouteImport } from './routes/datenschutz'
-import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as KurseYogaJgaRouteImport } from './routes/kurse.yoga-jga'
-import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
-import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
-import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
-import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
-import { Route as KurseHormonyogaRouteImport } from './routes/kurse.hormonyoga'
-import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
-import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as BuchenRouteImport } from './routes/buchen'
+import { Route as DatenschutzRouteImport } from './routes/datenschutz'
+import { Route as GewinnspielRouteImport } from './routes/gewinnspiel'
+import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as KursplanRouteImport } from './routes/kursplan'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as PreiseRouteImport } from './routes/preise'
+import { Route as RetreatRouteImport } from './routes/retreat'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TeamRouteImport } from './routes/team'
+import { Route as UeberMichRouteImport } from './routes/ueber-mich'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as ApiPublicFormSubmitRouteImport } from './routes/api/public/form-submit'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
+import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
+import { Route as KurseHormonyogaRouteImport } from './routes/kurse.hormonyoga'
+import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
+import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
+import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
+import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
+import { Route as KurseYogaJgaRouteImport } from './routes/kurse.yoga-jga'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as ApiPublicFormSubmitRouteImport } from './routes/api/public/form-submit'
 
-const UeberMichRoute = UeberMichRouteImport.update({
-  id: '/ueber-mich',
-  path: '/ueber-mich',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TeamRoute = TeamRouteImport.update({
-  id: '/team',
-  path: '/team',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RetreatRoute = RetreatRouteImport.update({
-  id: '/retreat',
-  path: '/retreat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PreiseRoute = PreiseRouteImport.update({
-  id: '/preise',
-  path: '/preise',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KursplanRoute = KursplanRouteImport.update({
-  id: '/kursplan',
-  path: '/kursplan',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KontaktRoute = KontaktRouteImport.update({
-  id: '/kontakt',
-  path: '/kontakt',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImpressumRoute = ImpressumRouteImport.update({
-  id: '/impressum',
-  path: '/impressum',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GewinnspielRoute = GewinnspielRouteImport.update({
-  id: '/gewinnspiel',
-  path: '/gewinnspiel',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DatenschutzRoute = DatenschutzRouteImport.update({
-  id: '/datenschutz',
-  path: '/datenschutz',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BuchenRoute = BuchenRouteImport.update({
@@ -95,39 +45,76 @@ const BuchenRoute = BuchenRouteImport.update({
   path: '/buchen',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const DatenschutzRoute = DatenschutzRouteImport.update({
+  id: '/datenschutz',
+  path: '/datenschutz',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseYogaJgaRoute = KurseYogaJgaRouteImport.update({
-  id: '/kurse/yoga-jga',
-  path: '/kurse/yoga-jga',
+const GewinnspielRoute = GewinnspielRouteImport.update({
+  id: '/gewinnspiel',
+  path: '/gewinnspiel',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseSoundbathRoute = KurseSoundbathRouteImport.update({
-  id: '/kurse/soundbath',
-  path: '/kurse/soundbath',
+const ImpressumRoute = ImpressumRouteImport.update({
+  id: '/impressum',
+  path: '/impressum',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KursePrivatBusinessRoute = KursePrivatBusinessRouteImport.update({
-  id: '/kurse/privat-business',
-  path: '/kurse/privat-business',
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseMotherblessingRoute = KurseMotherblessingRouteImport.update({
-  id: '/kurse/motherblessing',
-  path: '/kurse/motherblessing',
+const KursplanRoute = KursplanRouteImport.update({
+  id: '/kursplan',
+  path: '/kursplan',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
-  id: '/kurse/kinderyoga',
-  path: '/kurse/kinderyoga',
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseHormonyogaRoute = KurseHormonyogaRouteImport.update({
-  id: '/kurse/hormonyoga',
-  path: '/kurse/hormonyoga',
+const PreiseRoute = PreiseRouteImport.update({
+  id: '/preise',
+  path: '/preise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RetreatRoute = RetreatRouteImport.update({
+  id: '/retreat',
+  path: '/retreat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UeberMichRoute = UeberMichRouteImport.update({
+  id: '/ueber-mich',
+  path: '/ueber-mich',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
+  id: '/kurse/anfaengerkurs',
+  path: '/kurse/anfaengerkurs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
@@ -135,26 +122,34 @@ const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
   path: '/kurse/beckenboden',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseAnfaengerkursRoute = KurseAnfaengerkursRouteImport.update({
-  id: '/kurse/anfaengerkurs',
-  path: '/kurse/anfaengerkurs',
+const KurseHormonyogaRoute = KurseHormonyogaRouteImport.update({
+  id: '/kurse/hormonyoga',
+  path: '/kurse/hormonyoga',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const Char91DotmcpChar93ListToolsRoute =
-  Char91DotmcpChar93ListToolsRouteImport.update({
-    id: '/.mcp/list-tools',
-    path: '/.mcp/list-tools',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPublicFormSubmitRoute = ApiPublicFormSubmitRouteImport.update({
-  id: '/api/public/form-submit',
-  path: '/api/public/form-submit',
+const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
+  id: '/kurse/kinderyoga',
+  path: '/kurse/kinderyoga',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseMotherblessingRoute = KurseMotherblessingRouteImport.update({
+  id: '/kurse/motherblessing',
+  path: '/kurse/motherblessing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KursePrivatBusinessRoute = KursePrivatBusinessRouteImport.update({
+  id: '/kurse/privat-business',
+  path: '/kurse/privat-business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseSoundbathRoute = KurseSoundbathRouteImport.update({
+  id: '/kurse/soundbath',
+  path: '/kurse/soundbath',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KurseYogaJgaRoute = KurseYogaJgaRouteImport.update({
+  id: '/kurse/yoga-jga',
+  path: '/kurse/yoga-jga',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
@@ -163,6 +158,11 @@ const Char91DotmcpChar93InvokeToolToolRoute =
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicFormSubmitRoute = ApiPublicFormSubmitRouteImport.update({
+  id: '/api/public/form-submit',
+  path: '/api/public/form-submit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -360,81 +360,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/ueber-mich': {
-      id: '/ueber-mich'
-      path: '/ueber-mich'
-      fullPath: '/ueber-mich'
-      preLoaderRoute: typeof UeberMichRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/team': {
-      id: '/team'
-      path: '/team'
-      fullPath: '/team'
-      preLoaderRoute: typeof TeamRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/retreat': {
-      id: '/retreat'
-      path: '/retreat'
-      fullPath: '/retreat'
-      preLoaderRoute: typeof RetreatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/preise': {
-      id: '/preise'
-      path: '/preise'
-      fullPath: '/preise'
-      preLoaderRoute: typeof PreiseRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kursplan': {
-      id: '/kursplan'
-      path: '/kursplan'
-      fullPath: '/kursplan'
-      preLoaderRoute: typeof KursplanRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kontakt': {
-      id: '/kontakt'
-      path: '/kontakt'
-      fullPath: '/kontakt'
-      preLoaderRoute: typeof KontaktRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/impressum': {
-      id: '/impressum'
-      path: '/impressum'
-      fullPath: '/impressum'
-      preLoaderRoute: typeof ImpressumRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gewinnspiel': {
-      id: '/gewinnspiel'
-      path: '/gewinnspiel'
-      fullPath: '/gewinnspiel'
-      preLoaderRoute: typeof GewinnspielRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/datenschutz': {
-      id: '/datenschutz'
-      path: '/datenschutz'
-      fullPath: '/datenschutz'
-      preLoaderRoute: typeof DatenschutzRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/buchen': {
@@ -444,74 +374,81 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BuchenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/datenschutz': {
+      id: '/datenschutz'
+      path: '/datenschutz'
+      fullPath: '/datenschutz'
+      preLoaderRoute: typeof DatenschutzRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/yoga-jga': {
-      id: '/kurse/yoga-jga'
-      path: '/kurse/yoga-jga'
-      fullPath: '/kurse/yoga-jga'
-      preLoaderRoute: typeof KurseYogaJgaRouteImport
+    '/gewinnspiel': {
+      id: '/gewinnspiel'
+      path: '/gewinnspiel'
+      fullPath: '/gewinnspiel'
+      preLoaderRoute: typeof GewinnspielRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/soundbath': {
-      id: '/kurse/soundbath'
-      path: '/kurse/soundbath'
-      fullPath: '/kurse/soundbath'
-      preLoaderRoute: typeof KurseSoundbathRouteImport
+    '/impressum': {
+      id: '/impressum'
+      path: '/impressum'
+      fullPath: '/impressum'
+      preLoaderRoute: typeof ImpressumRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/privat-business': {
-      id: '/kurse/privat-business'
-      path: '/kurse/privat-business'
-      fullPath: '/kurse/privat-business'
-      preLoaderRoute: typeof KursePrivatBusinessRouteImport
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/motherblessing': {
-      id: '/kurse/motherblessing'
-      path: '/kurse/motherblessing'
-      fullPath: '/kurse/motherblessing'
-      preLoaderRoute: typeof KurseMotherblessingRouteImport
+    '/kursplan': {
+      id: '/kursplan'
+      path: '/kursplan'
+      fullPath: '/kursplan'
+      preLoaderRoute: typeof KursplanRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/kinderyoga': {
-      id: '/kurse/kinderyoga'
-      path: '/kurse/kinderyoga'
-      fullPath: '/kurse/kinderyoga'
-      preLoaderRoute: typeof KurseKinderyogaRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/hormonyoga': {
-      id: '/kurse/hormonyoga'
-      path: '/kurse/hormonyoga'
-      fullPath: '/kurse/hormonyoga'
-      preLoaderRoute: typeof KurseHormonyogaRouteImport
+    '/preise': {
+      id: '/preise'
+      path: '/preise'
+      fullPath: '/preise'
+      preLoaderRoute: typeof PreiseRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/beckenboden': {
-      id: '/kurse/beckenboden'
-      path: '/kurse/beckenboden'
-      fullPath: '/kurse/beckenboden'
-      preLoaderRoute: typeof KurseBeckenbodenRouteImport
+    '/retreat': {
+      id: '/retreat'
+      path: '/retreat'
+      fullPath: '/retreat'
+      preLoaderRoute: typeof RetreatRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/anfaengerkurs': {
-      id: '/kurse/anfaengerkurs'
-      path: '/kurse/anfaengerkurs'
-      fullPath: '/kurse/anfaengerkurs'
-      preLoaderRoute: typeof KurseAnfaengerkursRouteImport
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ueber-mich': {
+      id: '/ueber-mich'
+      path: '/ueber-mich'
+      fullPath: '/ueber-mich'
+      preLoaderRoute: typeof UeberMichRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/list-tools': {
@@ -521,11 +458,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/form-submit': {
-      id: '/api/public/form-submit'
-      path: '/api/public/form-submit'
-      fullPath: '/api/public/form-submit'
-      preLoaderRoute: typeof ApiPublicFormSubmitRouteImport
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/anfaengerkurs': {
+      id: '/kurse/anfaengerkurs'
+      path: '/kurse/anfaengerkurs'
+      fullPath: '/kurse/anfaengerkurs'
+      preLoaderRoute: typeof KurseAnfaengerkursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/beckenboden': {
+      id: '/kurse/beckenboden'
+      path: '/kurse/beckenboden'
+      fullPath: '/kurse/beckenboden'
+      preLoaderRoute: typeof KurseBeckenbodenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/hormonyoga': {
+      id: '/kurse/hormonyoga'
+      path: '/kurse/hormonyoga'
+      fullPath: '/kurse/hormonyoga'
+      preLoaderRoute: typeof KurseHormonyogaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/kinderyoga': {
+      id: '/kurse/kinderyoga'
+      path: '/kurse/kinderyoga'
+      fullPath: '/kurse/kinderyoga'
+      preLoaderRoute: typeof KurseKinderyogaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/motherblessing': {
+      id: '/kurse/motherblessing'
+      path: '/kurse/motherblessing'
+      fullPath: '/kurse/motherblessing'
+      preLoaderRoute: typeof KurseMotherblessingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/privat-business': {
+      id: '/kurse/privat-business'
+      path: '/kurse/privat-business'
+      fullPath: '/kurse/privat-business'
+      preLoaderRoute: typeof KursePrivatBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/soundbath': {
+      id: '/kurse/soundbath'
+      path: '/kurse/soundbath'
+      fullPath: '/kurse/soundbath'
+      preLoaderRoute: typeof KurseSoundbathRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kurse/yoga-jga': {
+      id: '/kurse/yoga-jga'
+      path: '/kurse/yoga-jga'
+      fullPath: '/kurse/yoga-jga'
+      preLoaderRoute: typeof KurseYogaJgaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {
@@ -533,6 +526,13 @@ declare module '@tanstack/react-router' {
       path: '/.mcp/invoke-tool/$tool'
       fullPath: '/.mcp/invoke-tool/$tool'
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/form-submit': {
+      id: '/api/public/form-submit'
+      path: '/api/public/form-submit'
+      fullPath: '/api/public/form-submit'
+      preLoaderRoute: typeof ApiPublicFormSubmitRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
