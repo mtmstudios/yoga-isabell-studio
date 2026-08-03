@@ -136,6 +136,34 @@ function YogaJgaPage() {
         </div>
       </Section>
 
+      <Section bg="bone" className="relative overflow-hidden">
+        <LotusOutline
+          size={280}
+          className="pointer-events-none absolute -right-12 -bottom-12 text-sand/60"
+        />
+
+        <div className="relative mx-auto max-w-[52rem] text-center">
+          <Reveal>
+            <span aria-hidden className="mx-auto block h-px w-16 bg-line" />
+          </Reveal>
+          <Reveal delay={0.15} y={32}>
+            <blockquote className="mt-10 font-display text-[clamp(1.3rem,3vw,2.2rem)] leading-[1.25] tracking-[-0.012em] text-ink [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
+              <span className="text-clay">„</span>
+              Eine wunderschöne Erfahrung! Isabell hat für unsere Gruppe eine Yoga-Stunde im Rahmen eines Junggesellinnenabschieds gehalten — im Freien, in wunderschönem Ambiente und mit einem Engagement, das alle unsere Erwartungen übertroffen hat. Wir danken dir für die Hilfe und den Austausch bereits im Vorfeld, genauso wie für das Eingehen auf die ganz unterschiedlichen Yoga-Erfahrungen — vom völligen Anfänger bis zum geübten Yoga-Teilnehmer. Wir hatten eine wunderbare Zeit und können dich absolut weiterempfehlen! Danke dir!
+              <span className="text-clay">"</span>
+            </blockquote>
+          </Reveal>
+          <Reveal delay={0.35}>
+            <div className="mt-10 flex flex-col items-center gap-3">
+              <span aria-hidden className="h-px w-10 bg-line" />
+              <span className="text-[0.7rem] uppercase tracking-[0.28em] text-taupe">
+                JGA-Teilnehmerin
+              </span>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
       <Faq items={FAQ} bg="sand" />
     </>
   );
