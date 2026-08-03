@@ -119,7 +119,7 @@ function YogaJgaPage() {
             <span aria-hidden className="mx-auto block h-px w-16 bg-bone/30" />
           </Reveal>
           <Reveal delay={0.15} y={32}>
-            <blockquote className="mt-10 font-display text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.15] tracking-[-0.012em] text-bone [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
+            <blockquote className="mt-10 font-display text-[clamp(1.3rem,2.8vw,2rem)] leading-[1.2] tracking-[-0.012em] text-bone [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
               <span className="text-clay">„</span>
               Mit ganz viel Liebe, Achtsamkeit und Blick fürs Detail hat Isabell für meine Freundinnen und mich für einen besonderen Anlass eine ganz besondere Yogastunde vorbereitet. Ganz herzlichen Dank dafür!
               <span className="text-clay">"</span>
@@ -147,7 +147,7 @@ function YogaJgaPage() {
             <span aria-hidden className="mx-auto block h-px w-16 bg-line" />
           </Reveal>
           <Reveal delay={0.15} y={32}>
-            <blockquote className="mt-10 font-display text-[clamp(1.3rem,3vw,2.2rem)] leading-[1.25] tracking-[-0.012em] text-ink [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
+            <blockquote className="mt-10 font-display text-[clamp(1.1rem,2.4vw,1.7rem)] leading-[1.3] tracking-[-0.012em] text-ink [font-variation-settings:'SOFT'_100,'opsz'_144] [text-wrap:balance]">
               <span className="text-clay">„</span>
               Eine wunderschöne Erfahrung! Isabell hat für unsere Gruppe eine Yoga-Stunde im Rahmen eines Junggesellinnenabschieds gehalten — im Freien, in wunderschönem Ambiente und mit einem Engagement, das alle unsere Erwartungen übertroffen hat. Wir danken dir für die Hilfe und den Austausch bereits im Vorfeld, genauso wie für das Eingehen auf die ganz unterschiedlichen Yoga-Erfahrungen — vom völligen Anfänger bis zum geübten Yoga-Teilnehmer. Wir hatten eine wunderbare Zeit und können dich absolut weiterempfehlen! Danke dir!
               <span className="text-clay">"</span>
