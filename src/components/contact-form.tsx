@@ -45,6 +45,7 @@ const schema = z.object({
     .trim()
     .min(10, "Bitte schreib ein paar Worte mehr.")
     .max(2000, "Nachricht ist zu lang."),
+  newsletter: z.boolean().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -58,7 +59,14 @@ export function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
-    defaultValues: { name: "", email: "", phone: "", interest: "", message: "" },
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      interest: "",
+      message: "",
+      newsletter: false,
+    },
   });
 
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -77,6 +85,7 @@ export function ContactForm() {
             phone: data.phone ?? "",
             interest: data.interest ?? "",
             message: data.message,
+            newsletter: !!data.newsletter,
           },
         }),
       });
@@ -191,6 +200,18 @@ export function ContactForm() {
           </p>
         )}
       </div>
+
+      <label className="flex items-start gap-3 text-[0.9rem] text-ink">
+        <input
+          type="checkbox"
+          {...register("newsletter")}
+          className="mt-1 h-4 w-4 accent-clay"
+        />
+        <span>
+          Ja, ich möchte gelegentlich Neuigkeiten zu Kursen und Retreats per
+          E-Mail erhalten (jederzeit abbestellbar).
+        </span>
+      </label>
 
       <div className="mt-2">
         <CTA type="submit" variant="primary" disabled={isSubmitting}>

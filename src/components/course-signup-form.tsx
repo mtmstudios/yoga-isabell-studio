@@ -37,6 +37,7 @@ export function CourseSignupForm({
 }: Props) {
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "ok" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -66,6 +67,7 @@ export function CourseSignupForm({
           data: {
             email: parsed.data,
             course: course ?? "",
+            newsletter,
           },
         }),
       });
@@ -73,6 +75,7 @@ export function CourseSignupForm({
       setStatus("ok");
       setEmail("");
       setConsent(false);
+      setNewsletter(false);
     } catch {
       setStatus("error");
       setError("Etwas ist schiefgelaufen. Versuche es bitte später erneut.");
@@ -152,6 +155,19 @@ export function CourseSignupForm({
                 Datenschutzerklärung
               </a>
               . Du kannst Dich jederzeit wieder abmelden.
+            </span>
+          </label>
+
+          <label className="flex items-start gap-3 text-[0.85rem] leading-[1.55] text-taupe">
+            <input
+              type="checkbox"
+              checked={newsletter}
+              onChange={(e) => setNewsletter(e.target.checked)}
+              className="mt-[3px] h-4 w-4 shrink-0 cursor-pointer accent-clay"
+            />
+            <span>
+              Ja, ich möchte gelegentlich Neuigkeiten zu Kursen und Retreats per
+              E-Mail erhalten (jederzeit abbestellbar).
             </span>
           </label>
 
