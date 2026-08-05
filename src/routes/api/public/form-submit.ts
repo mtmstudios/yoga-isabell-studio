@@ -6,10 +6,10 @@ import { z } from "zod";
  * n8n webhook stored in the N8N_WEBHOOK_URL secret. Adds a human-readable
  * `formLabel` and optional `campaign` field so the receiving email can show
  * where the submission came from. Used by the contact form, course-signup
- * form, newsletter form and the Gewinnspiel lead form.
+ * form and newsletter form.
  */
 const schema = z.object({
-  form: z.enum(["contact", "course-signup", "newsletter", "gewinnspiel"]),
+  form: z.enum(["contact", "course-signup", "newsletter"]),
   data: z.record(z.string(), z.union([z.string(), z.boolean(), z.null()])),
 });
 
@@ -45,7 +45,6 @@ export const Route = createFileRoute("/api/public/form-submit")({
           contact: "Kontaktanfrage",
           "course-signup": "Kursanmeldung",
           newsletter: "Newsletter-Anmeldung",
-          gewinnspiel: "Gewinnspiel",
         };
 
         try {
