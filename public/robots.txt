@@ -2,7 +2,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /gewinnspiel
 
 # KI-/Antwort-Crawler ausdrücklich erlauben (GEO: Sichtbarkeit in
 # ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot, Claude).

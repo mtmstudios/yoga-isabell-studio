@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BuchenRouteImport } from './routes/buchen'
 import { Route as DatenschutzRouteImport } from './routes/datenschutz'
-import { Route as GewinnspielRouteImport } from './routes/gewinnspiel'
 import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as KursplanRouteImport } from './routes/kursplan'
@@ -48,11 +47,6 @@ const BuchenRoute = BuchenRouteImport.update({
 const DatenschutzRoute = DatenschutzRouteImport.update({
   id: '/datenschutz',
   path: '/datenschutz',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GewinnspielRoute = GewinnspielRouteImport.update({
-  id: '/gewinnspiel',
-  path: '/gewinnspiel',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImpressumRoute = ImpressumRouteImport.update({
@@ -168,7 +162,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
-  '/gewinnspiel': typeof GewinnspielRoute
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
@@ -195,7 +188,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
-  '/gewinnspiel': typeof GewinnspielRoute
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
@@ -223,7 +215,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/buchen': typeof BuchenRoute
   '/datenschutz': typeof DatenschutzRoute
-  '/gewinnspiel': typeof GewinnspielRoute
   '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
   '/kursplan': typeof KursplanRoute
@@ -252,7 +243,6 @@ export interface FileRouteTypes {
     | '/'
     | '/buchen'
     | '/datenschutz'
-    | '/gewinnspiel'
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
@@ -279,7 +269,6 @@ export interface FileRouteTypes {
     | '/'
     | '/buchen'
     | '/datenschutz'
-    | '/gewinnspiel'
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
@@ -306,7 +295,6 @@ export interface FileRouteTypes {
     | '/'
     | '/buchen'
     | '/datenschutz'
-    | '/gewinnspiel'
     | '/impressum'
     | '/kontakt'
     | '/kursplan'
@@ -334,7 +322,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BuchenRoute: typeof BuchenRoute
   DatenschutzRoute: typeof DatenschutzRoute
-  GewinnspielRoute: typeof GewinnspielRoute
   ImpressumRoute: typeof ImpressumRoute
   KontaktRoute: typeof KontaktRoute
   KursplanRoute: typeof KursplanRoute
@@ -379,13 +366,6 @@ declare module '@tanstack/react-router' {
       path: '/datenschutz'
       fullPath: '/datenschutz'
       preLoaderRoute: typeof DatenschutzRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gewinnspiel': {
-      id: '/gewinnspiel'
-      path: '/gewinnspiel'
-      fullPath: '/gewinnspiel'
-      preLoaderRoute: typeof GewinnspielRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/impressum': {
@@ -542,7 +522,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BuchenRoute: BuchenRoute,
   DatenschutzRoute: DatenschutzRoute,
-  GewinnspielRoute: GewinnspielRoute,
   ImpressumRoute: ImpressumRoute,
   KontaktRoute: KontaktRoute,
   KursplanRoute: KursplanRoute,
