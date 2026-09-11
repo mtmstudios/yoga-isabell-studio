@@ -62,9 +62,9 @@ function KinderyogaPage() {
         })}
       />
       <PageHeader
-        eyebrow="3 – 6 Jahre · mit Svenja"
+        eyebrow="5 – 7 JAHRE · MIT SVENJA"
         title={<>Kinder<em>yoga</em>.</>}
-        lead="Spielerisch, liebevoll, gemeinsam mit einer Begleitperson."
+        lead="Spielerisch & liebevoll."
       />
 
       <Section bg="bone">
@@ -72,11 +72,11 @@ function KinderyogaPage() {
           <div>
             <Reveal>
               <p className="text-[1.08rem] leading-[1.75] text-taupe">
-                In unserem Kinderyoga tauchen die Kleinen gemeinsam mit ihrer
-                Begleitperson spielerisch in die Welt des Yoga ein. Geschichten,
+                In unserem Kinderyoga tauchen die Kleinen spielerisch in die Welt
+                des Yoga ein. Geschichten,
                 Tier-Asanas, kleine Atemspiele und ruhige Momente wechseln sich
                 ab. Es geht um Spaß, Bewegung und das gemeinsame Erleben, ganz
-                ohne Leistungsdruck. Für Kinder von 3 – 6 Jahre mit Begleitperson.
+                ohne Leistungsdruck. Für Kinder von 5 – 7 Jahre.
               </p>
             </Reveal>
 
@@ -86,7 +86,7 @@ function KinderyogaPage() {
                   Nächster Kurs
                 </p>
                 <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
-                  Freitags, 18.09. – 25.09.2026 · 15:30 – 16:30 Uhr
+                  Donnerstags, 05.11. – 10.12.2026 · 16:00 – 16:45 Uhr
                 </p>
                 <p className="mt-2 text-taupe">
                   6 Einheiten · 90 €
