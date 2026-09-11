@@ -12,11 +12,11 @@ import { courseSchema } from "@/lib/site";
 const FAQ = [
   {
     q: "Für welches Alter ist das Kinderyoga geeignet?",
-    a: "Für Kinder von 3 bis 6 Jahren – gemeinsam mit einer Begleitperson (Mama, Papa, Oma, Opa oder einer anderen Bezugsperson).",
+    a: "Für Kinder von 5 – 7 Jahre.",
   },
   {
     q: "Muss eine Begleitperson dabei sein?",
-    a: "Ja. Die Begleitperson übt aktiv mit – mal als sicherer Anker, mal als Mitspieler, mal als Kuschelpartner in der Entspannung.",
+    a: "Nein, es muss keine Begleitperson dabei sein.",
   },
   {
     q: "Was passiert in einer Kinderyoga-Stunde?",
@@ -24,24 +24,26 @@ const FAQ = [
   },
   {
     q: "Wann findet der nächste Kurs statt und was kostet er?",
-    a: "Freitags vom 18.09. bis 25.09.2026, 15:30–16:30 Uhr, 6 Einheiten für 90 €. Geleitet wird der Kurs von Svenja.",
+    a: "Donnerstags vom 05.11. bis 10.12.2026, 16:00–16:45 Uhr, 6 Einheiten für 90 €. Geleitet wird der Kurs von Svenja.",
   },
+
 ];
 
 export const Route = createFileRoute("/kurse/kinderyoga")({
   head: () => ({
     meta: [
-      { title: "Kinderyoga (3–6 Jahre) mit Begleitperson — Yoga mit Isabell" },
+      { title: "Kinderyoga (5 – 7 Jahre) — Yoga mit Isabell" },
       {
         name: "description",
         content:
-          "Spielerisches Kinderyoga für 3–6-Jährige mit Begleitperson. 6 Einheiten freitags, mit Svenja.",
+          "Spielerisches Kinderyoga für 5- bis 7-Jährige. 6 Einheiten donnerstags, mit Svenja.",
       },
       { property: "og:title", content: "Kinderyoga mit Svenja" },
       {
         property: "og:description",
-        content: "Yoga für die Kleinen — spielerisch, liebevoll, gemeinsam mit einer Begleitperson.",
+        content: "Yoga für die Kleinen — spielerisch und liebevoll.",
       },
+
       { property: "og:url", content: "/kurse/kinderyoga" }
     ],
     links: [{ rel: "canonical", href: "/kurse/kinderyoga" }],
@@ -54,9 +56,10 @@ function KinderyogaPage() {
     <>
       <JsonLd
         data={courseSchema({
-          name: "Kinderyoga (3–6 Jahre)",
+          name: "Kinderyoga (5 – 7 Jahre)",
           description:
-            "Spielerisches Kinderyoga für 3–6-Jährige mit Begleitperson in Stuttgart-Steinhaldenfeld – Bewegung, Atemspiele und Geschichten, mit Svenja.",
+            "Spielerisches Kinderyoga für 5- bis 7-Jährige in Stuttgart-Steinhaldenfeld – Bewegung, Atemspiele und Geschichten, mit Svenja.",
+
           path: "/kurse/kinderyoga",
           about: ["Kinderyoga", "Yoga für Kinder", "Achtsamkeit"],
         })}
