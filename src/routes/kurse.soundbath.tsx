@@ -4,7 +4,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
-import { CourseSignupForm } from "@/components/course-signup-form";
+import { CTA } from "@/components/cta";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -27,8 +27,9 @@ const FAQ = [
   },
   {
     q: "Wann ist der nächste Termin?",
-    a: "Die Termine finden in loser Folge statt. Melde Dich für den Newsletter an, dann erfährst Du als Erste:r vom nächsten Soundbath.",
+    a: "Der nächste Soundbath findet am 21.01.2027 von 20:00 bis 21:30 Uhr statt. Du kannst Dich direkt über Eversports anmelden.",
   },
+
 ];
 
 export const Route = createFileRoute("/kurse/soundbath")({
@@ -108,16 +109,28 @@ function SoundbathPage() {
 
       <Section bg="bone">
         <Reveal>
-          <div className="mx-auto max-w-[40rem]">
-            <CourseSignupForm
-              course="soundbath"
-              title="Sei beim nächsten Soundbath dabei"
-              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Soundbath-Termin steht."
-              successMessage="Danke! Wir melden uns, sobald der nächste Soundbath-Termin steht."
-            />
+          <div className="mx-auto max-w-[40rem] text-center">
+            <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-taupe">
+              Nächster Termin
+            </p>
+            <p className="mt-4 font-display text-[clamp(1.4rem,3vw,2.1rem)] leading-[1.25] text-ink">
+              21.01.2027 · 20:00 – 21:30 Uhr
+            </p>
+            <div className="mt-8">
+              <CTA asChild size="lg">
+                <a
+                  href="https://www.eversports.de/org/activity/ab8b243a-677f-479d-b904-f2e75cb3e9f6"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jetzt buchen
+                </a>
+              </CTA>
+            </div>
           </div>
         </Reveal>
       </Section>
+
 
       <Faq items={FAQ} bg="sand" />
     </>
