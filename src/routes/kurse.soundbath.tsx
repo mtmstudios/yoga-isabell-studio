@@ -27,7 +27,7 @@ const FAQ = [
   },
   {
     q: "Wann ist der nächste Termin?",
-    a: "Der nächste Soundbath findet am 21.01.2027 von 20:00 bis 21:30 Uhr statt. Du kannst Dich direkt über Eversports anmelden.",
+    a: "Der nächste Soundbath findet am Donnerstag, 21.01.2027 von 20:00 bis 21:30 Uhr statt und kostet 29 €. Du kannst Dich direkt über Eversports anmelden.",
   },
 
 ];
