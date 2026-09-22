@@ -44,7 +44,7 @@ const FAQ = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vinyasa Yoga Stuttgart-Steinhaldenfeld · Yoga mit Isabell" },
+      { title: "Yoga Stuttgart-Steinhaldenfeld · Yoga mit Isabell" },
       {
         name: "description",
         content:

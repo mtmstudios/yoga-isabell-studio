@@ -88,14 +88,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld" },
+      { title: "Yoga mit Isabell — Yoga in Stuttgart-Steinhaldenfeld" },
       {
         name: "description",
         content:
           "Klein & fein: Vinyasa Yoga in Stuttgart-Steinhaldenfeld. Max. 12 Teilnehmer:innen, ganzheitlich und persönlich begleitet von Isabell Thieleke.",
       },
       { name: "author", content: "Yoga mit Isabell" },
-      { property: "og:title", content: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld" },
+      { property: "og:title", content: "Yoga mit Isabell — Yoga in Stuttgart-Steinhaldenfeld" },
       {
         property: "og:description",
         content: "Vinyasa Yoga in Stuttgart — klein, persönlich, ganzheitlich.",
@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: OG_IMAGE },
       { property: "og:url", content: `${SITE_URL}/` },
       { name: "theme-color", content: "#F6F1E8" },
-      { name: "twitter:title", content: "Yoga mit Isabell — Vinyasa Yoga in Stuttgart-Steinhaldenfeld" },
+      { name: "twitter:title", content: "Yoga mit Isabell — Yoga in Stuttgart-Steinhaldenfeld" },
       { name: "twitter:description", content: "Vinyasa Yoga in Stuttgart — klein, persönlich, ganzheitlich." },
     ],
     links: [
