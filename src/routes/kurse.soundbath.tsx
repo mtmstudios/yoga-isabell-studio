@@ -109,15 +109,15 @@ function SoundbathPage() {
 
       <Section bg="bone">
         <Reveal>
-          <div className="mx-auto max-w-[40rem] text-center">
-            <p className="font-sans text-[0.75rem] uppercase tracking-[0.18em] text-taupe">
+          <div className="mx-auto max-w-[34rem] rounded-md border border-ink/10 bg-sand/60 p-7">
+            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
               Nächster Termin
             </p>
-            <p className="mt-4 font-display text-[clamp(1.4rem,3vw,2.1rem)] leading-[1.25] text-ink">
+            <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
               21.01.2027 · 20:00 – 21:30 Uhr
             </p>
-            <div className="mt-8">
-              <CTA asChild size="lg">
+            <div className="mt-6">
+              <CTA asChild variant="primary">
                 <a
                   href="https://www.eversports.de/org/activity/ab8b243a-677f-479d-b904-f2e75cb3e9f6"
                   target="_blank"
@@ -130,6 +130,7 @@ function SoundbathPage() {
           </div>
         </Reveal>
       </Section>
+
 
 
       <Faq items={FAQ} bg="sand" />
