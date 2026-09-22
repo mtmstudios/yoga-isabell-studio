@@ -114,8 +114,10 @@ function SoundbathPage() {
               Nächster Termin
             </p>
             <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
-              21.01.2027 · 20:00 – 21:30 Uhr
+              Donnerstag, 21.01.2027 · 20:00 – 21:30 Uhr
             </p>
+            <p className="mt-2 text-taupe">29 €</p>
+
             <div className="mt-6">
               <CTA asChild variant="primary">
                 <a
