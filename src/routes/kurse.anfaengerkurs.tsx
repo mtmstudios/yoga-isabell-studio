@@ -27,7 +27,7 @@ const FAQ = [
   },
   {
     q: "Wann startet der nächste Anfängerkurs in Stuttgart und was kostet er?",
-    a: "Der nächste Anfängerkurs läuft montags vom 16.11.2026 bis 14.12.2026, jeweils 17:30–18:45 Uhr, 5 Einheiten für 95 €.",
+    a: "Der nächste Anfängerkurs läuft montags vom 16.11.2026 bis 14.12.2026, jeweils 17:30–18:45 Uhr, 5 Einheiten für 90 €.",
   },
 ];
 
@@ -122,7 +122,7 @@ function AnfaengerPage() {
             <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
               Montags, 16.11.2026 – 14.12.2026 · 17:30 – 18:45 Uhr
             </p>
-            <p className="mt-2 text-taupe">5 Einheiten · 95 €</p>
+            <p className="mt-2 text-taupe">5 Einheiten · 90 €</p>
 
             <div className="mt-6">
               <CTA asChild variant="primary">
