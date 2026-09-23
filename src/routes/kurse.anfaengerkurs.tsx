@@ -4,6 +4,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
+import { CTA } from "@/components/cta";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -122,6 +123,18 @@ function AnfaengerPage() {
               Montags, 16.11.2026 – 14.12.2026 · 17:30 – 18:45 Uhr
             </p>
             <p className="mt-2 text-taupe">5 Einheiten · 95 €</p>
+
+            <div className="mt-6">
+              <CTA asChild variant="primary">
+                <a
+                  href="https://www.eversports.de/org/activity/e1462a0b-352c-4ffc-9035-0b0e25756d38"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jetzt buchen
+                </a>
+              </CTA>
+            </div>
           </div>
         </Reveal>
       </Section>
