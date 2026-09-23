@@ -37,12 +37,12 @@ export const Route = createFileRoute("/kurse/anfaengerkurs")({
       {
         name: "description",
         content:
-          "Geschlossener Anfängerkurs in 6 Einheiten. Körperhaltungen, Atemübungen, Meditation und leichte Flows — in kleinen Gruppen.",
+          "Geschlossener Anfängerkurs in 5 Einheiten. Körperhaltungen, Atemübungen, Meditation und leichte Flows — in kleinen Gruppen.",
       },
       { property: "og:title", content: "Yoga Anfängerkurs — Dein sanfter Einstieg" },
       {
         property: "og:description",
-        content: "Sanfter Einstieg ins Yoga — 6 Einheiten, max. 12 Teilnehmer:innen.",
+        content: "Sanfter Einstieg ins Yoga — 5 Einheiten, max. 12 Teilnehmer:innen.",
       },
       { property: "og:url", content: "/kurse/anfaengerkurs" }
     ],
@@ -58,13 +58,13 @@ function AnfaengerPage() {
         data={courseSchema({
           name: "Yoga Anfängerkurs",
           description:
-            "Geschlossener Anfängerkurs in 6 Einheiten – sanfter Einstieg ins Yoga ohne Vorkenntnisse, in Stuttgart-Steinhaldenfeld.",
+            "Geschlossener Anfängerkurs in 5 Einheiten – sanfter Einstieg ins Yoga ohne Vorkenntnisse, in Stuttgart-Steinhaldenfeld.",
           path: "/kurse/anfaengerkurs",
           about: ["Yoga für Anfänger", "Vinyasa Yoga", "Atemübungen"],
         })}
       />
       <PageHeader
-        eyebrow="Geschlossener Kurs · 6 Einheiten"
+        eyebrow="Geschlossener Kurs · 5 Einheiten"
         title={<>Yoga Anfängerkurs — Dein sanfter <em>Einstieg</em>.</>}
         lead="Erste Schritte ins Yoga, ohne Vorkenntnisse, in kleinen Gruppen."
       />
