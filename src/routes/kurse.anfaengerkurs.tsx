@@ -4,7 +4,6 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
-import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -15,7 +14,7 @@ const FAQ = [
   },
   {
     q: "Wie viele Einheiten umfasst der Kurs?",
-    a: "Der geschlossene Anfängerkurs läuft über 6 Einheiten, sodass Du die Grundlagen in Ruhe aufbauen kannst.",
+    a: "Der geschlossene Anfängerkurs läuft über 5 Einheiten, sodass Du die Grundlagen in Ruhe aufbauen kannst.",
   },
   {
     q: "Was lerne ich im Anfängerkurs?",
@@ -26,8 +25,8 @@ const FAQ = [
     a: "Wir üben in kleinen Gruppen von maximal 12 Teilnehmer:innen, damit wir individuell auf Dich eingehen können.",
   },
   {
-    q: "Wann startet der nächste Anfängerkurs in Stuttgart?",
-    a: "Neue Termine geben wir über den Newsletter bekannt. Melde Dich an, dann erfährst Du als Erste:r vom nächsten Start.",
+    q: "Wann startet der nächste Anfängerkurs in Stuttgart und was kostet er?",
+    a: "Der nächste Anfängerkurs läuft montags vom 16.11.2026 bis 14.12.2026, jeweils 17:30–18:45 Uhr, 5 Einheiten für 95 €.",
   },
 ];
 
@@ -115,13 +114,14 @@ function AnfaengerPage() {
 
       <Section bg="bone">
         <Reveal>
-          <div className="mx-auto max-w-[40rem]">
-            <CourseSignupForm
-              course="anfaengerkurs"
-              title="Sei dabei beim nächsten Anfängerkurs"
-              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Anfängerkurs startet."
-              successMessage="Danke! Wir melden uns, sobald der nächste Anfängerkurs startet."
-            />
+          <div className="mx-auto max-w-[34rem] rounded-md border border-ink/10 bg-sand/60 p-7">
+            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
+              Nächster Termin
+            </p>
+            <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
+              Montags, 16.11.2026 – 14.12.2026 · 17:30 – 18:45 Uhr
+            </p>
+            <p className="mt-2 text-taupe">5 Einheiten · 95 €</p>
           </div>
         </Reveal>
       </Section>
