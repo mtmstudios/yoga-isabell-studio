@@ -65,7 +65,7 @@ function AnfaengerPage() {
         })}
       />
       <PageHeader
-        eyebrow="Geschlossener Kurs · 5 Einheiten"
+        eyebrow="Neuer Termin im November · 5 Einheiten"
         title={<>Yoga Anfängerkurs — Dein sanfter <em>Einstieg</em>.</>}
         lead="Erste Schritte ins Yoga, ohne Vorkenntnisse, in kleinen Gruppen."
       />
