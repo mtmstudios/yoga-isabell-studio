@@ -25,7 +25,6 @@ import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
-import { Route as KurseHormonyogaRouteImport } from './routes/kurse.hormonyoga'
 import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
 import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
 import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
@@ -116,11 +115,6 @@ const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
   path: '/kurse/beckenboden',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseHormonyogaRoute = KurseHormonyogaRouteImport.update({
-  id: '/kurse/hormonyoga',
-  path: '/kurse/hormonyoga',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
   id: '/kurse/kinderyoga',
   path: '/kurse/kinderyoga',
@@ -175,7 +169,6 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -201,7 +194,6 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -228,7 +220,6 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/hormonyoga': typeof KurseHormonyogaRoute
   '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
@@ -256,7 +247,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -282,7 +272,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -308,7 +297,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/hormonyoga'
     | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
@@ -335,7 +323,6 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
   KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
-  KurseHormonyogaRoute: typeof KurseHormonyogaRoute
   KurseKinderyogaRoute: typeof KurseKinderyogaRoute
   KurseMotherblessingRoute: typeof KurseMotherblessingRoute
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
@@ -459,13 +446,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KurseBeckenbodenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/hormonyoga': {
-      id: '/kurse/hormonyoga'
-      path: '/kurse/hormonyoga'
-      fullPath: '/kurse/hormonyoga'
-      preLoaderRoute: typeof KurseHormonyogaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/kurse/kinderyoga': {
       id: '/kurse/kinderyoga'
       path: '/kurse/kinderyoga'
@@ -536,7 +516,6 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
   KurseBeckenbodenRoute: KurseBeckenbodenRoute,
-  KurseHormonyogaRoute: KurseHormonyogaRoute,
   KurseKinderyogaRoute: KurseKinderyogaRoute,
   KurseMotherblessingRoute: KurseMotherblessingRoute,
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,
