@@ -61,10 +61,10 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
   {
     day: "Freitag",
     items: [
-      { time: "ab 14:30", text: "Individuelle Anreise · lockeres Get-Together bei Kaffee, Tee & Snacks" },
+      { time: "ab 14:30", text: "Individuelle Anreise" },
       { time: "17:00", text: <>Vinyasa Yoga <em className="font-display not-italic text-ink">Ankommen & Auftanken</em> mit Isabell (alle Level)</> },
       { time: "18:30", text: "Gemeinsames Abendessen in Buffet-Form" },
-      { time: "21:00", text: <><em className="font-display not-italic text-ink">Mondgrüße</em> mit Alina (alle Level, 30 Minuten)</> },
+      { time: "21:00", text: <><em className="font-display not-italic text-ink">Mondgruß</em> mit Alina (alle Level, 30 Minuten)</> },
     ],
   },
   {
@@ -75,7 +75,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
       { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet" },
       { text: "Zeit zur freien Verfügung, um die Umgebung zu erkunden oder Seele baumeln lassen" },
       { time: "16:00", text: <><em className="font-display not-italic text-ink">Yoga Music Flow</em> mit Isabell (für Fortgeschrittene)</> },
-      { time: "17:30", text: <><em className="font-display not-italic text-ink">Yoga meets Thai Yoga Massage</em> mit Alina (alle Level)</> },
+      { time: "17:30", text: <><em className="font-display not-italic text-ink">Thai Yoga Massage in Partnerarbeit</em> mit Alina (alle Level)</> },
       { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls)" },
       { text: "Im Anschluss lassen wir den Abend gemeinsam ausklingen" },
     ],
@@ -84,7 +84,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
     day: "Sonntag",
     items: [
       { time: "07:15", text: "Opening · Kaffee-, Tee-Bar & Snacks" },
-      { time: "08:00", text: <><em className="font-display not-italic text-ink">Flow & Glow — Yoga meets Face Yoga</em> mit Alina & Isabell (alle Level)</> },
+      { time: "08:00", text: <><em className="font-display not-italic text-ink">Flow & Glow</em> mit Alina & Isabell (alle Level)</> },
       { time: "09:30", text: "Gemeinsames, ausgiebiges Frühstücksbuffet" },
       { time: "13:00", text: "Check-out" },
     ],
