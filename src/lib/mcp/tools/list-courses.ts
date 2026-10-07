@@ -16,13 +16,6 @@ const COURSES = [
     path: "/kurse/anfaengerkurs",
   },
   {
-    slug: "hormonyoga",
-    name: "Hormonyoga Workshop (nach Dinah Rodrigues)",
-    description:
-      "Workshop mit Ursula zur natürlichen Regulierung der Hormone, ideal in Zyklus- und Wechseljahren.",
-    path: "/kurse/hormonyoga",
-  },
-  {
     slug: "beckenboden",
     name: "Beckenboden Yoga",
     description: "Kraft & Achtsamkeit für den Beckenboden — sanft, gezielt und alltagstauglich.",
