@@ -18,7 +18,6 @@ const NAV: NavItem[] = [
     children: [
       { label: "Kursplan & Kursbeschreibungen", href: "/kursplan" },
       { label: "Anfängerkurs", href: "/kurse/anfaengerkurs" },
-      { label: "Hormonyoga", href: "/kurse/hormonyoga" },
       { label: "Soundbath Meditation", href: "/kurse/soundbath" },
       { label: "Beckenboden Yoga", href: "/kurse/beckenboden" },
       { label: "Privatstunde & Business Yoga", href: "/kurse/privat-business" },
