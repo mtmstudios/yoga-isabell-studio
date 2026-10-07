@@ -76,7 +76,7 @@ const SCHEDULE: { day: string; items: { time?: string; text: ReactNode }[] }[] =
       { text: "Zeit zur freien Verfügung, um die Umgebung zu erkunden oder Seele baumeln lassen" },
       { time: "16:00", text: <><em className="font-display not-italic text-ink">Yoga Music Flow</em> mit Isabell (für Fortgeschrittene)</> },
       { time: "17:30", text: <><em className="font-display not-italic text-ink">Thai Yoga Massage in Partnerarbeit</em> mit Alina (alle Level)</> },
-      { time: "19:00", text: "Gemeinsamer Kochabend (u. a. Summer Rolls)" },
+      { time: "19:00", text: "Gemeinsamer Kochabend" },
       { text: "Im Anschluss lassen wir den Abend gemeinsam ausklingen" },
     ],
   },
