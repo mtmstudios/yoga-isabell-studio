@@ -37,7 +37,7 @@ export function BeginnerCoursePopup() {
             </CTA>
           </DialogClose>
           <DialogTitle className="font-display text-3xl font-normal leading-[1.2] tracking-normal text-ink sm:text-4xl">
-            Melde Dich jetzt zum <em>Yoga Anfängerkurs</em> an
+            Neuer <em>Yoga Anfängerkurs</em> ab November - jetzt anmelden
           </DialogTitle>
           <CTA asChild className="mt-8">
             <Link to="/kurse/anfaengerkurs" onClick={() => setOpen(false)}>
