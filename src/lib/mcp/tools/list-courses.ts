@@ -28,12 +28,6 @@ const COURSES = [
     path: "/kurse/soundbath",
   },
   {
-    slug: "kinderyoga",
-    name: "Kinderyoga",
-    description: "Verspielte Yogastunden für Kinder — Bewegung, Fantasie und Entspannung.",
-    path: "/kurse/kinderyoga",
-  },
-  {
     slug: "motherblessing",
     name: "Motherblessing",
     description: "Achtsame Zeremonie zur Ehrung werdender Mütter im Kreis vertrauter Frauen.",
