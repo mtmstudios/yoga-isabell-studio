@@ -25,7 +25,6 @@ import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as KurseAnfaengerkursRouteImport } from './routes/kurse.anfaengerkurs'
 import { Route as KurseBeckenbodenRouteImport } from './routes/kurse.beckenboden'
-import { Route as KurseKinderyogaRouteImport } from './routes/kurse.kinderyoga'
 import { Route as KurseMotherblessingRouteImport } from './routes/kurse.motherblessing'
 import { Route as KursePrivatBusinessRouteImport } from './routes/kurse.privat-business'
 import { Route as KurseSoundbathRouteImport } from './routes/kurse.soundbath'
@@ -115,11 +114,6 @@ const KurseBeckenbodenRoute = KurseBeckenbodenRouteImport.update({
   path: '/kurse/beckenboden',
   getParentRoute: () => rootRouteImport,
 } as any)
-const KurseKinderyogaRoute = KurseKinderyogaRouteImport.update({
-  id: '/kurse/kinderyoga',
-  path: '/kurse/kinderyoga',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const KurseMotherblessingRoute = KurseMotherblessingRouteImport.update({
   id: '/kurse/motherblessing',
   path: '/kurse/motherblessing',
@@ -169,7 +163,6 @@ export interface FileRoutesByFullPath {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
@@ -194,7 +187,6 @@ export interface FileRoutesByTo {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
@@ -220,7 +212,6 @@ export interface FileRoutesById {
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/kurse/anfaengerkurs': typeof KurseAnfaengerkursRoute
   '/kurse/beckenboden': typeof KurseBeckenbodenRoute
-  '/kurse/kinderyoga': typeof KurseKinderyogaRoute
   '/kurse/motherblessing': typeof KurseMotherblessingRoute
   '/kurse/privat-business': typeof KursePrivatBusinessRoute
   '/kurse/soundbath': typeof KurseSoundbathRoute
@@ -247,7 +238,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
@@ -272,7 +262,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
@@ -297,7 +286,6 @@ export interface FileRouteTypes {
     | '/.well-known/oauth-protected-resource'
     | '/kurse/anfaengerkurs'
     | '/kurse/beckenboden'
-    | '/kurse/kinderyoga'
     | '/kurse/motherblessing'
     | '/kurse/privat-business'
     | '/kurse/soundbath'
@@ -323,7 +311,6 @@ export interface RootRouteChildren {
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   KurseAnfaengerkursRoute: typeof KurseAnfaengerkursRoute
   KurseBeckenbodenRoute: typeof KurseBeckenbodenRoute
-  KurseKinderyogaRoute: typeof KurseKinderyogaRoute
   KurseMotherblessingRoute: typeof KurseMotherblessingRoute
   KursePrivatBusinessRoute: typeof KursePrivatBusinessRoute
   KurseSoundbathRoute: typeof KurseSoundbathRoute
@@ -446,13 +433,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KurseBeckenbodenRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/kurse/kinderyoga': {
-      id: '/kurse/kinderyoga'
-      path: '/kurse/kinderyoga'
-      fullPath: '/kurse/kinderyoga'
-      preLoaderRoute: typeof KurseKinderyogaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/kurse/motherblessing': {
       id: '/kurse/motherblessing'
       path: '/kurse/motherblessing'
@@ -516,7 +496,6 @@ const rootRouteChildren: RootRouteChildren = {
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   KurseAnfaengerkursRoute: KurseAnfaengerkursRoute,
   KurseBeckenbodenRoute: KurseBeckenbodenRoute,
-  KurseKinderyogaRoute: KurseKinderyogaRoute,
   KurseMotherblessingRoute: KurseMotherblessingRoute,
   KursePrivatBusinessRoute: KursePrivatBusinessRoute,
   KurseSoundbathRoute: KurseSoundbathRoute,
