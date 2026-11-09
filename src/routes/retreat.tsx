@@ -160,7 +160,7 @@ function RetreatPage() {
         <div className="container-editorial absolute inset-x-0 bottom-10 text-bone">
           <Reveal>
             <p className="font-display text-[clamp(1.3rem,2.2vw,1.8rem)] leading-[1.2]">
-              Saiger Lounge · 1.020 m · nahe Titisee
+              Unser Retreat-Haus · 1.020 m · nahe Titisee
             </p>
           </Reveal>
         </div>
