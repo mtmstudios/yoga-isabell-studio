@@ -178,10 +178,12 @@ function RetreatPage() {
         <Reveal delay={0.15}>
           <p className="mt-4 inline-flex items-center gap-3 rounded-pill border border-clay/40 bg-clay/5 px-4 py-2 text-[0.78rem] uppercase tracking-[0.22em] text-clay">
             <span aria-hidden className="h-1 w-1 rotate-45 bg-clay" />
-            Ein Wochenende Abstand vom Alltag · 23. – 25. April 2027 · ausgebucht
+            23. – 25. April 2027 · ausgebucht
           </p>
-          <p className="mt-3 text-[1rem] text-taupe">
-            26. – 28. November 2027 · setze Dich gerne auf die Warteliste
+          <br />
+          <p className="mt-3 inline-flex items-center gap-3 rounded-pill border border-clay/40 bg-clay/5 px-4 py-2 text-[0.78rem] uppercase tracking-[0.22em] text-clay">
+            <span aria-hidden className="h-1 w-1 rotate-45 bg-clay" />
+            26. – 28. November 2027 · setze Dich gerne auf die Warteliste!
           </p>
         </Reveal>
       </Section>
