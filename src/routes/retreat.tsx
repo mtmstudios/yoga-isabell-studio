@@ -43,7 +43,7 @@ export const Route = createFileRoute("/retreat")({
       {
         name: "description",
         content:
-          "23.–25. April 2027 · ein Wochenende Abstand vom Alltag in der Saiger Lounge im Schwarzwald. Mit Alina & Isabell.",
+          "26.–28. November 2027 · ein Wochenende Abstand vom Alltag in der Saiger Lounge im Schwarzwald. Mit Alina & Isabell.",
       },
       { property: "og:title", content: "Yoga Retreat im Schwarzwald 2027" },
       {
