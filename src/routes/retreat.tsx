@@ -145,7 +145,7 @@ function RetreatPage() {
       <PageHeader
         eyebrow="Retreat 2027"
         title={<>Yoga Retreat im <em>Schwarzwald</em>.</>}
-        lead="Ein Wochenende Abstand vom Alltag · 23. – 25. April 2027."
+        lead="Ein Wochenende Abstand vom Alltag · 26. – 28. November 2027."
       />
 
       {/* Hero photo */}
