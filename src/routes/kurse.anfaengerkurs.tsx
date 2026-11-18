@@ -4,7 +4,7 @@ import { Section } from "@/components/section";
 import { Reveal } from "@/components/reveal";
 import { Photo } from "@/components/photo";
 import { Faq } from "@/components/faq";
-import { CTA } from "@/components/cta";
+import { CourseSignupForm } from "@/components/course-signup-form";
 import { JsonLd } from "@/components/json-ld";
 import { courseSchema } from "@/lib/site";
 
@@ -115,26 +115,13 @@ function AnfaengerPage() {
 
       <Section bg="bone">
         <Reveal>
-          <div className="mx-auto max-w-[34rem] rounded-md border border-ink/10 bg-sand/60 p-7">
-            <p className="text-[0.72rem] uppercase tracking-[0.22em] text-clay">
-              Nächster Termin
-            </p>
-            <p className="mt-3 font-display text-[1.45rem] leading-[1.2] text-ink">
-              Montags, 16.11.2026 – 14.12.2026 · 17:30 – 18:45 Uhr
-            </p>
-            <p className="mt-2 text-taupe">5 Einheiten · 90 €</p>
-
-            <div className="mt-6">
-              <CTA asChild variant="primary">
-                <a
-                  href="https://www.eversports.de/org/activity/e1462a0b-352c-4ffc-9035-0b0e25756d38"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Jetzt buchen
-                </a>
-              </CTA>
-            </div>
+          <div className="mx-auto max-w-[40rem]">
+            <CourseSignupForm
+              course="anfaengerkurs"
+              title="Sei dabei beim nächsten Anfängerkurs"
+              description="Trag Dich ein und Du erfährst als Erste:r, wenn der nächste Anfängerkurs startet."
+              successMessage="Danke! Wir melden uns, sobald der nächste Anfängerkurs startet."
+            />
           </div>
         </Reveal>
       </Section>
