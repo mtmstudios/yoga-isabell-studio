@@ -27,7 +27,7 @@ const FAQ = [
   },
   {
     q: "Wann startet der nächste Anfängerkurs in Stuttgart und was kostet er?",
-    a: "Der nächste Anfängerkurs läuft montags vom 16.11.2026 bis 14.12.2026, jeweils 17:30–18:45 Uhr, 5 Einheiten für 90 €.",
+    a: "Ein neuer Termin folgt. Melde Dich zum Newsletter an, dann erfährst Du als Erste:r vom nächsten Start.",
   },
 ];
 
@@ -65,7 +65,7 @@ function AnfaengerPage() {
         })}
       />
       <PageHeader
-        eyebrow="Neuer Termin im November · 5 Einheiten"
+        eyebrow="Neuer Termin folgt"
         title={<>Yoga Anfängerkurs — Dein sanfter <em>Einstieg</em>.</>}
         lead="Erste Schritte ins Yoga, ohne Vorkenntnisse, in kleinen Gruppen."
       />
