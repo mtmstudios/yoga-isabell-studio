@@ -13,7 +13,6 @@ import { Marquee } from "@/components/marquee";
 import { LotusThread } from "@/components/lotus-thread";
 import { SectionDivider } from "@/components/section-divider";
 import { Faq } from "@/components/faq";
-import { BeginnerCoursePopup } from "@/components/home/beginner-course-popup";
 
 const FAQ = [
   {
@@ -71,7 +70,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
-      <BeginnerCoursePopup />
       <Hero />
       <Intro />
       <SectionDivider bg="bone" />
